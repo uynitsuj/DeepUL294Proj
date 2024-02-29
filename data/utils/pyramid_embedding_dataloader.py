@@ -148,7 +148,9 @@ class PyramidEmbeddingDataloader(FeatureDataloader):
 
         clip_interp = []
         for i, tr in enumerate(tqdm(self.tile_sizes, desc="Scales")):
-            clip_interp.append(self.data_dict[i].add_images(img_batch))
+            clip_interpolations = self.data_dict[i].add_images(img_batch)
+            # self.data_dict[i].data[0,...] = clip_interpolations
+            clip_interp.append(clip_interpolations)
         
         assert len(self.data_dict) != 0
 
@@ -156,9 +158,9 @@ class PyramidEmbeddingDataloader(FeatureDataloader):
         # for _ in img_batch:
             
         # for i, tr in enumerate(self.tile_sizes):
-        #     clip_interp.append(self.data_dict[i].data[j:j+1,...])
+        #     clip_interp.append(self.data_dict[i].data[0,...])
 
-        #     # self.out_queue.put(updates)
+            # self.out_queue.put(updates)
         #     j+=1
         
         print(f"PyramidEmbeddingProcess took {time.time()-start} seconds")
