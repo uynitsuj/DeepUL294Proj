@@ -1,0 +1,27 @@
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_setup.py:_flush():76] Configure stats pid to 71101
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_setup.py:_flush():76] Loading settings from /home/yujustin/.config/wandb/settings
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_setup.py:_flush():76] Loading settings from /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/settings
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'DUL294P/train_gen.py', 'program_abspath': '/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py', 'program': '/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py'}
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_init.py:_log_setup():527] Logging user logs to /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_153351-rzoo4zuu/logs/debug.log
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_init.py:_log_setup():528] Logging internal logs to /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_153351-rzoo4zuu/logs/debug-internal.log
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_init.py:init():567] calling init triggers
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_init.py:init():574] wandb.init called with sweep_config: {}
+config: {'model': {'k': 40, 'dropout': 0.5, 'num_layers': 4, 'channels': [48, 64, 96, 128], 'num_heads': [3, 4, 6, 8], 'ratio': 4.0}, 'training': {'batch_size_per_device': 128, 'checkpoint_name': 'model.pkl', 'seed': 1189, 'precision': 'float32', 'dataset': {'num_workers': 32, 'type': 'webdataset', 'location': 'https://huggingface.co/datasets/laion/laion2B-en/resolve/main/part-{00000..00127}-5114fd87-297e-42b0-9d11-50f1df323dfa-c000.snappy.parquet'}, 'optimizer': {'type': 'adamw', 'beta_1': 0.9, 'beta_2': 0.98, 'eps': 1e-06, 'weight_decay': 0.1, 'schedule': {'lr': 0.0001, 'type': 'cosine', 'steps': 781250.0, 'warmup': 0.9995, 'final_lr': 0.0}}, 'wandb': {'use_wandb': True, 'project': 'DUL294P'}}, 'dataset name': 'HuggingFaceM4/COCO'}
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_init.py:init():617] starting backend
+2024-03-28 15:33:51,591 INFO    MainThread:71101 [wandb_init.py:init():621] setting up manager
+2024-03-28 15:33:51,592 INFO    MainThread:71101 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-03-28 15:33:51,601 INFO    MainThread:71101 [wandb_init.py:init():629] backend started and connected
+2024-03-28 15:33:51,602 INFO    MainThread:71101 [wandb_init.py:init():721] updated telemetry
+2024-03-28 15:33:51,605 INFO    MainThread:71101 [wandb_init.py:init():754] communicating run to backend with 90.0 second timeout
+2024-03-28 15:33:51,916 INFO    MainThread:71101 [wandb_run.py:_on_init():2344] communicating current version
+2024-03-28 15:33:51,978 INFO    MainThread:71101 [wandb_run.py:_on_init():2353] got version response 
+2024-03-28 15:33:51,978 INFO    MainThread:71101 [wandb_init.py:init():805] starting run threads in backend
+2024-03-28 15:33:54,004 INFO    MainThread:71101 [wandb_run.py:_console_start():2323] atexit reg
+2024-03-28 15:33:54,004 INFO    MainThread:71101 [wandb_run.py:_redirect():2178] redirect: wrap_raw
+2024-03-28 15:33:54,004 INFO    MainThread:71101 [wandb_run.py:_redirect():2243] Wrapping output streams.
+2024-03-28 15:33:54,004 INFO    MainThread:71101 [wandb_run.py:_redirect():2268] Redirects installed.
+2024-03-28 15:33:54,005 INFO    MainThread:71101 [wandb_init.py:init():848] run started, returning control to user process

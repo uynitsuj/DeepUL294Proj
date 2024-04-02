@@ -1,0 +1,33 @@
+Training from scratch
+Epoch 0
+0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 144, in <module>
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 133, in main
+    tqdm.write('')
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 118, in train_one_epoch
+    clipimgbatch = []
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 85, in clip_collate_fn
+    'image': [clipencoder.preprocess(x['image'].permute(2,0,1)) for x in batch],
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 85, in <listcomp>
+    'image': [clipencoder.preprocess(x['image'].permute(2,0,1)) for x in batch],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/open_clip/transform.py", line 239, in _convert_to_rgb
+    return image.convert('RGB')
+           ^^^^^^^^^^^^^
+AttributeError: 'Tensor' object has no attribute 'convert'

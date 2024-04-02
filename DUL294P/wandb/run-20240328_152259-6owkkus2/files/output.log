@@ -1,0 +1,11 @@
+
+Training from scratch
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 141, in <module>
+    main()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 100, in main
+    trainloader = data.DataLoader(dataset["train"], batch_size, drop_last=True,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 254, in __init__
+    raise ValueError('persistent_workers option needs num_workers > 0')
+ValueError: persistent_workers option needs num_workers > 0

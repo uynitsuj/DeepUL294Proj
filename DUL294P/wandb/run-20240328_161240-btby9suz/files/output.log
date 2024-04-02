@@ -1,0 +1,205 @@
+Training from scratch
+Epoch 0
+  0%|                                                                                                                                                                  | 0/4427 [00:00<?, ?it/s]/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/functional.py:507: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3549.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/yujustin/SSD/DeepUL294Proj/DUL294P/foveation/foveate_image.py:66: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.result = torch.tensor(image).flatten(end_dim=-2)[self.sample_mask_idx,:]
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0006730556488037109(s)
+Frequency: 1485.7612469004605(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0005390644073486328(s)
+Frequency: 1855.0659000442283(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0005116462707519531(s)
+Frequency: 1954.475302889096(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0005331039428710938(s)
+Frequency: 1875.8067978533095(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00052642822265625(s)
+Frequency: 1899.5942028985507(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005862712860107422(s)
+Frequency: 1705.694997966653(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005517005920410156(s)
+Frequency: 1812.5773552290407(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005366802215576172(s)
+Frequency: 1863.3069746779208(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005500316619873047(s)
+Frequency: 1818.0771564802774(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005311965942382812(s)
+Frequency: 1882.5421903052065(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.00048422813415527344(s)
+Frequency: 2065.1422944362384(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.0004246234893798828(s)
+Frequency: 2355.027512633352(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.00040030479431152344(s)
+Frequency: 2498.096486003574(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.0004687309265136719(s)
+Frequency: 2133.4201424211597(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.0004181861877441406(s)
+Frequency: 2391.279361459521(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004801750183105469(s)
+Frequency: 2082.573982125124(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.00040650367736816406(s)
+Frequency: 2460.0023460410557(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004954338073730469(s)
+Frequency: 2018.4331087584217(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0003972053527832031(s)
+Frequency: 2517.5894357743095(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004506111145019531(s)
+Frequency: 2219.2084656084658(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.00046825408935546875(s)
+Frequency: 2135.5926680244397(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for image, sentences in zip(batch['image'], batch['sentences']):
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0004513263702392578(s)
+Frequency: 2215.691494981511(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Program interrupted. (Use 'cont' to resume).
+--Return--
+> /home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/matplotlib/backends/backend_qt.py(593)start_main_loop()->None

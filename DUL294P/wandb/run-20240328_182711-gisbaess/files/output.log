@@ -1,0 +1,9 @@
+
+Training from scratch
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 151, in <module>
+    main()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 82, in main
+    optimizer = torch.optim.Adam(model.parameters(), lr=opt_config['lr'])
+                                                        ~~~~~~~~~~^^^^^^
+KeyError: 'lr'

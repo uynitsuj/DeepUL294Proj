@@ -1,0 +1,9 @@
+
+Training from scratch
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 157, in <module>
+    main()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 138, in main
+    img = clipencoder.preprocess(img).unsqueeze(0).half().to(device)
+                             ^^^
+UnboundLocalError: cannot access local variable 'img' where it is not associated with a value

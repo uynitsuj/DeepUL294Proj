@@ -1,0 +1,3 @@
+Training from scratch
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(85)main()
+-> def clip_collate_fn(batch):

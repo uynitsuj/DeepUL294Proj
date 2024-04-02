@@ -1,0 +1,20 @@
+Training from scratch
+Epoch 0
+  0%|                                                                                                                                                                  | 0/4427 [00:00<?, ?it/s]
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(111)train_one_epoch()
+-> clipimg = clipencoder.process(image).unsqueeze(0).half().cuda()
+  0%|                                                                                                                                                                  | 0/4427 [00:47<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 148, in <module>
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 139, in main
+    tqdm.write('')
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 111, in train_one_epoch
+    import pdb; pdb.set_trace()
+              ^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit

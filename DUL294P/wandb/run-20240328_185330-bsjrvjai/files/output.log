@@ -1,0 +1,22 @@
+
+Training from scratch
+  0%|                                                                                                                                                                                                      | 0/4427 [00:00<?, ?it/s]/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/functional.py:507: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3549.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/yujustin/SSD/DeepUL294Proj/DUL294P/foveation/foveate_image.py:66: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.result = torch.tensor(image).flatten(end_dim=-2)[self.sample_mask_idx,:]
+/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py:133: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+  0%|                                                                                                                                                                                                      | 0/4427 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 159, in <module>
+    main()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 150, in main
+    train_one_epoch()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 141, in train_one_epoch
+    imgspacey = torch.transpose(y_centered, 0,1).view(-1)[idxs]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.
+Epoch 0
+Original Image Size 640 428
+Pixel Count 273920
+Compression: 50.0%

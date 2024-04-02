@@ -1,0 +1,8 @@
+{
+    "k": 40,
+    "dropout": 0.5, 
+    "num_layers": 4, 
+    "channels": [48, 64, 96, 128], 
+    "num_heads": [3, 4, 6, 8], 
+    "ratio": 4.0
+}

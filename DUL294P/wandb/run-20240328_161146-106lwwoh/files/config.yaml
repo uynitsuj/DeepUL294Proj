@@ -1,0 +1,77 @@
+wandb_version: 1
+
+model:
+  desc: null
+  value:
+    k: 40
+    dropout: 0.5
+    num_layers: 4
+    channels:
+    - 48
+    - 64
+    - 96
+    - 128
+    num_heads:
+    - 3
+    - 4
+    - 6
+    - 8
+    ratio: 4.0
+training:
+  desc: null
+  value:
+    batch_size_per_device: 128
+    precision: float32
+    optimizer:
+      type: adamw
+      beta_1: 0.9
+      beta_2: 0.98
+      eps: 1.0e-06
+      weight_decay: 0.1
+      schedule:
+        lr: 0.0001
+        type: cosine
+        steps: 781250.0
+        warmup: 0.9995
+        final_lr: 0.0
+    wandb:
+      use_wandb: true
+      project: DUL294P
+dataset name:
+  desc: null
+  value: HuggingFaceM4/COCO
+_wandb:
+  desc: null
+  value:
+    code_path: code/DUL294P/train_gen.py
+    python_version: 3.11.8
+    cli_version: 0.16.5
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1711667506.0
+    t:
+      1:
+      - 1
+      - 41
+      - 49
+      - 51
+      - 55
+      - 63
+      - 77
+      2:
+      - 1
+      - 41
+      - 49
+      - 51
+      - 55
+      - 63
+      - 77
+      3:
+      - 16
+      - 23
+      4: 3.11.8
+      5: 0.16.5
+      8:
+      - 5
+      13: linux-x86_64

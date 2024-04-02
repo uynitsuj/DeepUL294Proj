@@ -1,0 +1,56 @@
+Training from scratch
+Epoch 0
+/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 32 worker processes in total. Our suggested max number of worker in current system is 16, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+0it [00:00, ?it/s]
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 166, in <module>
+    main()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 155, in main
+    train_one_epoch()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 140, in train_one_epoch
+    for i, batch in enumerate(tqdm(zip(trainloader, clip_trainloader))):
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1346, in _next_data
+    return self._process_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1372, in _process_data
+    data.reraise()
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/_utils.py", line 722, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 117, in collate_fn
+    'image': [transform(x['image']) for x in batch],
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 117, in <listcomp>
+    'image': [transform(x['image']) for x in batch],
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torchvision/transforms/transforms.py", line 277, in forward
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torchvision/transforms/functional.py", line 349, in normalize
+    return F_t.normalize(tensor, mean=mean, std=std, inplace=inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torchvision/transforms/_functional_tensor.py", line 907, in normalize
+    raise TypeError(f"Input tensor should be a float tensor. Got {tensor.dtype}.")
+TypeError: Input tensor should be a float tensor. Got torch.uint8.

@@ -1,0 +1,22 @@
+# ninja log v5
+0	15126	1711660201640503552	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/attention/attention_cuda.o	f72bbb63a09621af
+0	15143	1711660201648503855	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/aggregation/aggregation_cuda.o	68d9b10dbafe689a
+2	15350	1711660201864512031	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/rpe_v2/relative_pos_encoding_cuda_v2.o	8dfd1bf5344fc972
+1	15373	1711660201884512788	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/rpe/relative_pos_encoding_cuda.o	de97c671ee088d02
+2	15669	1711660202180523990	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/sampling/sampling_cuda.o	cb17a3066c3b0b24
+1	15816	1711660202328529591	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/grouping/grouping_cuda.o	6eaafd1e2d4ab062
+1	16173	1711660202684543063	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/knnquery/knnquery_cuda.o	5901940ec570ee98
+0	16428	1711660202940552751	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/attention_v2/attention_cuda_v2.o	b29030190ff24277
+1	16822	1711660203336567731	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/interpolation/interpolation_cuda.o	f38d43764ca0caa7
+1	25960	1711660212472912829	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/interpolation/interpolation_cuda_kernel.o	7ce7cbd7feee0c48
+15143	26749	1711660213256942395	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/subtraction/subtraction_cuda.o	4f5687647ee192f7
+0	26875	1711660213380947071	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/attention_v2/attention_cuda_kernel_v2.o	ff67adb192561903
+1	27429	1711660213936968034	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/knnquery/knnquery_cuda_kernel.o	71b084abbb37f175
+1	28524	1711660215025009043	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/pointops_api.o	2d5cd7cf35f9926d
+1	28828	1711660215341020950	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/rpe/relative_pos_encoding_cuda_kernel.o	fffa28f060b6efcf
+0	28850	1711660215361021703	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/aggregation/aggregation_cuda_kernel.o	999a79c4f71a2704
+0	29058	1711660215569029541	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/attention/attention_cuda_kernel.o	deb9b9d55fcd14dc
+0	29108	1711660215621031500	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/grouping/grouping_cuda_kernel.o	b32a136c320a7665
+2	29463	1711660215973044763	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/rpe_v2/relative_pos_encoding_cuda_kernel_v2.o	91f0eb79351ac6d5
+15136	34547	1711660221057236139	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/sampling/sampling_cuda_kernel.o	14053e76630618b6
+15350	36497	1711660223005309383	/home/yujustin/SSD/DeepUL294Proj/DUL294P/lib/pointops2/build/temp.linux-x86_64-cpython-311/src/subtraction/subtraction_cuda_kernel.o	199d9620ec463080

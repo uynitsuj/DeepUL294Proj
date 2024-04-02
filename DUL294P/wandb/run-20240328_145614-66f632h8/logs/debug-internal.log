@@ -1,0 +1,175 @@
+2024-03-28 14:56:14,383 INFO    StreamThr :49292 [internal.py:wandb_internal():86] W&B internal server running at pid: 49292, started at: 2024-03-28 14:56:14.383728
+2024-03-28 14:56:14,384 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: status
+2024-03-28 14:56:14,385 INFO    WriterThread:49292 [datastore.py:open_for_write():87] open: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/run-66f632h8.wandb
+2024-03-28 14:56:14,385 DEBUG   SenderThread:49292 [sender.py:send():379] send: header
+2024-03-28 14:56:14,387 DEBUG   SenderThread:49292 [sender.py:send():379] send: run
+2024-03-28 14:56:14,882 INFO    SenderThread:49292 [dir_watcher.py:__init__():211] watching files in: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files
+2024-03-28 14:56:14,882 INFO    SenderThread:49292 [sender.py:_start_run_threads():1124] run started: 66f632h8 with start time 1711662974.383643
+2024-03-28 14:56:14,886 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: check_version
+2024-03-28 14:56:14,886 DEBUG   SenderThread:49292 [sender.py:send_request():406] send_request: check_version
+2024-03-28 14:56:14,938 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: run_start
+2024-03-28 14:56:14,944 DEBUG   HandlerThread:49292 [system_info.py:__init__():26] System info init
+2024-03-28 14:56:14,945 DEBUG   HandlerThread:49292 [system_info.py:__init__():41] System info init done
+2024-03-28 14:56:14,945 INFO    HandlerThread:49292 [system_monitor.py:start():194] Starting system monitor
+2024-03-28 14:56:14,945 INFO    SystemMonitor:49292 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-28 14:56:14,945 INFO    HandlerThread:49292 [system_monitor.py:probe():214] Collecting system info
+2024-03-28 14:56:14,945 INFO    SystemMonitor:49292 [interfaces.py:start():190] Started cpu monitoring
+2024-03-28 14:56:14,945 INFO    SystemMonitor:49292 [interfaces.py:start():190] Started disk monitoring
+2024-03-28 14:56:14,946 INFO    SystemMonitor:49292 [interfaces.py:start():190] Started gpu monitoring
+2024-03-28 14:56:14,946 INFO    SystemMonitor:49292 [interfaces.py:start():190] Started memory monitoring
+2024-03-28 14:56:14,946 INFO    SystemMonitor:49292 [interfaces.py:start():190] Started network monitoring
+2024-03-28 14:56:14,955 DEBUG   HandlerThread:49292 [system_info.py:probe():150] Probing system
+2024-03-28 14:56:14,957 DEBUG   HandlerThread:49292 [system_info.py:_probe_git():135] Probing git
+2024-03-28 14:56:14,960 DEBUG   HandlerThread:49292 [system_info.py:_probe_git():143] Probing git done
+2024-03-28 14:56:14,960 DEBUG   HandlerThread:49292 [system_info.py:probe():198] Probing system done
+2024-03-28 14:56:14,960 DEBUG   HandlerThread:49292 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-26-generic-x86_64-with-glibc2.35', 'python': '3.11.8', 'heartbeatAt': '2024-03-28T21:56:14.955878', 'startedAt': '2024-03-28T21:56:14.381688', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py', 'codePathLocal': 'train_gen.py', 'codePath': 'DUL294P/train_gen.py', 'git': {'remote': 'https://github.com/uynitsuj/DeepUL294Proj.git', 'commit': '4ea2c2a333414e16ff3586a1e02b27ded374213c'}, 'email': 'yujustin8@gmail.com', 'root': '/home/yujustin/SSD/DeepUL294Proj', 'host': 'Guilty-Spark', 'username': 'yujustin', 'executable': '/home/yujustin/anaconda3/envs/fov/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2598.6482500000006, 'min': 400.0, 'max': 5573.0}, 'cpu_freq_per_core': [{'current': 4491.186, 'min': 400.0, 'max': 5573.0}, {'current': 4475.419, 'min': 400.0, 'max': 5573.0}, {'current': 4486.155, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 4228.048, 'min': 400.0, 'max': 5573.0}, {'current': 4487.565, 'min': 400.0, 'max': 5573.0}, {'current': 3574.869, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 3584.294, 'min': 400.0, 'max': 5573.0}, {'current': 4488.429, 'min': 400.0, 'max': 5573.0}, {'current': 3592.451, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 4206.284, 'min': 400.0, 'max': 5573.0}, {'current': 4294.21, 'min': 400.0, 'max': 5573.0}], 'disk': {'/': {'total': 567.2868194580078, 'used': 412.2329330444336}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 30.492889404296875}}
+2024-03-28 14:56:14,960 INFO    HandlerThread:49292 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-28 14:56:14,960 INFO    HandlerThread:49292 [system_monitor.py:probe():227] Publishing system info
+2024-03-28 14:56:14,960 DEBUG   HandlerThread:49292 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-03-28 14:56:15,883 INFO    Thread-12 :49292 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files/conda-environment.yaml
+2024-03-28 14:56:16,777 DEBUG   HandlerThread:49292 [system_info.py:_save_conda():222] Saving conda packages done
+2024-03-28 14:56:16,777 DEBUG   HandlerThread:49292 [system_info.py:_save_code():44] Saving code
+2024-03-28 14:56:16,779 DEBUG   HandlerThread:49292 [system_info.py:_save_code():65] Saving code done
+2024-03-28 14:56:16,779 DEBUG   HandlerThread:49292 [system_info.py:_save_patches():82] Saving git patches
+2024-03-28 14:56:16,820 DEBUG   HandlerThread:49292 [system_info.py:_save_patches():124] Saving git patches done
+2024-03-28 14:56:16,821 INFO    HandlerThread:49292 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-28 14:56:16,821 DEBUG   SenderThread:49292 [sender.py:send():379] send: files
+2024-03-28 14:56:16,822 INFO    SenderThread:49292 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-03-28 14:56:16,822 INFO    SenderThread:49292 [sender.py:_save_file():1390] saving file code/DUL294P/train_gen.py with policy now
+2024-03-28 14:56:16,822 INFO    SenderThread:49292 [sender.py:_save_file():1390] saving file diff.patch with policy now
+2024-03-28 14:56:16,870 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-28 14:56:16,870 DEBUG   SenderThread:49292 [sender.py:send_request():406] send_request: python_packages
+2024-03-28 14:56:16,871 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-28 14:56:16,871 DEBUG   SenderThread:49292 [sender.py:send_request():406] send_request: stop_status
+2024-03-28 14:56:16,871 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-28 14:56:16,882 INFO    Thread-12 :49292 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files/conda-environment.yaml
+2024-03-28 14:56:16,882 INFO    Thread-12 :49292 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files/diff.patch
+2024-03-28 14:56:16,883 INFO    Thread-12 :49292 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files/wandb-metadata.json
+2024-03-28 14:56:16,883 INFO    Thread-12 :49292 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files/requirements.txt
+2024-03-28 14:56:16,883 INFO    Thread-12 :49292 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files/code/DUL294P/train_gen.py
+2024-03-28 14:56:16,883 INFO    Thread-12 :49292 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files/code
+2024-03-28 14:56:16,883 INFO    Thread-12 :49292 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files/code/DUL294P
+2024-03-28 14:56:17,157 DEBUG   SenderThread:49292 [sender.py:send():379] send: telemetry
+2024-03-28 14:56:17,556 INFO    wandb-upload_0:49292 [upload_job.py:push():131] Uploaded file /tmp/tmpnh3l51r4wandb/2hmyv7y7-wandb-metadata.json
+2024-03-28 14:56:17,557 INFO    wandb-upload_1:49292 [upload_job.py:push():131] Uploaded file /tmp/tmpnh3l51r4wandb/zfssz1f1-code/DUL294P/train_gen.py
+2024-03-28 14:56:17,557 INFO    wandb-upload_2:49292 [upload_job.py:push():131] Uploaded file /tmp/tmpnh3l51r4wandb/1917q17a-diff.patch
+2024-03-28 14:56:17,883 INFO    Thread-12 :49292 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files/output.log
+2024-03-28 14:56:19,883 INFO    Thread-12 :49292 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files/output.log
+2024-03-28 14:56:20,158 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: status_report
+2024-03-28 14:56:25,160 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: status_report
+2024-03-28 14:56:30,162 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: status_report
+2024-03-28 14:56:31,871 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-28 14:56:31,871 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-28 14:56:31,872 DEBUG   SenderThread:49292 [sender.py:send_request():406] send_request: stop_status
+2024-03-28 14:56:36,099 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: status_report
+2024-03-28 14:56:41,100 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: status_report
+2024-03-28 14:56:45,269 ERROR   FileStreamThread:49292 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/yujustin/DUL294P/66f632h8/file_stream
+NoneType: None
+2024-03-28 14:56:45,891 INFO    Thread-12 :49292 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/files/output.log
+2024-03-28 14:56:46,236 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: status_report
+2024-03-28 14:56:46,331 ERROR   SenderThread:49292 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-28 14:56:46,331 ERROR   SenderThread:49292 [internal_api.py:execute():374] {"errors":[{"message":"run 66f632h8 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-28 14:56:46,871 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-28 14:56:46,872 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-28 14:56:47,663 ERROR   SenderThread:49292 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-28 14:56:47,664 ERROR   SenderThread:49292 [internal_api.py:execute():374] {"errors":[{"message":"run 66f632h8 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-28 14:56:49,919 ERROR   SenderThread:49292 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-28 14:56:49,919 ERROR   SenderThread:49292 [internal_api.py:execute():374] {"errors":[{"message":"run 66f632h8 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-28 14:56:49,919 INFO    SenderThread:49292 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+2024-03-28 14:56:51,873 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-28 14:56:54,834 ERROR   SenderThread:49292 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-28 14:56:54,834 ERROR   SenderThread:49292 [internal_api.py:execute():374] {"errors":[{"message":"run 66f632h8 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-28 14:56:56,874 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-28 14:57:01,872 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-28 14:57:04,049 ERROR   SenderThread:49292 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-28 14:57:04,049 ERROR   SenderThread:49292 [internal_api.py:execute():374] {"errors":[{"message":"run 66f632h8 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-28 14:57:06,876 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-28 14:57:11,877 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-28 14:57:14,947 DEBUG   SystemMonitor:49292 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-28 14:57:16,724 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-28 14:57:21,726 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-28 14:57:23,914 ERROR   SenderThread:49292 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-28 14:57:23,914 ERROR   SenderThread:49292 [internal_api.py:execute():374] {"errors":[{"message":"run 66f632h8 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-28 14:57:24,966 INFO    memory    :49292 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-03-28 14:57:24,966 DEBUG   SystemMonitor:49292 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-28 14:57:24,966 DEBUG   SystemMonitor:49292 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-28 14:57:26,727 DEBUG   HandlerThread:49292 [handler.py:handle_request():146] handle_request: keepalive
+2024-03-28 14:57:27,404 WARNING StreamThr :49292 [internal.py:is_dead():414] Internal process exiting, parent pid 49243 disappeared
+2024-03-28 14:57:27,404 ERROR   StreamThr :49292 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-03-28 14:57:27,727 INFO    HandlerThread:49292 [handler.py:finish():866] shutting down handler
+2024-03-28 14:57:27,727 INFO    HandlerThread:49292 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-28 14:57:27,727 INFO    HandlerThread:49292 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-28 14:57:27,727 INFO    HandlerThread:49292 [interfaces.py:finish():202] Joined disk monitor
+2024-03-28 14:57:27,727 INFO    HandlerThread:49292 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-28 14:57:27,728 INFO    HandlerThread:49292 [interfaces.py:finish():202] Joined memory monitor
+2024-03-28 14:57:27,728 INFO    HandlerThread:49292 [interfaces.py:finish():202] Joined network monitor
+2024-03-28 14:57:27,968 INFO    WriterThread:49292 [datastore.py:close():296] close: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_145614-66f632h8/run-66f632h8.wandb
+2024-03-28 14:58:03,341 ERROR   SenderThread:49292 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-28 14:58:03,341 ERROR   SenderThread:49292 [internal_api.py:execute():374] {"errors":[{"message":"run 66f632h8 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-28 14:59:20,952 ERROR   SenderThread:49292 [internal_api.py:execute():373] 409 response executing GraphQL.
+2024-03-28 14:59:20,953 ERROR   SenderThread:49292 [internal_api.py:execute():374] {"errors":[{"message":"run 66f632h8 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-03-28 14:59:20,953 ERROR   StreamThr :49292 [internal.py:wandb_internal():174] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 2217, in upsert_run
+    response = self.gql(
+               ^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 341, in gql
+    ret = self._retry_gql(
+          ^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/internal/internal_util.py", line 49, in run
+    self._run()
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/internal/internal_util.py", line 93, in _run
+    self._debounce()
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/internal/internal.py", line 334, in _debounce
+    self._sm.debounce()
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 537, in debounce
+    self._maybe_update_config(always=final)
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 514, in _maybe_update_config
+    self._debounce_config()
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/sdk/internal/sender.py", line 543, in _debounce_config
+    self._api.upsert_run(
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: run 66f632h8 was previously created and deleted; try a new run name (Error 409: Conflict)

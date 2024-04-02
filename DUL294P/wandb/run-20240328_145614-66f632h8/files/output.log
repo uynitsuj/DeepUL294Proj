@@ -1,0 +1,4 @@
+Training from scratch
+Epoch 0
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(107)train_one_epoch()
+-> for i, batch in enumerate(tqdm(train_loader)):

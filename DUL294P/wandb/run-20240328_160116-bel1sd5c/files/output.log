@@ -1,0 +1,31 @@
+Training from scratch
+Epoch 0
+  0%|                                                                                                                                                      | 0/4427 [00:00<?, ?it/s]/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/functional.py:507: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3549.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]                                                                                      | 0/128 [00:00<?, ?it/s]
+/home/yujustin/SSD/DeepUL294Proj/DUL294P/foveation/foveate_image.py:66: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.result = torch.tensor(image).flatten(end_dim=-2)[self.sample_mask_idx,:]
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0005588531494140625(s)
+Frequency: 1789.3788395904437(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(129)train_one_epoch()
+-> if args.debug:
+  0%|                                                                                                                                                       | 0/128 [01:50<?, ?it/s]
+  0%|                                                                                                                                                      | 0/4427 [01:51<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 146, in <module>
+    main()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 137, in main
+    train_one_epoch()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 129, in train_one_epoch
+    plt.show()
+       ^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit

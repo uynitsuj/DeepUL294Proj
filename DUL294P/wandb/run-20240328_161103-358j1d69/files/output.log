@@ -1,0 +1,12 @@
+Training from scratch
+Epoch 0
+  0%|                                                                                                                                                                  | 0/4427 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 148, in <module>
+    main()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 139, in main
+    train_one_epoch()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 108, in train_one_epoch
+    for j, image, sentences in enumerate(zip(batch['image'], batch['sentences'])):
+        ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)

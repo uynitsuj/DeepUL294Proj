@@ -1,0 +1,358 @@
+Training from scratch
+Epoch 0
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0005228519439697266(s)
+Frequency: 1912.5873233014136(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00037479400634765625(s)
+Frequency: 2668.1323155216287(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00047588348388671875(s)
+Frequency: 2101.3547094188375(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00039124488830566406(s)
+Frequency: 2555.94393662401(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00046944618225097656(s)
+Frequency: 2130.169629253428(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005393028259277344(s)
+Frequency: 1854.2458001768346(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005731582641601562(s)
+Frequency: 1744.7188019966723(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+Original Image Size 556 640
+Pixel Count 355840
+  0%|                                                                                                                                                      | 0/4427 [00:00<?, ?it/s]/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/functional.py:507: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3549.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]                                                                                      | 0/128 [00:00<?, ?it/s]
+/home/yujustin/SSD/DeepUL294Proj/DUL294P/foveation/foveate_image.py:66: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.result = torch.tensor(image).flatten(end_dim=-2)[self.sample_mask_idx,:]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py:130: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).              | 1/128 [00:00<00:14,  8.54it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).              | 4/128 [00:00<00:06, 18.25it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).              | 7/128 [00:00<00:05, 20.48it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 10/128 [00:00<00:05, 21.06it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 13/128 [00:00<00:04, 23.29it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 16/128 [00:00<00:04, 24.54it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 19/128 [00:00<00:04, 25.61it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+ 17%|████████████████████████▍                                                                                                                     | 22/128 [00:00<00:04, 25.56it/s]
+Elapsed time: 0.0004634857177734375(s)
+Frequency: 2157.5637860082306(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005583763122558594(s)
+Frequency: 1790.9069171648164(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005214214324951172(s)
+Frequency: 1917.8344764517603(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.00040221214294433594(s)
+Frequency: 2486.2501481920567(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.0003502368927001953(s)
+Frequency: 2855.2103471749488(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.0003387928009033203(s)
+Frequency: 2951.6565798733286(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.00043320655822753906(s)
+Frequency: 2308.3676389653274(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.00039386749267578125(s)
+Frequency: 2538.9249394673125(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0003497600555419922(s)
+Frequency: 2859.102931152011(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004169940948486328(s)
+Frequency: 2398.1154945683247(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.00033783912658691406(s)
+Frequency: 2959.9887085391674(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0003871917724609375(s)
+Frequency: 2582.6995073891626(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0003268718719482422(s)
+Frequency: 3059.302698760029(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005283355712890625(s)
+Frequency: 1892.7364620938629(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0004553794860839844(s)
+Frequency: 2195.9706806282725(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.00046539306640625(s)
+Frequency: 2148.72131147541(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005028247833251953(s)
+Frequency: 1988.764343290659(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.00038695335388183594(s)
+Frequency: 2584.290819470117(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0004107952117919922(s)
+Frequency: 2434.3029599535694(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0003924369812011719(s)
+Frequency: 2548.1798298906438(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00044035911560058594(s)
+Frequency: 2270.8738494856525(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0004074573516845703(s)
+Frequency: 2454.2445874780574(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00039768218994140625(s)
+Frequency: 2514.5707434052756(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 479
+Pixel Count 306560
+Elapsed time: 0.00043272972106933594(s)
+Frequency: 2310.91129476584(fps)
+Foveated Pixel Count torch.Size([153280, 3])
+Compression: 50.0%
+Original Image Size 640 479
+Pixel Count 306560
+Elapsed time: 0.0004901885986328125(s)
+Frequency: 2040.0311284046693(fps)
+Foveated Pixel Count torch.Size([153280, 3])
+Compression: 50.0%
+Original Image Size 640 479
+Pixel Count 306560
+Elapsed time: 0.00038433074951171875(s)
+Frequency: 2601.925558312655(fps)
+Foveated Pixel Count torch.Size([153280, 3])
+Compression: 50.0%
+Original Image Size 640 479
+Pixel Count 306560
+Elapsed time: 0.000370025634765625(s)
+Frequency: 2702.5154639175257(fps)
+Foveated Pixel Count torch.Size([153280, 3])
+Compression: 50.0%
+Original Image Size 640 479
+Pixel Count 306560
+Elapsed time: 0.00038623809814453125(s)
+Frequency: 2589.0765432098765(fps)
+Foveated Pixel Count torch.Size([153280, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0004913806915283203(s)
+Frequency: 2035.0819990295972(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0006012916564941406(s)
+Frequency: 1663.086439333862(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.000469207763671875(s)
+Frequency: 2131.2520325203254(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0005402565002441406(s)
+Frequency: 1850.972639011474(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0005278587341308594(s)
+Frequency: 1894.4462511291779(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005500316619873047(s)
+Frequency: 1818.0771564802774(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005419254302978516(s)
+Frequency: 1845.2723273207216(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005350112915039062(s)
+Frequency: 1869.1194295900177(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0004718303680419922(s)
+Frequency: 2119.4057604850937(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005702972412109375(s)
+Frequency: 1753.4715719063545(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 320
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 22/128 [00:00<00:04, 25.56it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 25/128 [00:01<00:04, 25.50it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 28/128 [00:01<00:03, 25.25it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 31/128 [00:01<00:03, 25.21it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 34/128 [00:01<00:03, 25.06it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 37/128 [00:01<00:03, 24.85it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 40/128 [00:01<00:03, 24.70it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 43/128 [00:01<00:03, 24.71it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+                                                                                                                                                                                    WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).             | 46/128 [00:01<00:03, 25.40it/s]
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+ 38%|██████████████████████████████████████████████████████▎                                                                                       | 49/128 [00:01<00:03, 24.58it/s]
+  0%|                                                                                                                                                      | 0/4427 [00:02<?, ?it/s]
+Elapsed time: 0.00043702125549316406(s)
+Frequency: 2288.218221494817(fps)
+Foveated Pixel Count torch.Size([76800, 3])
+Compression: 50.0%
+Original Image Size 480 320
+Pixel Count 153600
+Elapsed time: 0.0002799034118652344(s)
+Frequency: 3572.6609880749575(fps)
+Foveated Pixel Count torch.Size([76800, 3])
+Compression: 50.0%
+Original Image Size 480 320
+Pixel Count 153600
+Elapsed time: 0.000347137451171875(s)
+Frequency: 2880.703296703297(fps)
+Foveated Pixel Count torch.Size([76800, 3])
+Compression: 50.0%
+Original Image Size 480 320
+Pixel Count 153600
+Elapsed time: 0.00028443336486816406(s)
+Frequency: 3515.761944677284(fps)
+Foveated Pixel Count torch.Size([76800, 3])
+Compression: 50.0%
+Original Image Size 480 320
+Pixel Count 153600
+Elapsed time: 0.00024700164794921875(s)
+Frequency: 4048.5559845559847(fps)
+Foveated Pixel Count torch.Size([76800, 3])

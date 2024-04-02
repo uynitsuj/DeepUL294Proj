@@ -1,0 +1,25 @@
+Training from scratch
+Epoch 0
+  0%|                                                                                                                                                       | 0/128 [00:00<?, ?it/s]
+  0%|                                                                                                                                                      | 0/4427 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 127, in <module>
+    main()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 116, in main
+    train_one_epoch()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 109, in train_one_epoch
+    imgenc = clipencoder.model.encode_image(clipimg).float()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/open_clip/model.py", line 266, in encode_image
+    features = self.visual(image)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/open_clip/transformer.py", line 508, in forward
+    x = torch.cat([_expand_token(self.class_embedding, x.shape[0]).to(x.dtype), x], dim=1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Sizes of tensors must match except in dimension 1. Expected size 768 but got size 14 for tensor number 1 in the list.

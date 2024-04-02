@@ -1,0 +1,838 @@
+Training from scratch
+Epoch 0
+  0%|                                                                                                                                                      | 0/4427 [00:00<?, ?it/s]/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/functional.py:507: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3549.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]                                                                                      | 0/128 [00:00<?, ?it/s]
+/home/yujustin/SSD/DeepUL294Proj/DUL294P/foveation/foveate_image.py:66: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.result = torch.tensor(image).flatten(end_dim=-2)[self.sample_mask_idx,:]
+ 18%|█████████████████████████▌                                                                                                                    | 23/128 [00:00<00:03, 27.12it/s]
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0006880760192871094(s)
+Frequency: 1453.3277893277893(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00038814544677734375(s)
+Frequency: 2576.3538083538083(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0004582405090332031(s)
+Frequency: 2182.260145681582(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00048279762268066406(s)
+Frequency: 2071.2612345679013(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00038886070251464844(s)
+Frequency: 2571.614960147149(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005230903625488281(s)
+Frequency: 1911.7155879671832(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005078315734863281(s)
+Frequency: 1969.156807511737(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005834102630615234(s)
+Frequency: 1714.0596648957908(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005741119384765625(s)
+Frequency: 1741.8205980066446(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+Original Image Size 556 640
+Pixel Count 355840
+Elapsed time: 0.0005135536193847656(s)
+Frequency: 1947.2163416898793(fps)
+Foveated Pixel Count torch.Size([177920, 3])
+Compression: 50.0%
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.00038313865661621094(s)
+Frequency: 2610.0211574362165(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.00039458274841308594(s)
+Frequency: 2534.322658610272(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.0005388259887695312(s)
+Frequency: 1855.8867256637168(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.0005495548248291016(s)
+Frequency: 1819.6546637744034(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+Original Image Size 426 640
+Pixel Count 272640
+Elapsed time: 0.0005095005035400391(s)
+Frequency: 1962.706598034628(fps)
+Foveated Pixel Count torch.Size([136320, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0005376338958740234(s)
+Frequency: 1860.0017738359202(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0005033016204833984(s)
+Frequency: 1986.8801515869256(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004963874816894531(s)
+Frequency: 2014.5552353506243(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004482269287109375(s)
+Frequency: 2231.012765957447(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.00041294097900390625(s)
+Frequency: 2421.6535796766743(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005383491516113281(s)
+Frequency: 1857.5305580159434(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0006387233734130859(s)
+Frequency: 1565.6229936543486(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005114078521728516(s)
+Frequency: 1955.3864801864802(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005276203155517578(s)
+Frequency: 1895.3023045639404(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0006537437438964844(s)
+Frequency: 1529.6513493800146(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0005481243133544922(s)
+Frequency: 1824.4036537625054(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0005741119384765625(s)
+Frequency: 1741.8205980066446(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0006229877471923828(s)
+Frequency: 1605.16800612323(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0006299018859863281(s)
+Frequency: 1587.54882664648(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0005545616149902344(s)
+Frequency: 1803.226139294927(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 479
+Pixel Count 306560
+Elapsed time: 0.0005619525909423828(s)
+Frequency: 1779.5095460330929(fps)
+Foveated Pixel Count torch.Size([153280, 3])
+Compression: 50.0%
+Original Image Size 640 479
+Pixel Count 306560
+Elapsed time: 0.0005071163177490234(s)
+Frequency: 1971.9341795956746(fps)
+Foveated Pixel Count torch.Size([153280, 3])
+Compression: 50.0%
+Original Image Size 640 479
+Pixel Count 306560
+Elapsed time: 0.00045371055603027344(s)
+Frequency: 2204.048344718865(fps)
+Foveated Pixel Count torch.Size([153280, 3])
+Compression: 50.0%
+Original Image Size 640 479
+Pixel Count 306560
+Elapsed time: 0.00038933753967285156(s)
+Frequency: 2568.465401102266(fps)
+Foveated Pixel Count torch.Size([153280, 3])
+Compression: 50.0%
+Original Image Size 640 479
+Pixel Count 306560
+Elapsed time: 0.0004994869232177734(s)
+Frequency: 2002.054415274463(fps)
+Foveated Pixel Count torch.Size([153280, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00039649009704589844(s)
+Frequency: 2522.131088394468(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.000461578369140625(s)
+Frequency: 2166.4793388429753(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0003924369812011719(s)
+Frequency: 2548.1798298906438(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0004055500030517578(s)
+Frequency: 2465.7871840094062(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00046372413635253906(s)
+Frequency: 2156.454498714653(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0006666183471679688(s)
+Frequency: 1500.1087267525036(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005083084106445312(s)
+Frequency: 1967.3095684803002(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0006334781646728516(s)
+Frequency: 1578.586375611592(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005099773406982422(s)
+Frequency: 1960.871435250117(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 640
+Pixel Count 307200
+Elapsed time: 0.0005936622619628906(s)
+Frequency: 1684.459437751004(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 480 320
+
+ 70%|███████████████████████████████████████████████████████████████████████████████████████████████████▊                                          | 90/128 [00:02<00:00, 38.72it/s]
+Elapsed time: 0.0002574920654296875(s)
+Frequency: 3883.614814814815(fps)
+Foveated Pixel Count torch.Size([76800, 3])
+Compression: 50.0%
+Original Image Size 480 320
+Pixel Count 153600
+Elapsed time: 0.00030112266540527344(s)
+Frequency: 3320.9057798891527(fps)
+Foveated Pixel Count torch.Size([76800, 3])
+Compression: 50.0%
+Original Image Size 480 320
+Pixel Count 153600
+Elapsed time: 0.0002982616424560547(s)
+Frequency: 3352.7609912070343(fps)
+Foveated Pixel Count torch.Size([76800, 3])
+Compression: 50.0%
+Original Image Size 480 320
+Pixel Count 153600
+Elapsed time: 0.000316619873046875(s)
+Frequency: 3158.3614457831327(fps)
+Foveated Pixel Count torch.Size([76800, 3])
+Compression: 50.0%
+Original Image Size 480 320
+Pixel Count 153600
+Elapsed time: 0.00028586387634277344(s)
+Frequency: 3498.1684737281066(fps)
+Foveated Pixel Count torch.Size([76800, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0006680488586425781(s)
+Frequency: 1496.8965024982156(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004565715789794922(s)
+Frequency: 2190.2370757180156(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0005097389221191406(s)
+Frequency: 1961.7885874649205(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004775524139404297(s)
+Frequency: 2094.010983524713(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.00047898292541503906(s)
+Frequency: 2087.757093081135(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 326
+Pixel Count 208640
+Elapsed time: 0.0003933906555175781(s)
+Frequency: 2542.0024242424242(fps)
+Foveated Pixel Count torch.Size([104320, 3])
+Compression: 50.0%
+Original Image Size 640 326
+Pixel Count 208640
+Elapsed time: 0.0003662109375(s)
+Frequency: 2730.6666666666665(fps)
+Foveated Pixel Count torch.Size([104320, 3])
+Compression: 50.0%
+Original Image Size 640 326
+Pixel Count 208640
+Elapsed time: 0.0004000663757324219(s)
+Frequency: 2499.585220500596(fps)
+Foveated Pixel Count torch.Size([104320, 3])
+Compression: 50.0%
+Original Image Size 640 326
+Pixel Count 208640
+Elapsed time: 0.00039196014404296875(s)
+Frequency: 2551.279805352798(fps)
+Foveated Pixel Count torch.Size([104320, 3])
+Compression: 50.0%
+Original Image Size 640 326
+Pixel Count 208640
+Elapsed time: 0.00038552284240722656(s)
+Frequency: 2593.880024737168(fps)
+Foveated Pixel Count torch.Size([104320, 3])
+Compression: 50.0%
+Original Image Size 500 332
+Pixel Count 166000
+Elapsed time: 0.00032901763916015625(s)
+Frequency: 3039.350724637681(fps)
+Foveated Pixel Count torch.Size([83000, 3])
+Compression: 50.0%
+Original Image Size 500 332
+Pixel Count 166000
+Elapsed time: 0.00024199485778808594(s)
+Frequency: 4132.31921182266(fps)
+Foveated Pixel Count torch.Size([83000, 3])
+Compression: 50.0%
+Original Image Size 500 332
+Pixel Count 166000
+Elapsed time: 0.000263214111328125(s)
+Frequency: 3799.1884057971015(fps)
+Foveated Pixel Count torch.Size([83000, 3])
+Compression: 50.0%
+Original Image Size 500 332
+Pixel Count 166000
+Elapsed time: 0.0002589225769042969(s)
+Frequency: 3862.158379373849(fps)
+Foveated Pixel Count torch.Size([83000, 3])
+Compression: 50.0%
+Original Image Size 500 332
+Pixel Count 166000
+Elapsed time: 0.00027489662170410156(s)
+Frequency: 3637.731136166522(fps)
+Foveated Pixel Count torch.Size([83000, 3])
+Compression: 50.0%
+Original Image Size 425 640
+Pixel Count 272000
+Elapsed time: 0.00032973289489746094(s)
+Frequency: 3032.757772957339(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 425 640
+Pixel Count 272000
+Elapsed time: 0.0004405975341796875(s)
+Frequency: 2269.6450216450216(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 425 640
+Pixel Count 272000
+Elapsed time: 0.0004360675811767578(s)
+Frequency: 2293.2225259704755(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 425 640
+Pixel Count 272000
+Elapsed time: 0.00033164024353027344(s)
+Frequency: 3015.315600287563(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 425 640
+Pixel Count 272000
+Elapsed time: 0.0003261566162109375(s)
+Frequency: 3066.0116959064326(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.00036597251892089844(s)
+Frequency: 2732.4456026058633(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0003452301025390625(s)
+Frequency: 2896.6187845303866(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.00034737586975097656(s)
+Frequency: 2878.726149622512(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.00036644935607910156(s)
+Frequency: 2728.8900455432663(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004067420959472656(s)
+Frequency: 2458.5603751465414(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 352 230
+Pixel Count 80960
+Elapsed time: 0.0001289844512939453(s)
+Frequency: 7752.872458410351(fps)
+Foveated Pixel Count torch.Size([40480, 3])
+Compression: 50.0%
+Original Image Size 352 230
+Pixel Count 80960
+Elapsed time: 0.00010728836059570312(s)
+Frequency: 9320.675555555556(fps)
+Foveated Pixel Count torch.Size([40480, 3])
+Compression: 50.0%
+Original Image Size 352 230
+Pixel Count 80960
+Elapsed time: 0.00010752677917480469(s)
+Frequency: 9300.0088691796(fps)
+Foveated Pixel Count torch.Size([40480, 3])
+Compression: 50.0%
+Original Image Size 352 230
+Pixel Count 80960
+Elapsed time: 0.00010704994201660156(s)
+Frequency: 9341.43429844098(fps)
+Foveated Pixel Count torch.Size([40480, 3])
+Compression: 50.0%
+Original Image Size 352 230
+Pixel Count 80960
+Elapsed time: 0.00010323524475097656(s)
+Frequency: 9686.614318706697(fps)
+Foveated Pixel Count torch.Size([40480, 3])
+Compression: 50.0%
+Original Image Size 640 424
+Pixel Count 271360
+Elapsed time: 0.0003292560577392578(s)
+Frequency: 3037.1498913830555(fps)
+Foveated Pixel Count torch.Size([135680, 3])
+Compression: 50.0%
+Original Image Size 640 424
+Pixel Count 271360
+Elapsed time: 0.00043463706970214844(s)
+Frequency: 2300.7701590784422(fps)
+Foveated Pixel Count torch.Size([135680, 3])
+Compression: 50.0%
+Original Image Size 640 424
+Pixel Count 271360
+Elapsed time: 0.00039267539978027344(s)
+Frequency: 2546.6326654523377(fps)
+Foveated Pixel Count torch.Size([135680, 3])
+Compression: 50.0%
+Original Image Size 640 424
+Pixel Count 271360
+Elapsed time: 0.0004525184631347656(s)
+Frequency: 2209.854583772392(fps)
+Foveated Pixel Count torch.Size([135680, 3])
+Compression: 50.0%
+Original Image Size 640 424
+Pixel Count 271360
+Elapsed time: 0.0004303455352783203(s)
+Frequency: 2323.714127423823(fps)
+Foveated Pixel Count torch.Size([135680, 3])
+Compression: 50.0%
+Original Image Size 500 346
+Pixel Count 173000
+Elapsed time: 0.00027060508728027344(s)
+Frequency: 3695.422026431718(fps)
+Foveated Pixel Count torch.Size([86500, 3])
+Compression: 50.0%
+Original Image Size 500 346
+Pixel Count 173000
+Elapsed time: 0.00024819374084472656(s)
+Frequency: 4029.1104707012487(fps)
+Foveated Pixel Count torch.Size([86500, 3])
+Compression: 50.0%
+Original Image Size 500 346
+Pixel Count 173000
+Elapsed time: 0.00023221969604492188(s)
+Frequency: 4306.2669404517455(fps)
+Foveated Pixel Count torch.Size([86500, 3])
+Compression: 50.0%
+Original Image Size 500 346
+Pixel Count 173000
+Elapsed time: 0.0002205371856689453(s)
+Frequency: 4534.382702702703(fps)
+Foveated Pixel Count torch.Size([86500, 3])
+Compression: 50.0%
+Original Image Size 500 346
+Pixel Count 173000
+Elapsed time: 0.00022745132446289062(s)
+Frequency: 4396.545073375262(fps)
+Foveated Pixel Count torch.Size([86500, 3])
+Compression: 50.0%
+Original Image Size 425 640
+Pixel Count 272000
+Elapsed time: 0.0003573894500732422(s)
+Frequency: 2798.0680453635755(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 425 640
+Pixel Count 272000
+Elapsed time: 0.0003669261932373047(s)
+Frequency: 2725.3437296946067(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 425 640
+Pixel Count 272000
+Elapsed time: 0.0004508495330810547(s)
+Frequency: 2218.034902168165(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 425 640
+Pixel Count 272000
+Elapsed time: 0.0004229545593261719(s)
+Frequency: 2364.3201803833144(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 425 640
+Pixel Count 272000
+Elapsed time: 0.0003521442413330078(s)
+Frequency: 2839.7454299255246(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 640 425
+Pixel Count 272000
+Elapsed time: 0.0004210472106933594(s)
+Frequency: 2375.030577576444(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 640 425
+Pixel Count 272000
+Elapsed time: 0.00042629241943359375(s)
+Frequency: 2345.807606263982(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 640 425
+Pixel Count 272000
+Elapsed time: 0.00036525726318359375(s)
+Frequency: 2737.7963446475196(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 640 425
+Pixel Count 272000
+Elapsed time: 0.00041866302490234375(s)
+Frequency: 2388.5558086560363(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 640 425
+Pixel Count 272000
+Elapsed time: 0.00045013427734375(s)
+Frequency: 2221.5593220338983(fps)
+Foveated Pixel Count torch.Size([136000, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.00042629241943359375(s)
+Frequency: 2345.807606263982(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004177093505859375(s)
+Frequency: 2394.009132420091(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.00045228004455566406(s)
+Frequency: 2211.019504480759(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004210472106933594(s)
+Frequency: 2375.030577576444(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004029273986816406(s)
+Frequency: 2481.8366863905326(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.00043129920959472656(s)
+Frequency: 2318.5760088446655(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004169940948486328(s)
+Frequency: 2398.1154945683247(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.00034499168395996094(s)
+Frequency: 2898.620594333103(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004093647003173828(s)
+Frequency: 2442.8095515433897(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 427
+Pixel Count 273280
+Elapsed time: 0.0004315376281738281(s)
+Frequency: 2317.2950276243096(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 427 640
+Pixel Count 273280
+Elapsed time: 0.00040435791015625(s)
+Frequency: 2473.056603773585(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 427 640
+Pixel Count 273280
+Elapsed time: 0.0005376338958740234(s)
+Frequency: 1860.0017738359202(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 427 640
+Pixel Count 273280
+Elapsed time: 0.0004668235778808594(s)
+Frequency: 2142.1368743615935(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 427 640
+Pixel Count 273280
+Elapsed time: 0.0005106925964355469(s)
+Frequency: 1958.125116713352(fps)
+  0%|                                                                                                                                            | 1/4427 [00:04<5:46:27,  4.70s/it]
+  2%|███▎                                                                                                                                           | 3/128 [00:00<00:04, 28.15it/s]
+Compression: 50.0%
+Original Image Size 427 640
+Pixel Count 273280
+Elapsed time: 0.00047397613525390625(s)
+Frequency: 2109.810865191147(fps)
+Foveated Pixel Count torch.Size([136640, 3])
+Compression: 50.0%
+Original Image Size 640 428
+Pixel Count 273920
+Elapsed time: 0.0005218982696533203(s)
+Frequency: 1916.0822293284605(fps)
+Foveated Pixel Count torch.Size([136960, 3])
+Compression: 50.0%
+Original Image Size 640 428
+Pixel Count 273920
+Elapsed time: 0.00041484832763671875(s)
+Frequency: 2410.519540229885(fps)
+Foveated Pixel Count torch.Size([136960, 3])
+Compression: 50.0%
+Original Image Size 640 428
+Pixel Count 273920
+Elapsed time: 0.000415802001953125(s)
+Frequency: 2404.9908256880735(fps)
+Foveated Pixel Count torch.Size([136960, 3])
+Compression: 50.0%
+Original Image Size 640 428
+Pixel Count 273920
+Elapsed time: 0.0005209445953369141(s)
+Frequency: 1919.5899313501145(fps)
+Foveated Pixel Count torch.Size([136960, 3])
+Compression: 50.0%
+Original Image Size 640 428
+Pixel Count 273920
+Elapsed time: 0.0005395412445068359(s)
+Frequency: 1853.4264250994256(fps)
+Foveated Pixel Count torch.Size([136960, 3])
+Compression: 50.0%
+Original Image Size 640 213
+Pixel Count 136320
+Elapsed time: 0.00021314620971679688(s)
+Frequency: 4691.615212527964(fps)
+Foveated Pixel Count torch.Size([68160, 3])
+Compression: 50.0%
+Original Image Size 640 213
+Pixel Count 136320
+Elapsed time: 0.0002186298370361328(s)
+Frequency: 4573.941112322792(fps)
+Foveated Pixel Count torch.Size([68160, 3])
+Compression: 50.0%
+Original Image Size 640 213
+Pixel Count 136320
+Elapsed time: 0.00021338462829589844(s)
+Frequency: 4686.3731843575415(fps)
+Foveated Pixel Count torch.Size([68160, 3])
+Compression: 50.0%
+Original Image Size 640 213
+Pixel Count 136320
+Elapsed time: 0.00021219253540039062(s)
+Frequency: 4712.701123595506(fps)
+Foveated Pixel Count torch.Size([68160, 3])
+Compression: 50.0%
+Original Image Size 640 213
+Pixel Count 136320
+Elapsed time: 0.00017380714416503906(s)
+Frequency: 5753.503429355281(fps)
+Foveated Pixel Count torch.Size([68160, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.00043463706970214844(s)
+Frequency: 2300.7701590784422(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0005180835723876953(s)
+Frequency: 1930.1905200184078(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0004973411560058594(s)
+Frequency: 2010.692233940556(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.000461578369140625(s)
+Frequency: 2166.4793388429753(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0004794597625732422(s)
+Frequency: 2085.680755842864(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+Original Image Size 640 388
+Pixel Count 248320
+Elapsed time: 0.0004096031188964844(s)
+Frequency: 2441.3876600698486(fps)
+Foveated Pixel Count torch.Size([124160, 3])
+Compression: 50.0%
+Original Image Size 640 388
+Pixel Count 248320
+Elapsed time: 0.0003979206085205078(s)
+Frequency: 2513.064110245656(fps)
+Foveated Pixel Count torch.Size([124160, 3])
+Compression: 50.0%
+Original Image Size 640 388
+Pixel Count 248320
+Elapsed time: 0.00040030479431152344(s)
+Frequency: 2498.096486003574(fps)
+Foveated Pixel Count torch.Size([124160, 3])
+Compression: 50.0%
+Original Image Size 640 388
+Pixel Count 248320
+Elapsed time: 0.0004191398620605469(s)
+Frequency: 2385.838452787258(fps)
+Foveated Pixel Count torch.Size([124160, 3])
+Compression: 50.0%
+Original Image Size 640 388
+Pixel Count 248320
+Elapsed time: 0.00040221214294433594(s)
+Frequency: 2486.2501481920567(fps)
+Foveated Pixel Count torch.Size([124160, 3])
+Compression: 50.0%
+Original Image Size 639 640
+Pixel Count 408960
+Elapsed time: 0.0006611347198486328(s)
+Frequency: 1512.5510277677606(fps)
+Foveated Pixel Count torch.Size([204480, 3])
+Compression: 50.0%
+Original Image Size 639 640
+Pixel Count 408960
+Elapsed time: 0.0006628036499023438(s)
+Frequency: 1508.7424460431655(fps)
+Foveated Pixel Count torch.Size([204480, 3])
+Compression: 50.0%
+Original Image Size 639 640
+Pixel Count 408960
+Elapsed time: 0.0006606578826904297(s)
+Frequency: 1513.6427282569468(fps)
+Foveated Pixel Count torch.Size([204480, 3])
+
+  0%|                                                                                                                                            | 1/4427 [00:05<6:58:26,  5.67s/it]

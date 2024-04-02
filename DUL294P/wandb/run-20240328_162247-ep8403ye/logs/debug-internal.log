@@ -1,0 +1,200 @@
+2024-03-28 16:22:47,281 INFO    StreamThr :6385 [internal.py:wandb_internal():86] W&B internal server running at pid: 6385, started at: 2024-03-28 16:22:47.281271
+2024-03-28 16:22:47,282 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: status
+2024-03-28 16:22:47,283 INFO    WriterThread:6385 [datastore.py:open_for_write():87] open: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/run-ep8403ye.wandb
+2024-03-28 16:22:47,283 DEBUG   SenderThread:6385 [sender.py:send():379] send: header
+2024-03-28 16:22:47,284 DEBUG   SenderThread:6385 [sender.py:send():379] send: run
+2024-03-28 16:22:47,591 INFO    SenderThread:6385 [dir_watcher.py:__init__():211] watching files in: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files
+2024-03-28 16:22:47,591 INFO    SenderThread:6385 [sender.py:_start_run_threads():1124] run started: ep8403ye with start time 1711668167.281088
+2024-03-28 16:22:47,594 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: check_version
+2024-03-28 16:22:47,594 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: check_version
+2024-03-28 16:22:47,641 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: run_start
+2024-03-28 16:22:47,648 DEBUG   HandlerThread:6385 [system_info.py:__init__():26] System info init
+2024-03-28 16:22:47,648 DEBUG   HandlerThread:6385 [system_info.py:__init__():41] System info init done
+2024-03-28 16:22:47,648 INFO    HandlerThread:6385 [system_monitor.py:start():194] Starting system monitor
+2024-03-28 16:22:47,648 INFO    SystemMonitor:6385 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-28 16:22:47,648 INFO    HandlerThread:6385 [system_monitor.py:probe():214] Collecting system info
+2024-03-28 16:22:47,648 INFO    SystemMonitor:6385 [interfaces.py:start():190] Started cpu monitoring
+2024-03-28 16:22:47,649 INFO    SystemMonitor:6385 [interfaces.py:start():190] Started disk monitoring
+2024-03-28 16:22:47,649 INFO    SystemMonitor:6385 [interfaces.py:start():190] Started gpu monitoring
+2024-03-28 16:22:47,649 INFO    SystemMonitor:6385 [interfaces.py:start():190] Started memory monitoring
+2024-03-28 16:22:47,649 INFO    SystemMonitor:6385 [interfaces.py:start():190] Started network monitoring
+2024-03-28 16:22:47,659 DEBUG   HandlerThread:6385 [system_info.py:probe():150] Probing system
+2024-03-28 16:22:47,660 DEBUG   HandlerThread:6385 [system_info.py:_probe_git():135] Probing git
+2024-03-28 16:22:47,663 DEBUG   HandlerThread:6385 [system_info.py:_probe_git():143] Probing git done
+2024-03-28 16:22:47,663 DEBUG   HandlerThread:6385 [system_info.py:probe():198] Probing system done
+2024-03-28 16:22:47,663 DEBUG   HandlerThread:6385 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-26-generic-x86_64-with-glibc2.35', 'python': '3.11.8', 'heartbeatAt': '2024-03-28T23:22:47.659047', 'startedAt': '2024-03-28T23:22:47.279223', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py', 'codePathLocal': 'train_gen.py', 'codePath': 'DUL294P/train_gen.py', 'git': {'remote': 'https://github.com/uynitsuj/DeepUL294Proj.git', 'commit': '4ea2c2a333414e16ff3586a1e02b27ded374213c'}, 'email': 'yujustin8@gmail.com', 'root': '/home/yujustin/SSD/DeepUL294Proj', 'host': 'Guilty-Spark', 'username': 'yujustin', 'executable': '/home/yujustin/anaconda3/envs/fov/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2585.63075, 'min': 400.0, 'max': 5573.0}, 'cpu_freq_per_core': [{'current': 4092.074, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 4423.949, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 4487.956, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 3861.12, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 3748.423, 'min': 400.0, 'max': 5573.0}, {'current': 3804.772, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 4490.545, 'min': 400.0, 'max': 5573.0}, {'current': 4357.638, 'min': 400.0, 'max': 5573.0}, {'current': 4490.519, 'min': 400.0, 'max': 5573.0}, {'current': 3868.307, 'min': 400.0, 'max': 5573.0}, {'current': 4175.081, 'min': 400.0, 'max': 5573.0}], 'disk': {'/': {'total': 567.2868194580078, 'used': 412.8086166381836}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 30.49289321899414}}
+2024-03-28 16:22:47,663 INFO    HandlerThread:6385 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-28 16:22:47,664 INFO    HandlerThread:6385 [system_monitor.py:probe():227] Publishing system info
+2024-03-28 16:22:47,664 DEBUG   HandlerThread:6385 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-03-28 16:22:48,591 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/conda-environment.yaml
+2024-03-28 16:22:49,530 DEBUG   HandlerThread:6385 [system_info.py:_save_conda():222] Saving conda packages done
+2024-03-28 16:22:49,530 DEBUG   HandlerThread:6385 [system_info.py:_save_code():44] Saving code
+2024-03-28 16:22:49,532 DEBUG   HandlerThread:6385 [system_info.py:_save_code():65] Saving code done
+2024-03-28 16:22:49,533 DEBUG   HandlerThread:6385 [system_info.py:_save_patches():82] Saving git patches
+2024-03-28 16:22:49,574 DEBUG   HandlerThread:6385 [system_info.py:_save_patches():124] Saving git patches done
+2024-03-28 16:22:49,574 INFO    HandlerThread:6385 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-28 16:22:49,575 DEBUG   SenderThread:6385 [sender.py:send():379] send: files
+2024-03-28 16:22:49,575 INFO    SenderThread:6385 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-03-28 16:22:49,575 INFO    SenderThread:6385 [sender.py:_save_file():1390] saving file code/DUL294P/train_gen.py with policy now
+2024-03-28 16:22:49,576 INFO    SenderThread:6385 [sender.py:_save_file():1390] saving file diff.patch with policy now
+2024-03-28 16:22:49,591 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/conda-environment.yaml
+2024-03-28 16:22:49,591 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/diff.patch
+2024-03-28 16:22:49,591 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/code/DUL294P/train_gen.py
+2024-03-28 16:22:49,591 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/wandb-metadata.json
+2024-03-28 16:22:49,591 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/code
+2024-03-28 16:22:49,591 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/code/DUL294P
+2024-03-28 16:22:49,623 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-28 16:22:49,623 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: python_packages
+2024-03-28 16:22:49,624 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-28 16:22:49,624 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: stop_status
+2024-03-28 16:22:49,624 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-28 16:22:49,844 DEBUG   SenderThread:6385 [sender.py:send():379] send: telemetry
+2024-03-28 16:22:50,109 INFO    wandb-upload_0:6385 [upload_job.py:push():131] Uploaded file /tmp/tmphk3dej2nwandb/81hylbkm-wandb-metadata.json
+2024-03-28 16:22:50,162 INFO    wandb-upload_1:6385 [upload_job.py:push():131] Uploaded file /tmp/tmphk3dej2nwandb/pqa4dzee-code/DUL294P/train_gen.py
+2024-03-28 16:22:50,196 INFO    wandb-upload_2:6385 [upload_job.py:push():131] Uploaded file /tmp/tmphk3dej2nwandb/rdnlmfut-diff.patch
+2024-03-28 16:22:50,592 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/requirements.txt
+2024-03-28 16:22:50,592 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/output.log
+2024-03-28 16:22:51,627 DEBUG   SenderThread:6385 [sender.py:send():379] send: exit
+2024-03-28 16:22:51,627 INFO    SenderThread:6385 [sender.py:send_exit():586] handling exit code: 1
+2024-03-28 16:22:51,627 INFO    SenderThread:6385 [sender.py:send_exit():588] handling runtime: 3
+2024-03-28 16:22:51,628 INFO    SenderThread:6385 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-03-28 16:22:51,628 INFO    SenderThread:6385 [sender.py:send_exit():594] send defer
+2024-03-28 16:22:51,628 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:51,628 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-28 16:22:51,628 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:51,628 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-03-28 16:22:51,628 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 1
+2024-03-28 16:22:51,628 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:51,628 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-28 16:22:51,628 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:51,628 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-03-28 16:22:51,628 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 2
+2024-03-28 16:22:51,628 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:51,628 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-28 16:22:51,629 INFO    HandlerThread:6385 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-28 16:22:51,629 DEBUG   SystemMonitor:6385 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-28 16:22:51,629 DEBUG   SystemMonitor:6385 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-28 16:22:51,629 DEBUG   SystemMonitor:6385 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-28 16:22:51,629 INFO    HandlerThread:6385 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-28 16:22:51,629 INFO    HandlerThread:6385 [interfaces.py:finish():202] Joined disk monitor
+2024-03-28 16:22:51,664 INFO    HandlerThread:6385 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-28 16:22:51,664 INFO    HandlerThread:6385 [interfaces.py:finish():202] Joined memory monitor
+2024-03-28 16:22:51,664 INFO    HandlerThread:6385 [interfaces.py:finish():202] Joined network monitor
+2024-03-28 16:22:51,664 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:51,664 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-03-28 16:22:51,664 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 3
+2024-03-28 16:22:51,664 DEBUG   SenderThread:6385 [sender.py:send():379] send: stats
+2024-03-28 16:22:51,664 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:51,665 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-28 16:22:51,665 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:51,665 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-03-28 16:22:51,665 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 4
+2024-03-28 16:22:51,665 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:51,665 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-28 16:22:51,665 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:51,665 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-03-28 16:22:51,665 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 5
+2024-03-28 16:22:51,665 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:51,665 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-28 16:22:51,665 DEBUG   SenderThread:6385 [sender.py:send():379] send: summary
+2024-03-28 16:22:51,665 INFO    SenderThread:6385 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-03-28 16:22:51,665 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:51,665 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-03-28 16:22:51,665 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 6
+2024-03-28 16:22:51,665 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:51,665 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-28 16:22:51,665 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:51,665 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-03-28 16:22:51,667 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: status_report
+2024-03-28 16:22:51,765 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 7
+2024-03-28 16:22:51,765 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:51,765 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-28 16:22:51,765 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:51,765 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-03-28 16:22:52,592 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/config.yaml
+2024-03-28 16:22:52,593 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/output.log
+2024-03-28 16:22:52,593 INFO    Thread-12 :6385 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/wandb-summary.json
+2024-03-28 16:22:52,628 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-28 16:22:53,108 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 8
+2024-03-28 16:22:53,108 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: poll_exit
+2024-03-28 16:22:53,108 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:53,108 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-28 16:22:53,109 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:53,109 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-03-28 16:22:53,109 INFO    SenderThread:6385 [job_builder.py:build():318] Attempting to build job artifact
+2024-03-28 16:22:53,109 INFO    SenderThread:6385 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-03-28 16:22:53,124 INFO    SenderThread:6385 [job_builder.py:build():431] adding wandb-job metadata file
+2024-03-28 16:22:53,140 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 9
+2024-03-28 16:22:53,140 DEBUG   SenderThread:6385 [sender.py:send():379] send: artifact
+2024-03-28 16:22:53,141 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:53,141 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-28 16:22:53,535 INFO    SenderThread:6385 [sender.py:send_artifact():1468] sent artifact job-https___github.com_uynitsuj_DeepUL294Proj.git_DUL294P_train_gen.py - {'id': 'QXJ0aWZhY3Q6Nzc1MTE3OTYy', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE1MzY5MTQxMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Nzc1MTE3OTYy', 'versionIndex': 2}}}
+2024-03-28 16:22:53,535 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:53,535 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-03-28 16:22:53,535 INFO    SenderThread:6385 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-28 16:22:53,593 INFO    SenderThread:6385 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/output.log
+2024-03-28 16:22:53,593 INFO    SenderThread:6385 [dir_watcher.py:finish():388] scan: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files
+2024-03-28 16:22:53,594 INFO    SenderThread:6385 [dir_watcher.py:finish():402] scan save: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/config.yaml config.yaml
+2024-03-28 16:22:53,594 INFO    SenderThread:6385 [dir_watcher.py:finish():402] scan save: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/output.log output.log
+2024-03-28 16:22:53,594 INFO    SenderThread:6385 [dir_watcher.py:finish():402] scan save: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/wandb-metadata.json wandb-metadata.json
+2024-03-28 16:22:53,594 INFO    SenderThread:6385 [dir_watcher.py:finish():402] scan save: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/requirements.txt requirements.txt
+2024-03-28 16:22:53,594 INFO    SenderThread:6385 [dir_watcher.py:finish():402] scan save: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/conda-environment.yaml conda-environment.yaml
+2024-03-28 16:22:53,594 INFO    SenderThread:6385 [dir_watcher.py:finish():402] scan save: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/wandb-summary.json wandb-summary.json
+2024-03-28 16:22:53,594 INFO    SenderThread:6385 [dir_watcher.py:finish():402] scan save: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/diff.patch diff.patch
+2024-03-28 16:22:53,594 INFO    SenderThread:6385 [dir_watcher.py:finish():402] scan save: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/code/DUL294P/train_gen.py code/DUL294P/train_gen.py
+2024-03-28 16:22:53,594 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 10
+2024-03-28 16:22:53,594 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:53,594 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-28 16:22:53,597 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:53,598 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-03-28 16:22:53,598 INFO    SenderThread:6385 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-28 16:22:53,628 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-28 16:22:53,628 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: poll_exit
+2024-03-28 16:22:53,886 INFO    wandb-upload_1:6385 [upload_job.py:push():131] Uploaded file /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/conda-environment.yaml
+2024-03-28 16:22:53,887 INFO    wandb-upload_3:6385 [upload_job.py:push():131] Uploaded file /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/output.log
+2024-03-28 16:22:53,887 INFO    wandb-upload_0:6385 [upload_job.py:push():131] Uploaded file /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/config.yaml
+2024-03-28 16:22:53,905 INFO    wandb-upload_4:6385 [upload_job.py:push():131] Uploaded file /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/requirements.txt
+2024-03-28 16:22:54,011 INFO    wandb-upload_2:6385 [upload_job.py:push():131] Uploaded file /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/files/wandb-summary.json
+2024-03-28 16:22:54,212 INFO    Thread-11 (_thread_body):6385 [sender.py:transition_state():614] send defer: 11
+2024-03-28 16:22:54,212 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:54,212 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-28 16:22:54,212 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:54,212 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-03-28 16:22:54,212 INFO    SenderThread:6385 [file_pusher.py:join():178] waiting for file pusher
+2024-03-28 16:22:54,213 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 12
+2024-03-28 16:22:54,213 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:54,213 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-28 16:22:54,213 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:54,213 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-03-28 16:22:54,213 INFO    SenderThread:6385 [file_stream.py:finish():614] file stream finish called
+2024-03-28 16:22:54,288 INFO    SenderThread:6385 [file_stream.py:finish():618] file stream finish is done
+2024-03-28 16:22:54,288 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 13
+2024-03-28 16:22:54,288 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:54,288 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-28 16:22:54,288 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:54,288 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-03-28 16:22:54,288 INFO    SenderThread:6385 [sender.py:transition_state():614] send defer: 14
+2024-03-28 16:22:54,288 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: defer
+2024-03-28 16:22:54,289 DEBUG   SenderThread:6385 [sender.py:send():379] send: final
+2024-03-28 16:22:54,289 INFO    HandlerThread:6385 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-28 16:22:54,289 DEBUG   SenderThread:6385 [sender.py:send():379] send: footer
+2024-03-28 16:22:54,289 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: defer
+2024-03-28 16:22:54,289 INFO    SenderThread:6385 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-03-28 16:22:54,289 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-28 16:22:54,289 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: poll_exit
+2024-03-28 16:22:54,289 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-28 16:22:54,289 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: poll_exit
+2024-03-28 16:22:54,289 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: server_info
+2024-03-28 16:22:54,289 DEBUG   SenderThread:6385 [sender.py:send_request():406] send_request: server_info
+2024-03-28 16:22:54,290 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-28 16:22:54,290 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-28 16:22:54,290 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-28 16:22:54,355 INFO    MainThread:6385 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-03-28 16:22:54,355 INFO    MainThread:6385 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-03-28 16:22:54,355 INFO    MainThread:6385 [wandb_run.py:_footer_sync_info():3879] logging synced files
+2024-03-28 16:22:54,355 DEBUG   HandlerThread:6385 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-28 16:22:54,355 INFO    HandlerThread:6385 [handler.py:finish():866] shutting down handler
+2024-03-28 16:22:55,290 INFO    WriterThread:6385 [datastore.py:close():296] close: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_162247-ep8403ye/run-ep8403ye.wandb
+2024-03-28 16:22:55,355 INFO    SenderThread:6385 [sender.py:finish():1546] shutting down sender
+2024-03-28 16:22:55,355 INFO    SenderThread:6385 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-28 16:22:55,355 INFO    SenderThread:6385 [file_pusher.py:join():178] waiting for file pusher

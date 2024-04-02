@@ -1,0 +1,66 @@
+2024-03-28 15:41:02,431 INFO    StreamThr :4959 [internal.py:wandb_internal():86] W&B internal server running at pid: 4959, started at: 2024-03-28 15:41:02.430868
+2024-03-28 15:41:02,431 DEBUG   HandlerThread:4959 [handler.py:handle_request():146] handle_request: status
+2024-03-28 15:41:02,432 INFO    WriterThread:4959 [datastore.py:open_for_write():87] open: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/run-7s8syzjm.wandb
+2024-03-28 15:41:02,433 DEBUG   SenderThread:4959 [sender.py:send():379] send: header
+2024-03-28 15:41:02,434 DEBUG   SenderThread:4959 [sender.py:send():379] send: run
+2024-03-28 15:41:02,745 INFO    SenderThread:4959 [dir_watcher.py:__init__():211] watching files in: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files
+2024-03-28 15:41:02,745 INFO    SenderThread:4959 [sender.py:_start_run_threads():1124] run started: 7s8syzjm with start time 1711665662.431074
+2024-03-28 15:41:02,747 DEBUG   HandlerThread:4959 [handler.py:handle_request():146] handle_request: check_version
+2024-03-28 15:41:02,747 DEBUG   SenderThread:4959 [sender.py:send_request():406] send_request: check_version
+2024-03-28 15:41:02,793 DEBUG   HandlerThread:4959 [handler.py:handle_request():146] handle_request: run_start
+2024-03-28 15:41:02,800 DEBUG   HandlerThread:4959 [system_info.py:__init__():26] System info init
+2024-03-28 15:41:02,800 DEBUG   HandlerThread:4959 [system_info.py:__init__():41] System info init done
+2024-03-28 15:41:02,800 INFO    HandlerThread:4959 [system_monitor.py:start():194] Starting system monitor
+2024-03-28 15:41:02,800 INFO    SystemMonitor:4959 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-28 15:41:02,800 INFO    HandlerThread:4959 [system_monitor.py:probe():214] Collecting system info
+2024-03-28 15:41:02,800 INFO    SystemMonitor:4959 [interfaces.py:start():190] Started cpu monitoring
+2024-03-28 15:41:02,800 INFO    SystemMonitor:4959 [interfaces.py:start():190] Started disk monitoring
+2024-03-28 15:41:02,801 INFO    SystemMonitor:4959 [interfaces.py:start():190] Started gpu monitoring
+2024-03-28 15:41:02,801 INFO    SystemMonitor:4959 [interfaces.py:start():190] Started memory monitoring
+2024-03-28 15:41:02,801 INFO    SystemMonitor:4959 [interfaces.py:start():190] Started network monitoring
+2024-03-28 15:41:02,810 DEBUG   HandlerThread:4959 [system_info.py:probe():150] Probing system
+2024-03-28 15:41:02,811 DEBUG   HandlerThread:4959 [system_info.py:_probe_git():135] Probing git
+2024-03-28 15:41:02,815 DEBUG   HandlerThread:4959 [system_info.py:_probe_git():143] Probing git done
+2024-03-28 15:41:02,815 DEBUG   HandlerThread:4959 [system_info.py:probe():198] Probing system done
+2024-03-28 15:41:02,815 DEBUG   HandlerThread:4959 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-26-generic-x86_64-with-glibc2.35', 'python': '3.11.8', 'heartbeatAt': '2024-03-28T22:41:02.810933', 'startedAt': '2024-03-28T22:41:02.428952', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py', 'codePathLocal': 'train_gen.py', 'codePath': 'DUL294P/train_gen.py', 'git': {'remote': 'https://github.com/uynitsuj/DeepUL294Proj.git', 'commit': '4ea2c2a333414e16ff3586a1e02b27ded374213c'}, 'email': 'yujustin8@gmail.com', 'root': '/home/yujustin/SSD/DeepUL294Proj', 'host': 'Guilty-Spark', 'username': 'yujustin', 'executable': '/home/yujustin/anaconda3/envs/fov/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2889.8201249999997, 'min': 400.0, 'max': 5573.0}, 'cpu_freq_per_core': [{'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 4491.542, 'min': 400.0, 'max': 5573.0}, {'current': 3680.435, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 3591.988, 'min': 400.0, 'max': 5573.0}, {'current': 4099.307, 'min': 400.0, 'max': 5573.0}, {'current': 4491.619, 'min': 400.0, 'max': 5573.0}, {'current': 400.0, 'min': 400.0, 'max': 5573.0}, {'current': 4313.164, 'min': 400.0, 'max': 5573.0}, {'current': 3637.215, 'min': 400.0, 'max': 5573.0}, {'current': 4450.062, 'min': 400.0, 'max': 5573.0}, {'current': 4207.147, 'min': 400.0, 'max': 5573.0}, {'current': 3582.583, 'min': 400.0, 'max': 5573.0}, {'current': 3692.06, 'min': 400.0, 'max': 5573.0}], 'disk': {'/': {'total': 567.2868194580078, 'used': 412.2387275695801}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 30.49289321899414}}
+2024-03-28 15:41:02,815 INFO    HandlerThread:4959 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-28 15:41:02,815 INFO    HandlerThread:4959 [system_monitor.py:probe():227] Publishing system info
+2024-03-28 15:41:02,815 DEBUG   HandlerThread:4959 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-03-28 15:41:03,746 INFO    Thread-12 :4959 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files/conda-environment.yaml
+2024-03-28 15:41:04,746 INFO    Thread-12 :4959 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files/conda-environment.yaml
+2024-03-28 15:41:04,787 DEBUG   HandlerThread:4959 [system_info.py:_save_conda():222] Saving conda packages done
+2024-03-28 15:41:04,787 DEBUG   HandlerThread:4959 [system_info.py:_save_code():44] Saving code
+2024-03-28 15:41:04,789 DEBUG   HandlerThread:4959 [system_info.py:_save_code():65] Saving code done
+2024-03-28 15:41:04,789 DEBUG   HandlerThread:4959 [system_info.py:_save_patches():82] Saving git patches
+2024-03-28 15:41:04,870 DEBUG   HandlerThread:4959 [system_info.py:_save_patches():124] Saving git patches done
+2024-03-28 15:41:04,871 INFO    HandlerThread:4959 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-28 15:41:04,872 DEBUG   SenderThread:4959 [sender.py:send():379] send: files
+2024-03-28 15:41:04,872 INFO    SenderThread:4959 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-03-28 15:41:04,872 INFO    SenderThread:4959 [sender.py:_save_file():1390] saving file code/DUL294P/train_gen.py with policy now
+2024-03-28 15:41:04,872 INFO    SenderThread:4959 [sender.py:_save_file():1390] saving file diff.patch with policy now
+2024-03-28 15:41:04,939 DEBUG   HandlerThread:4959 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-28 15:41:04,939 DEBUG   SenderThread:4959 [sender.py:send_request():406] send_request: python_packages
+2024-03-28 15:41:04,939 DEBUG   HandlerThread:4959 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-28 15:41:04,940 DEBUG   SenderThread:4959 [sender.py:send_request():406] send_request: stop_status
+2024-03-28 15:41:04,940 DEBUG   HandlerThread:4959 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-28 15:41:05,095 DEBUG   SenderThread:4959 [sender.py:send():379] send: telemetry
+2024-03-28 15:41:05,395 INFO    wandb-upload_0:4959 [upload_job.py:push():131] Uploaded file /tmp/tmpnz0t8qnkwandb/qkz1ewyj-wandb-metadata.json
+2024-03-28 15:41:05,396 INFO    wandb-upload_1:4959 [upload_job.py:push():131] Uploaded file /tmp/tmpnz0t8qnkwandb/qps8r0d2-code/DUL294P/train_gen.py
+2024-03-28 15:41:05,396 INFO    wandb-upload_2:4959 [upload_job.py:push():131] Uploaded file /tmp/tmpnz0t8qnkwandb/hee4v9du-diff.patch
+2024-03-28 15:41:05,746 INFO    Thread-12 :4959 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files/requirements.txt
+2024-03-28 15:41:05,746 INFO    Thread-12 :4959 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files/diff.patch
+2024-03-28 15:41:05,746 INFO    Thread-12 :4959 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files/wandb-metadata.json
+2024-03-28 15:41:05,746 INFO    Thread-12 :4959 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files/code/DUL294P/train_gen.py
+2024-03-28 15:41:05,746 INFO    Thread-12 :4959 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files/output.log
+2024-03-28 15:41:05,746 INFO    Thread-12 :4959 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files/code/DUL294P
+2024-03-28 15:41:05,746 INFO    Thread-12 :4959 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files/code
+2024-03-28 15:41:07,531 DEBUG   HandlerThread:4959 [handler.py:handle_request():146] handle_request: status_report
+2024-03-28 15:41:07,746 INFO    Thread-12 :4959 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files/output.log
+2024-03-28 15:41:08,747 INFO    Thread-12 :4959 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_154102-7s8syzjm/files/output.log
+2024-03-28 15:41:12,556 DEBUG   HandlerThread:4959 [handler.py:handle_request():146] handle_request: status_report
+2024-03-28 15:41:14,875 INFO    cpu       :4959 [interfaces.py:monitor():140] Process cpu has exited.
+2024-03-28 15:41:14,879 DEBUG   SystemMonitor:4959 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-28 15:41:14,880 DEBUG   SystemMonitor:4959 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-28 15:41:14,880 DEBUG   SystemMonitor:4959 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-28 15:41:14,890 DEBUG   SenderThread:4959 [sender.py:send():379] send: stats
+2024-03-28 15:41:15,874 INFO    MainThread:4959 [internal.py:handle_exit():76] Internal process exited

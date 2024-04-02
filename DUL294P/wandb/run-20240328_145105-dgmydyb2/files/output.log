@@ -1,0 +1,40 @@
+  0%|                                                                                                                                                                  | 0/4427 [00:00<?, ?it/s]/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 32 worker processes in total. Our suggested max number of worker in current system is 16, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+  0%|                                                                                                                                                                  | 0/4427 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 161, in <module>
+    main()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 150, in main
+    train_one_epoch()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 106, in train_one_epoch
+    for i, batch in enumerate(tqdm(train_loader)):
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 434, in __iter__
+    self._iterator = self._get_iterator()
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 387, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1040, in __init__
+    w.start()
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/multiprocessing/context.py", line 288, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/multiprocessing/popen_spawn_posix.py", line 32, in __init__
+    super().__init__(process_obj)
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/multiprocessing/popen_spawn_posix.py", line 47, in _launch
+    reduction.dump(process_obj, fp)
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+AttributeError: Can't pickle local object 'main.<locals>.collate_fn'
+Training from scratch
+Epoch 0

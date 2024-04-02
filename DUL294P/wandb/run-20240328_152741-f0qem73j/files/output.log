@@ -1,0 +1,17 @@
+Training from scratch
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(85)main()
+-> def clip_collate_fn(batch):
+DatasetDict({
+    train: Dataset({
+        features: ['image', 'filepath', 'sentids', 'filename', 'imgid', 'split', 'sentences', 'cocoid'],
+        num_rows: 566747
+    })
+    validation: Dataset({
+        features: ['image', 'filepath', 'sentids', 'filename', 'imgid', 'split', 'sentences', 'cocoid'],
+        num_rows: 25010
+    })
+    test: Dataset({
+        features: ['image', 'filepath', 'sentids', 'filename', 'imgid', 'split', 'sentences', 'cocoid'],
+        num_rows: 25010
+    })
+})

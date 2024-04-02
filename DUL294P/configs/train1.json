@@ -1,0 +1,19 @@
+{
+    "epochs": 1000,
+    "batch_size_per_device": 128,
+    "precision": "float32",
+    "optimizer": {
+        "lr": 1e-3,
+        "schedule": {
+            "lr": 1e-3,
+            "type": "cosine",
+            "steps": 781250.0,
+            "warmup": 0.9995,
+            "final_lr": 0.0
+        }
+    },
+    "wandb": {
+        "use_wandb": true,
+        "project": "DUL294P"
+    }
+}

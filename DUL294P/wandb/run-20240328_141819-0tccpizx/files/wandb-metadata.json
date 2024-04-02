@@ -1,0 +1,128 @@
+{
+    "os": "Linux-6.5.0-26-generic-x86_64-with-glibc2.35",
+    "python": "3.11.8",
+    "heartbeatAt": "2024-03-28T21:18:19.573487",
+    "startedAt": "2024-03-28T21:18:19.090364",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py",
+    "codePathLocal": "train_gen.py",
+    "codePath": "DUL294P/train_gen.py",
+    "git": {
+        "remote": "https://github.com/uynitsuj/DeepUL294Proj.git",
+        "commit": "4ea2c2a333414e16ff3586a1e02b27ded374213c"
+    },
+    "email": "yujustin8@gmail.com",
+    "root": "/home/yujustin/SSD/DeepUL294Proj",
+    "host": "Guilty-Spark",
+    "username": "yujustin",
+    "executable": "/home/yujustin/anaconda3/envs/fov/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2890.4115625,
+        "min": 400.0,
+        "max": 5573.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 3588.015,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 3715.26,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 4490.911,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 3686.64,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 3588.137,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 4087.901,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 4326.071,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 4166.242,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 4342.541,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 3778.734,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5573.0
+        },
+        {
+            "current": 4476.133,
+            "min": 400.0,
+            "max": 5573.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 567.2868194580078,
+            "used": 412.2304801940918
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 30.492889404296875
+    }
+}

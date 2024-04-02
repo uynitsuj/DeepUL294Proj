@@ -1,0 +1,22 @@
+# ninja log v5
+2	10994	1708416740330129754	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/attention/attention_cuda.o	a0f8f89833c5f1a0
+9	11046	1708416740382130296	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/rpe_v2/relative_pos_encoding_cuda_v2.o	1529fb31a99107d4
+9	12521	1708416741866145761	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/sampling/sampling_cuda.o	65f89085db699636
+6	12859	1708416742202149262	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/knnquery/knnquery_cuda.o	ec27f8a8f3b9120d
+4	13434	1708416742774155222	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/attention_v2/attention_cuda_v2.o	963b77c2d6167c0b
+10	13733	1708416743078158389	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/subtraction/subtraction_cuda.o	8b51f6582e11fd0b
+1	14628	1708416743970167681	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/aggregation/aggregation_cuda.o	c306c122f09280ea
+5	15244	1708416744578174014	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/interpolation/interpolation_cuda.o	8090d92614482b28
+4	16501	1708416745842187178	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/grouping/grouping_cuda.o	998c2cbcb8a6880a
+7	18032	1708416747370203088	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/rpe/relative_pos_encoding_cuda.o	d9083fe2142ff823
+10	26633	1708416755978292650	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/sampling/sampling_cuda_kernel.o	4c1b00c657d91fa
+7	26875	1708416756186294812	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/pointops_api.o	d3065af983a6916a
+8	27118	1708416756466297723	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/rpe/relative_pos_encoding_cuda_kernel.o	d41556751b6a6bda
+2	27411	1708416756758300759	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/aggregation/aggregation_cuda_kernel.o	4a0ce1f4756864de
+6	28520	1708416757870312320	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/interpolation/interpolation_cuda_kernel.o	7c0679b5ef304127
+11	29778	1708416759126325374	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/subtraction/subtraction_cuda_kernel.o	2114a943e5bd59ec
+3	30120	1708416759466328907	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/attention_v2/attention_cuda_kernel_v2.o	f5242b69dee08c89
+5	30776	1708416760126335766	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/grouping/grouping_cuda_kernel.o	109ecaf6e82f0ef0
+3	31390	1708416760738342126	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/attention/attention_cuda_kernel.o	23d4eec546c2c58b
+8	32715	1708416762066355922	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/rpe_v2/relative_pos_encoding_cuda_kernel_v2.o	2009734a3301dd8e
+7	32957	1708416762306358416	/home/yujustin/Desktop/topology_deformables_repo/lib/pointops2/build/temp.linux-x86_64-cpython-38/src/knnquery/knnquery_cuda_kernel.o	b8333aec301265af

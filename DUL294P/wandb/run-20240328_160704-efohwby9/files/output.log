@@ -1,0 +1,31 @@
+Training from scratch
+Epoch 0
+  0%|                                                                                                                                                                  | 0/4427 [00:00<?, ?it/s]/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/functional.py:507: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3549.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]                                                                                                  | 0/128 [00:00<?, ?it/s]
+/home/yujustin/SSD/DeepUL294Proj/DUL294P/foveation/foveate_image.py:66: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.result = torch.tensor(image).flatten(end_dim=-2)[self.sample_mask_idx,:]
+Original Image Size 640 480
+Pixel Count 307200
+Elapsed time: 0.0008304119110107422(s)
+Frequency: 1204.2216480045938(fps)
+Foveated Pixel Count torch.Size([153600, 3])
+Compression: 50.0%
+WARNING:matplotlib.image:Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(108)train_one_epoch()
+-> for j, image in enumerate(tqdm(batch['image'])):
+  0%|                                                                                                                                                                   | 0/128 [03:43<?, ?it/s]
+  0%|                                                                                                                                                                  | 0/4427 [03:44<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 146, in <module>
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 137, in main
+    while True:
+        ^^^^^^^^
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 108, in train_one_epoch
+    for j, image, sentences in enumerate(zip(batch['image'], batch['sentences'])):
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yujustin/anaconda3/envs/fov/lib/python3.11/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+                      ^^^^^^^^^^^^^
+bdb.BdbQuit

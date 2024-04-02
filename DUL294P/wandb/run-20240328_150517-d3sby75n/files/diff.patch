@@ -1,0 +1,3189 @@
+diff --git a/.gitignore b/.gitignore
+deleted file mode 100644
+index 3f7ee24..0000000
+--- a/.gitignore
++++ /dev/null
+@@ -1,3 +0,0 @@
+-
+-*.pth
+-*.pt
+diff --git "a/clip_interp_test_imagenet/test_clip_interp_0_['plane', \"carpenter's plane\", 'woodworking plane'].png" "b/clip_interp_test_imagenet/test_clip_interp_0_['plane', \"carpenter's plane\", 'woodworking plane'].png"
+deleted file mode 100644
+index cc84fcb..0000000
+Binary files "a/clip_interp_test_imagenet/test_clip_interp_0_['plane', \"carpenter's plane\", 'woodworking plane'].png" and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_100_['leaf beetle', 'chrysomelid'].png b/clip_interp_test_imagenet/test_clip_interp_100_['leaf beetle', 'chrysomelid'].png
+deleted file mode 100644
+index 3e41657..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_100_['leaf beetle', 'chrysomelid'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_10_['trilobite'].png b/clip_interp_test_imagenet/test_clip_interp_10_['trilobite'].png
+deleted file mode 100644
+index 7c6676c..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_10_['trilobite'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_11_['steel drum'].png b/clip_interp_test_imagenet/test_clip_interp_11_['steel drum'].png
+deleted file mode 100644
+index f75f13e..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_11_['steel drum'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_12_['golfcart', 'golf cart'].png b/clip_interp_test_imagenet/test_clip_interp_12_['golfcart', 'golf cart'].png
+deleted file mode 100644
+index c95a37b..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_12_['golfcart', 'golf cart'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_13_['Windsor tie'].png b/clip_interp_test_imagenet/test_clip_interp_13_['Windsor tie'].png
+deleted file mode 100644
+index 363808e..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_13_['Windsor tie'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_14_['racket', 'racquet'].png b/clip_interp_test_imagenet/test_clip_interp_14_['racket', 'racquet'].png
+deleted file mode 100644
+index 4f3a218..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_14_['racket', 'racquet'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_15_['cocker spaniel', 'English cocker spaniel', 'cocker'].png b/clip_interp_test_imagenet/test_clip_interp_15_['cocker spaniel', 'English cocker spaniel', 'cocker'].png
+deleted file mode 100644
+index 78dddb8..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_15_['cocker spaniel', 'English cocker spaniel', 'cocker'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_16_['cairn', 'cairn terrier'].png b/clip_interp_test_imagenet/test_clip_interp_16_['cairn', 'cairn terrier'].png
+deleted file mode 100644
+index 6844c3f..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_16_['cairn', 'cairn terrier'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_17_['Airedale', 'Airedale terrier'].png b/clip_interp_test_imagenet/test_clip_interp_17_['Airedale', 'Airedale terrier'].png
+deleted file mode 100644
+index 3944f86..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_17_['Airedale', 'Airedale terrier'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_18_['tiger', 'Panthera tigris'].png b/clip_interp_test_imagenet/test_clip_interp_18_['tiger', 'Panthera tigris'].png
+deleted file mode 100644
+index f10ae95..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_18_['tiger', 'Panthera tigris'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_19_['tape player'].png b/clip_interp_test_imagenet/test_clip_interp_19_['tape player'].png
+deleted file mode 100644
+index 5c37312..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_19_['tape player'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_1_['comic book'].png b/clip_interp_test_imagenet/test_clip_interp_1_['comic book'].png
+deleted file mode 100644
+index 5d837cb..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_1_['comic book'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_20_['sea anemone', 'anemone'].png b/clip_interp_test_imagenet/test_clip_interp_20_['sea anemone', 'anemone'].png
+deleted file mode 100644
+index 56901a7..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_20_['sea anemone', 'anemone'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_21_['baboon'].png b/clip_interp_test_imagenet/test_clip_interp_21_['baboon'].png
+deleted file mode 100644
+index b9ce82b..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_21_['baboon'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_22_['rocking chair', 'rocker'].png b/clip_interp_test_imagenet/test_clip_interp_22_['rocking chair', 'rocker'].png
+deleted file mode 100644
+index bb9c173..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_22_['rocking chair', 'rocker'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_23_['can opener', 'tin opener'].png b/clip_interp_test_imagenet/test_clip_interp_23_['can opener', 'tin opener'].png
+deleted file mode 100644
+index dc211e2..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_23_['can opener', 'tin opener'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_24_['dam', 'dike', 'dyke'].png b/clip_interp_test_imagenet/test_clip_interp_24_['dam', 'dike', 'dyke'].png
+deleted file mode 100644
+index 7e1172d..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_24_['dam', 'dike', 'dyke'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_26_['oil filter'].png b/clip_interp_test_imagenet/test_clip_interp_26_['oil filter'].png
+deleted file mode 100644
+index 07a9905..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_26_['oil filter'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_27_['goose'].png b/clip_interp_test_imagenet/test_clip_interp_27_['goose'].png
+deleted file mode 100644
+index e14b55b..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_27_['goose'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_28_['white stork', 'Ciconia ciconia'].png b/clip_interp_test_imagenet/test_clip_interp_28_['white stork', 'Ciconia ciconia'].png
+deleted file mode 100644
+index fab31d3..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_28_['white stork', 'Ciconia ciconia'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_29_['tarantula'].png b/clip_interp_test_imagenet/test_clip_interp_29_['tarantula'].png
+deleted file mode 100644
+index 01a2d14..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_29_['tarantula'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_2_['junco', 'snowbird'].png b/clip_interp_test_imagenet/test_clip_interp_2_['junco', 'snowbird'].png
+deleted file mode 100644
+index 7c7a416..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_2_['junco', 'snowbird'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_30_['window shade'].png b/clip_interp_test_imagenet/test_clip_interp_30_['window shade'].png
+deleted file mode 100644
+index 83d4578..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_30_['window shade'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_31_['espresso maker'].png b/clip_interp_test_imagenet/test_clip_interp_31_['espresso maker'].png
+deleted file mode 100644
+index 61c851b..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_31_['espresso maker'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_32_['bullfrog', 'Rana catesbeiana'].png b/clip_interp_test_imagenet/test_clip_interp_32_['bullfrog', 'Rana catesbeiana'].png
+deleted file mode 100644
+index f8e5d6f..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_32_['bullfrog', 'Rana catesbeiana'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_33_['lumbermill', 'sawmill'].png b/clip_interp_test_imagenet/test_clip_interp_33_['lumbermill', 'sawmill'].png
+deleted file mode 100644
+index d95fad8..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_33_['lumbermill', 'sawmill'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_34_['wine bottle'].png b/clip_interp_test_imagenet/test_clip_interp_34_['wine bottle'].png
+deleted file mode 100644
+index edd7fe6..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_34_['wine bottle'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_35_['valley', 'vale'].png b/clip_interp_test_imagenet/test_clip_interp_35_['valley', 'vale'].png
+deleted file mode 100644
+index 76ee30c..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_35_['valley', 'vale'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_36_['pier'].png b/clip_interp_test_imagenet/test_clip_interp_36_['pier'].png
+deleted file mode 100644
+index 157ce34..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_36_['pier'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_37_['Pekinese', 'Pekingese', 'Peke'].png b/clip_interp_test_imagenet/test_clip_interp_37_['Pekinese', 'Pekingese', 'Peke'].png
+deleted file mode 100644
+index f2f5719..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_37_['Pekinese', 'Pekingese', 'Peke'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_38_['yawl'].png b/clip_interp_test_imagenet/test_clip_interp_38_['yawl'].png
+deleted file mode 100644
+index c81abd7..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_38_['yawl'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_39_['cheetah', 'chetah', 'Acinonyx jubatus'].png b/clip_interp_test_imagenet/test_clip_interp_39_['cheetah', 'chetah', 'Acinonyx jubatus'].png
+deleted file mode 100644
+index 7468717..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_39_['cheetah', 'chetah', 'Acinonyx jubatus'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_3_['zucchini', 'courgette'].png b/clip_interp_test_imagenet/test_clip_interp_3_['zucchini', 'courgette'].png
+deleted file mode 100644
+index a3b9611..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_3_['zucchini', 'courgette'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_40_['ostrich', 'Struthio camelus'].png b/clip_interp_test_imagenet/test_clip_interp_40_['ostrich', 'Struthio camelus'].png
+deleted file mode 100644
+index 79c0396..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_40_['ostrich', 'Struthio camelus'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_41_['menu'].png b/clip_interp_test_imagenet/test_clip_interp_41_['menu'].png
+deleted file mode 100644
+index f9e28b3..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_41_['menu'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_42_['flamingo'].png b/clip_interp_test_imagenet/test_clip_interp_42_['flamingo'].png
+deleted file mode 100644
+index ed60d16..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_42_['flamingo'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_43_['loggerhead', 'loggerhead turtle', 'Caretta caretta'].png b/clip_interp_test_imagenet/test_clip_interp_43_['loggerhead', 'loggerhead turtle', 'Caretta caretta'].png
+deleted file mode 100644
+index 23e857f..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_43_['loggerhead', 'loggerhead turtle', 'Caretta caretta'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_44_['cup'].png b/clip_interp_test_imagenet/test_clip_interp_44_['cup'].png
+deleted file mode 100644
+index 6c95558..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_44_['cup'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_45_['piggy bank', 'penny bank'].png b/clip_interp_test_imagenet/test_clip_interp_45_['piggy bank', 'penny bank'].png
+deleted file mode 100644
+index 36a8838..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_45_['piggy bank', 'penny bank'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_46_['milk can'].png b/clip_interp_test_imagenet/test_clip_interp_46_['milk can'].png
+deleted file mode 100644
+index 68e3265..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_46_['milk can'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_47_['swab', 'swob', 'mop'].png b/clip_interp_test_imagenet/test_clip_interp_47_['swab', 'swob', 'mop'].png
+deleted file mode 100644
+index ef7fb2e..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_47_['swab', 'swob', 'mop'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_48_['ruddy turnstone', 'Arenaria interpres'].png b/clip_interp_test_imagenet/test_clip_interp_48_['ruddy turnstone', 'Arenaria interpres'].png
+deleted file mode 100644
+index 3875a9c..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_48_['ruddy turnstone', 'Arenaria interpres'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_49_['standard schnauzer'].png b/clip_interp_test_imagenet/test_clip_interp_49_['standard schnauzer'].png
+deleted file mode 100644
+index 71f6d77..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_49_['standard schnauzer'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_4_['stingray'].png b/clip_interp_test_imagenet/test_clip_interp_4_['stingray'].png
+deleted file mode 100644
+index 3210459..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_4_['stingray'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_50_['Doberman', 'Doberman pinscher'].png b/clip_interp_test_imagenet/test_clip_interp_50_['Doberman', 'Doberman pinscher'].png
+deleted file mode 100644
+index b45db15..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_50_['Doberman', 'Doberman pinscher'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_51_['leaf beetle', 'chrysomelid'].png b/clip_interp_test_imagenet/test_clip_interp_51_['leaf beetle', 'chrysomelid'].png
+deleted file mode 100644
+index a853a3a..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_51_['leaf beetle', 'chrysomelid'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_52_['electric locomotive'].png b/clip_interp_test_imagenet/test_clip_interp_52_['electric locomotive'].png
+deleted file mode 100644
+index 3202e94..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_52_['electric locomotive'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_53_['spaghetti squash'].png b/clip_interp_test_imagenet/test_clip_interp_53_['spaghetti squash'].png
+deleted file mode 100644
+index 89ca575..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_53_['spaghetti squash'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_54_['Brittany spaniel'].png b/clip_interp_test_imagenet/test_clip_interp_54_['Brittany spaniel'].png
+deleted file mode 100644
+index fc6cb80..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_54_['Brittany spaniel'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_55_['thatch', 'thatched roof'].png b/clip_interp_test_imagenet/test_clip_interp_55_['thatch', 'thatched roof'].png
+deleted file mode 100644
+index 86e6a60..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_55_['thatch', 'thatched roof'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_57_['spotted salamander', 'Ambystoma maculatum'].png b/clip_interp_test_imagenet/test_clip_interp_57_['spotted salamander', 'Ambystoma maculatum'].png
+deleted file mode 100644
+index 2bfd5da..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_57_['spotted salamander', 'Ambystoma maculatum'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_58_['wallaby', 'brush kangaroo'].png b/clip_interp_test_imagenet/test_clip_interp_58_['wallaby', 'brush kangaroo'].png
+deleted file mode 100644
+index a379016..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_58_['wallaby', 'brush kangaroo'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_59_['diamondback', 'diamondback rattlesnake', 'Crotalus adamanteus'].png b/clip_interp_test_imagenet/test_clip_interp_59_['diamondback', 'diamondback rattlesnake', 'Crotalus adamanteus'].png
+deleted file mode 100644
+index fa0d17e..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_59_['diamondback', 'diamondback rattlesnake', 'Crotalus adamanteus'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_5_['scuba diver'].png b/clip_interp_test_imagenet/test_clip_interp_5_['scuba diver'].png
+deleted file mode 100644
+index e1c293a..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_5_['scuba diver'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_60_['grasshopper', 'hopper'].png b/clip_interp_test_imagenet/test_clip_interp_60_['grasshopper', 'hopper'].png
+deleted file mode 100644
+index 33e60d4..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_60_['grasshopper', 'hopper'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_61_['baseball'].png b/clip_interp_test_imagenet/test_clip_interp_61_['baseball'].png
+deleted file mode 100644
+index 5c31e1a..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_61_['baseball'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_62_['acorn squash'].png b/clip_interp_test_imagenet/test_clip_interp_62_['acorn squash'].png
+deleted file mode 100644
+index f13900a..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_62_['acorn squash'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_63_['orange'].png b/clip_interp_test_imagenet/test_clip_interp_63_['orange'].png
+deleted file mode 100644
+index a4e596c..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_63_['orange'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_64_['horse cart', 'horse-cart'].png b/clip_interp_test_imagenet/test_clip_interp_64_['horse cart', 'horse-cart'].png
+deleted file mode 100644
+index b195e61..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_64_['horse cart', 'horse-cart'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_65_['bubble'].png b/clip_interp_test_imagenet/test_clip_interp_65_['bubble'].png
+deleted file mode 100644
+index f9df419..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_65_['bubble'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_66_['cello', 'violoncello'].png b/clip_interp_test_imagenet/test_clip_interp_66_['cello', 'violoncello'].png
+deleted file mode 100644
+index 9346fc7..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_66_['cello', 'violoncello'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_67_['coffee mug'].png b/clip_interp_test_imagenet/test_clip_interp_67_['coffee mug'].png
+deleted file mode 100644
+index d767362..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_67_['coffee mug'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_68_['church', 'church building'].png b/clip_interp_test_imagenet/test_clip_interp_68_['church', 'church building'].png
+deleted file mode 100644
+index 089b95c..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_68_['church', 'church building'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_69_['motor scooter', 'scooter'].png b/clip_interp_test_imagenet/test_clip_interp_69_['motor scooter', 'scooter'].png
+deleted file mode 100644
+index e5a1241..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_69_['motor scooter', 'scooter'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_6_['miniskirt', 'mini'].png b/clip_interp_test_imagenet/test_clip_interp_6_['miniskirt', 'mini'].png
+deleted file mode 100644
+index 0a06195..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_6_['miniskirt', 'mini'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_70_['brassiere', 'bra', 'bandeau'].png b/clip_interp_test_imagenet/test_clip_interp_70_['brassiere', 'bra', 'bandeau'].png
+deleted file mode 100644
+index 2272c98..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_70_['brassiere', 'bra', 'bandeau'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_71_['folding chair'].png b/clip_interp_test_imagenet/test_clip_interp_71_['folding chair'].png
+deleted file mode 100644
+index 0ae718a..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_71_['folding chair'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_72_['spaghetti squash'].png b/clip_interp_test_imagenet/test_clip_interp_72_['spaghetti squash'].png
+deleted file mode 100644
+index c0e2001..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_72_['spaghetti squash'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_73_['ostrich', 'Struthio camelus'].png b/clip_interp_test_imagenet/test_clip_interp_73_['ostrich', 'Struthio camelus'].png
+deleted file mode 100644
+index 68962cc..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_73_['ostrich', 'Struthio camelus'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_74_['streetcar', 'tram', 'tramcar', 'trolley', 'trolley car'].png b/clip_interp_test_imagenet/test_clip_interp_74_['streetcar', 'tram', 'tramcar', 'trolley', 'trolley car'].png
+deleted file mode 100644
+index 58ec02a..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_74_['streetcar', 'tram', 'tramcar', 'trolley', 'trolley car'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_75_['viaduct'].png b/clip_interp_test_imagenet/test_clip_interp_75_['viaduct'].png
+deleted file mode 100644
+index ec0925c..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_75_['viaduct'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_76_['saltshaker', 'salt shaker'].png b/clip_interp_test_imagenet/test_clip_interp_76_['saltshaker', 'salt shaker'].png
+deleted file mode 100644
+index ceb2918..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_76_['saltshaker', 'salt shaker'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_77_['screwdriver'].png b/clip_interp_test_imagenet/test_clip_interp_77_['screwdriver'].png
+deleted file mode 100644
+index 7c91475..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_77_['screwdriver'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_78_['screen', 'CRT screen'].png b/clip_interp_test_imagenet/test_clip_interp_78_['screen', 'CRT screen'].png
+deleted file mode 100644
+index f9851b8..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_78_['screen', 'CRT screen'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_79_['grand piano', 'grand'].png b/clip_interp_test_imagenet/test_clip_interp_79_['grand piano', 'grand'].png
+deleted file mode 100644
+index 3c2fb64..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_79_['grand piano', 'grand'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_7_['grand piano', 'grand'].png b/clip_interp_test_imagenet/test_clip_interp_7_['grand piano', 'grand'].png
+deleted file mode 100644
+index 2cf7e37..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_7_['grand piano', 'grand'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_80_['pick', 'plectrum', 'plectron'].png b/clip_interp_test_imagenet/test_clip_interp_80_['pick', 'plectrum', 'plectron'].png
+deleted file mode 100644
+index aa6e196..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_80_['pick', 'plectrum', 'plectron'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_81_['dhole', 'Cuon alpinus'].png b/clip_interp_test_imagenet/test_clip_interp_81_['dhole', 'Cuon alpinus'].png
+deleted file mode 100644
+index 5787a08..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_81_['dhole', 'Cuon alpinus'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_82_['albatross', 'mollymawk'].png b/clip_interp_test_imagenet/test_clip_interp_82_['albatross', 'mollymawk'].png
+deleted file mode 100644
+index 6bd8ef9..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_82_['albatross', 'mollymawk'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_83_['French bulldog'].png b/clip_interp_test_imagenet/test_clip_interp_83_['French bulldog'].png
+deleted file mode 100644
+index e87d697..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_83_['French bulldog'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_84_['remote control', 'remote'].png b/clip_interp_test_imagenet/test_clip_interp_84_['remote control', 'remote'].png
+deleted file mode 100644
+index 6d4f52e..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_84_['remote control', 'remote'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_85_['Newfoundland', 'Newfoundland dog'].png b/clip_interp_test_imagenet/test_clip_interp_85_['Newfoundland', 'Newfoundland dog'].png
+deleted file mode 100644
+index 6a5fdfc..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_85_['Newfoundland', 'Newfoundland dog'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_86_['lycaenid', 'lycaenid butterfly'].png b/clip_interp_test_imagenet/test_clip_interp_86_['lycaenid', 'lycaenid butterfly'].png
+deleted file mode 100644
+index 319965d..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_86_['lycaenid', 'lycaenid butterfly'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_87_['Cardigan', 'Cardigan Welsh corgi'].png b/clip_interp_test_imagenet/test_clip_interp_87_['Cardigan', 'Cardigan Welsh corgi'].png
+deleted file mode 100644
+index 779df51..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_87_['Cardigan', 'Cardigan Welsh corgi'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_88_['stove'].png b/clip_interp_test_imagenet/test_clip_interp_88_['stove'].png
+deleted file mode 100644
+index bfd2516..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_88_['stove'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_89_['oxcart'].png b/clip_interp_test_imagenet/test_clip_interp_89_['oxcart'].png
+deleted file mode 100644
+index 4d5ff4f..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_89_['oxcart'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_8_['parallel bars', 'bars'].png b/clip_interp_test_imagenet/test_clip_interp_8_['parallel bars', 'bars'].png
+deleted file mode 100644
+index 9895209..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_8_['parallel bars', 'bars'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_90_['coral reef'].png b/clip_interp_test_imagenet/test_clip_interp_90_['coral reef'].png
+deleted file mode 100644
+index 3ddc709..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_90_['coral reef'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_91_['flamingo'].png b/clip_interp_test_imagenet/test_clip_interp_91_['flamingo'].png
+deleted file mode 100644
+index 0ce7460..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_91_['flamingo'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_92_['coucal'].png b/clip_interp_test_imagenet/test_clip_interp_92_['coucal'].png
+deleted file mode 100644
+index 5acc865..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_92_['coucal'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_93_['knee pad'].png b/clip_interp_test_imagenet/test_clip_interp_93_['knee pad'].png
+deleted file mode 100644
+index eaec315..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_93_['knee pad'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_94_['ladybug', 'ladybeetle', 'lady beetle', 'ladybird', 'ladybird beetle'].png b/clip_interp_test_imagenet/test_clip_interp_94_['ladybug', 'ladybeetle', 'lady beetle', 'ladybird', 'ladybird beetle'].png
+deleted file mode 100644
+index f62b2f6..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_94_['ladybug', 'ladybeetle', 'lady beetle', 'ladybird', 'ladybird beetle'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_95_['skunk', 'polecat', 'wood pussy'].png b/clip_interp_test_imagenet/test_clip_interp_95_['skunk', 'polecat', 'wood pussy'].png
+deleted file mode 100644
+index 8b1b18d..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_95_['skunk', 'polecat', 'wood pussy'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_96_['kimono'].png b/clip_interp_test_imagenet/test_clip_interp_96_['kimono'].png
+deleted file mode 100644
+index f031a72..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_96_['kimono'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_97_['goblet'].png b/clip_interp_test_imagenet/test_clip_interp_97_['goblet'].png
+deleted file mode 100644
+index aa850c0..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_97_['goblet'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_98_['bee eater'].png b/clip_interp_test_imagenet/test_clip_interp_98_['bee eater'].png
+deleted file mode 100644
+index 0cf20da..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_98_['bee eater'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_99_['long-horned beetle', 'longicorn', 'longicorn beetle'].png b/clip_interp_test_imagenet/test_clip_interp_99_['long-horned beetle', 'longicorn', 'longicorn beetle'].png
+deleted file mode 100644
+index 47fa6a7..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_99_['long-horned beetle', 'longicorn', 'longicorn beetle'].png and /dev/null differ
+diff --git a/clip_interp_test_imagenet/test_clip_interp_9_['syringe'].png b/clip_interp_test_imagenet/test_clip_interp_9_['syringe'].png
+deleted file mode 100644
+index 4abbb76..0000000
+Binary files a/clip_interp_test_imagenet/test_clip_interp_9_['syringe'].png and /dev/null differ
+diff --git a/configs/__pycache__/base_config.cpython-312.pyc b/configs/__pycache__/base_config.cpython-312.pyc
+deleted file mode 100644
+index d89d15e..0000000
+Binary files a/configs/__pycache__/base_config.cpython-312.pyc and /dev/null differ
+diff --git a/configs/base_config.py b/configs/base_config.py
+deleted file mode 100644
+index 568871c..0000000
+--- a/configs/base_config.py
++++ /dev/null
+@@ -1,38 +0,0 @@
+-
+-"""Base Configs"""
+-
+-
+-from __future__ import annotations
+-
+-from dataclasses import dataclass, field
+-from pathlib import Path
+-from typing import Any, List, Literal, Optional, Tuple, Type
+-
+-# Pretty printing class
+-class PrintableConfig:
+-    """Printable Config defining str function"""
+-
+-    def __str__(self):
+-        lines = [self.__class__.__name__ + ":"]
+-        for key, val in vars(self).items():
+-            if isinstance(val, Tuple):
+-                flattened_val = "["
+-                for item in val:
+-                    flattened_val += str(item) + "\n"
+-                flattened_val = flattened_val.rstrip("\n")
+-                val = flattened_val + "]"
+-            lines += f"{key}: {str(val)}".split("\n")
+-        return "\n    ".join(lines)
+-
+-
+-# Base instantiate configs
+-@dataclass
+-class InstantiateConfig(PrintableConfig):
+-    """Config class for instantiating an the class specified in the _target attribute."""
+-
+-    _target: Type
+-
+-    def setup(self, **kwargs) -> Any:
+-        """Returns the instantiated object using the config."""
+-        return self._target(self, **kwargs)
+-
+diff --git a/configs/model1.json b/configs/model1.json
+deleted file mode 100644
+index 69c0bed..0000000
+--- a/configs/model1.json
++++ /dev/null
+@@ -1,27 +0,0 @@
+-{
+-    "d_embed": 512,
+-    "inv_tau": 30.0,
+-    "scale_hopfield": 15.0,
+-    "image_encoder": {
+-        "type": "ViT",
+-        "image_size": 224,
+-        "input_channels": 3,
+-        "normalize": {
+-            "mean": [0.48145466, 0.4578275, 0.40821073],
+-            "std": [0.26862954, 0.26130258, 0.27577711]
+-        },
+-        "patch_size": 16,
+-        "n_layers": 12,
+-        "d_model": 768,
+-        "n_heads": 12
+-    },
+-    "text_encoder": {
+-        "type": "transformer",
+-        "tokenizer": "clip",
+-        "text_size": 77,
+-        "vocab_size": 49408,
+-        "n_layers": 12,
+-        "d_model": 512,
+-        "n_heads": 8      
+-    }
+-}
+\ No newline at end of file
+diff --git a/configs/train.json b/configs/train.json
+deleted file mode 100644
+index ec830c4..0000000
+--- a/configs/train.json
++++ /dev/null
+@@ -1,29 +0,0 @@
+-{
+-    "batch_size_per_device": 128,
+-    "checkpoint_name": "model.pkl",
+-    "seed": 1189,
+-    "precision": "float32",
+-    "dataset": {
+-        "num_workers": 32,
+-        "type": "webdataset",
+-        "location": "https://huggingface.co/datasets/laion/laion2B-en/resolve/main/part-{00000..00127}-5114fd87-297e-42b0-9d11-50f1df323dfa-c000.snappy.parquet"
+-    },
+-    "optimizer": {
+-        "type": "adamw",
+-        "beta_1": 0.9,
+-        "beta_2": 0.98,
+-        "eps": 1e-6,
+-        "weight_decay": 1e-1,
+-        "schedule": {
+-            "lr": 1e-4,
+-            "type": "cosine",
+-            "steps": 781250.0,
+-            "warmup": 0.9995,
+-            "final_lr": 0.0
+-        }
+-    },
+-    "wandb": {
+-        "use_wandb": true,
+-        "project": "fov"
+-    }
+-}
+\ No newline at end of file
+diff --git a/data/labels/imagenet1k_labels.txt b/data/labels/imagenet1k_labels.txt
+deleted file mode 100644
+index f0d3aa1..0000000
+--- a/data/labels/imagenet1k_labels.txt
++++ /dev/null
+@@ -1,1000 +0,0 @@
+- 0: 'tench, Tinca tinca',
+- 1: 'goldfish, Carassius auratus',
+- 2: 'great white shark, white shark, man-eater, man-eating shark, Carcharodon carcharias',
+- 3: 'tiger shark, Galeocerdo cuvieri',
+- 4: 'hammerhead, hammerhead shark',
+- 5: 'electric ray, crampfish, numbfish, torpedo',
+- 6: 'stingray',
+- 7: 'cock',
+- 8: 'hen',
+- 9: 'ostrich, Struthio camelus',
+- 10: 'brambling, Fringilla montifringilla',
+- 11: 'goldfinch, Carduelis carduelis',
+- 12: 'house finch, linnet, Carpodacus mexicanus',
+- 13: 'junco, snowbird',
+- 14: 'indigo bunting, indigo finch, indigo bird, Passerina cyanea',
+- 15: 'robin, American robin, Turdus migratorius',
+- 16: 'bulbul',
+- 17: 'jay',
+- 18: 'magpie',
+- 19: 'chickadee',
+- 20: 'water ouzel, dipper',
+- 21: 'kite',
+- 22: 'bald eagle, American eagle, Haliaeetus leucocephalus',
+- 23: 'vulture',
+- 24: 'great grey owl, great gray owl, Strix nebulosa',
+- 25: 'European fire salamander, Salamandra salamandra',
+- 26: 'common newt, Triturus vulgaris',
+- 27: 'eft',
+- 28: 'spotted salamander, Ambystoma maculatum',
+- 29: 'axolotl, mud puppy, Ambystoma mexicanum',
+- 30: 'bullfrog, Rana catesbeiana',
+- 31: 'tree frog, tree-frog',
+- 32: 'tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui',
+- 33: 'loggerhead, loggerhead turtle, Caretta caretta',
+- 34: 'leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea',
+- 35: 'mud turtle',
+- 36: 'terrapin',
+- 37: 'box turtle, box tortoise',
+- 38: 'banded gecko',
+- 39: 'common iguana, iguana, Iguana iguana',
+- 40: 'American chameleon, anole, Anolis carolinensis',
+- 41: 'whiptail, whiptail lizard',
+- 42: 'agama',
+- 43: 'frilled lizard, Chlamydosaurus kingi',
+- 44: 'alligator lizard',
+- 45: 'Gila monster, Heloderma suspectum',
+- 46: 'green lizard, Lacerta viridis',
+- 47: 'African chameleon, Chamaeleo chamaeleon',
+- 48: 'Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis',
+- 49: 'African crocodile, Nile crocodile, Crocodylus niloticus',
+- 50: 'American alligator, Alligator mississipiensis',
+- 51: 'triceratops',
+- 52: 'thunder snake, worm snake, Carphophis amoenus',
+- 53: 'ringneck snake, ring-necked snake, ring snake',
+- 54: 'hognose snake, puff adder, sand viper',
+- 55: 'green snake, grass snake',
+- 56: 'king snake, kingsnake',
+- 57: 'garter snake, grass snake',
+- 58: 'water snake',
+- 59: 'vine snake',
+- 60: 'night snake, Hypsiglena torquata',
+- 61: 'boa constrictor, Constrictor constrictor',
+- 62: 'rock python, rock snake, Python sebae',
+- 63: 'Indian cobra, Naja naja',
+- 64: 'green mamba',
+- 65: 'sea snake',
+- 66: 'horned viper, cerastes, sand viper, horned asp, Cerastes cornutus',
+- 67: 'diamondback, diamondback rattlesnake, Crotalus adamanteus',
+- 68: 'sidewinder, horned rattlesnake, Crotalus cerastes',
+- 69: 'trilobite',
+- 70: 'harvestman, daddy longlegs, Phalangium opilio',
+- 71: 'scorpion',
+- 72: 'black and gold garden spider, Argiope aurantia',
+- 73: 'barn spider, Araneus cavaticus',
+- 74: 'garden spider, Aranea diademata',
+- 75: 'black widow, Latrodectus mactans',
+- 76: 'tarantula',
+- 77: 'wolf spider, hunting spider',
+- 78: 'tick',
+- 79: 'centipede',
+- 80: 'black grouse',
+- 81: 'ptarmigan',
+- 82: 'ruffed grouse, partridge, Bonasa umbellus',
+- 83: 'prairie chicken, prairie grouse, prairie fowl',
+- 84: 'peacock',
+- 85: 'quail',
+- 86: 'partridge',
+- 87: 'African grey, African gray, Psittacus erithacus',
+- 88: 'macaw',
+- 89: 'sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita',
+- 90: 'lorikeet',
+- 91: 'coucal',
+- 92: 'bee eater',
+- 93: 'hornbill',
+- 94: 'hummingbird',
+- 95: 'jacamar',
+- 96: 'toucan',
+- 97: 'drake',
+- 98: 'red-breasted merganser, Mergus serrator',
+- 99: 'goose',
+- 100: 'black swan, Cygnus atratus',
+- 101: 'tusker',
+- 102: 'echidna, spiny anteater, anteater',
+- 103: 'platypus, duckbill, duckbilled platypus, duck-billed platypus, Ornithorhynchus anatinus',
+- 104: 'wallaby, brush kangaroo',
+- 105: 'koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus',
+- 106: 'wombat',
+- 107: 'jellyfish',
+- 108: 'sea anemone, anemone',
+- 109: 'brain coral',
+- 110: 'flatworm, platyhelminth',
+- 111: 'nematode, nematode worm, roundworm',
+- 112: 'conch',
+- 113: 'snail',
+- 114: 'slug',
+- 115: 'sea slug, nudibranch',
+- 116: 'chiton, coat-of-mail shell, sea cradle, polyplacophore',
+- 117: 'chambered nautilus, pearly nautilus, nautilus',
+- 118: 'Dungeness crab, Cancer magister',
+- 119: 'rock crab, Cancer irroratus',
+- 120: 'fiddler crab',
+- 121: 'king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica',
+- 122: 'American lobster, Northern lobster, Maine lobster, Homarus americanus',
+- 123: 'spiny lobster, langouste, rock lobster, crawfish, crayfish, sea crawfish',
+- 124: 'crayfish, crawfish, crawdad, crawdaddy',
+- 125: 'hermit crab',
+- 126: 'isopod',
+- 127: 'white stork, Ciconia ciconia',
+- 128: 'black stork, Ciconia nigra',
+- 129: 'spoonbill',
+- 130: 'flamingo',
+- 131: 'little blue heron, Egretta caerulea',
+- 132: 'American egret, great white heron, Egretta albus',
+- 133: 'bittern',
+- 134: 'crane',
+- 135: 'limpkin, Aramus pictus',
+- 136: 'European gallinule, Porphyrio porphyrio',
+- 137: 'American coot, marsh hen, mud hen, water hen, Fulica americana',
+- 138: 'bustard',
+- 139: 'ruddy turnstone, Arenaria interpres',
+- 140: 'red-backed sandpiper, dunlin, Erolia alpina',
+- 141: 'redshank, Tringa totanus',
+- 142: 'dowitcher',
+- 143: 'oystercatcher, oyster catcher',
+- 144: 'pelican',
+- 145: 'king penguin, Aptenodytes patagonica',
+- 146: 'albatross, mollymawk',
+- 147: 'grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus',
+- 148: 'killer whale, killer, orca, grampus, sea wolf, Orcinus orca',
+- 149: 'dugong, Dugong dugon',
+- 150: 'sea lion',
+- 151: 'Chihuahua',
+- 152: 'Japanese spaniel',
+- 153: 'Maltese dog, Maltese terrier, Maltese',
+- 154: 'Pekinese, Pekingese, Peke',
+- 155: 'Shih-Tzu',
+- 156: 'Blenheim spaniel',
+- 157: 'papillon',
+- 158: 'toy terrier',
+- 159: 'Rhodesian ridgeback',
+- 160: 'Afghan hound, Afghan',
+- 161: 'basset, basset hound',
+- 162: 'beagle',
+- 163: 'bloodhound, sleuthhound',
+- 164: 'bluetick',
+- 165: 'black-and-tan coonhound',
+- 166: 'Walker hound, Walker foxhound',
+- 167: 'English foxhound',
+- 168: 'redbone',
+- 169: 'borzoi, Russian wolfhound',
+- 170: 'Irish wolfhound',
+- 171: 'Italian greyhound',
+- 172: 'whippet',
+- 173: 'Ibizan hound, Ibizan Podenco',
+- 174: 'Norwegian elkhound, elkhound',
+- 175: 'otterhound, otter hound',
+- 176: 'Saluki, gazelle hound',
+- 177: 'Scottish deerhound, deerhound',
+- 178: 'Weimaraner',
+- 179: 'Staffordshire bullterrier, Staffordshire bull terrier',
+- 180: 'American Staffordshire terrier, Staffordshire terrier, American pit bull terrier, pit bull terrier',
+- 181: 'Bedlington terrier',
+- 182: 'Border terrier',
+- 183: 'Kerry blue terrier',
+- 184: 'Irish terrier',
+- 185: 'Norfolk terrier',
+- 186: 'Norwich terrier',
+- 187: 'Yorkshire terrier',
+- 188: 'wire-haired fox terrier',
+- 189: 'Lakeland terrier',
+- 190: 'Sealyham terrier, Sealyham',
+- 191: 'Airedale, Airedale terrier',
+- 192: 'cairn, cairn terrier',
+- 193: 'Australian terrier',
+- 194: 'Dandie Dinmont, Dandie Dinmont terrier',
+- 195: 'Boston bull, Boston terrier',
+- 196: 'miniature schnauzer',
+- 197: 'giant schnauzer',
+- 198: 'standard schnauzer',
+- 199: 'Scotch terrier, Scottish terrier, Scottie',
+- 200: 'Tibetan terrier, chrysanthemum dog',
+- 201: 'silky terrier, Sydney silky',
+- 202: 'soft-coated wheaten terrier',
+- 203: 'West Highland white terrier',
+- 204: 'Lhasa, Lhasa apso',
+- 205: 'flat-coated retriever',
+- 206: 'curly-coated retriever',
+- 207: 'golden retriever',
+- 208: 'Labrador retriever',
+- 209: 'Chesapeake Bay retriever',
+- 210: 'German short-haired pointer',
+- 211: 'vizsla, Hungarian pointer',
+- 212: 'English setter',
+- 213: 'Irish setter, red setter',
+- 214: 'Gordon setter',
+- 215: 'Brittany spaniel',
+- 216: 'clumber, clumber spaniel',
+- 217: 'English springer, English springer spaniel',
+- 218: 'Welsh springer spaniel',
+- 219: 'cocker spaniel, English cocker spaniel, cocker',
+- 220: 'Sussex spaniel',
+- 221: 'Irish water spaniel',
+- 222: 'kuvasz',
+- 223: 'schipperke',
+- 224: 'groenendael',
+- 225: 'malinois',
+- 226: 'briard',
+- 227: 'kelpie',
+- 228: 'komondor',
+- 229: 'Old English sheepdog, bobtail',
+- 230: 'Shetland sheepdog, Shetland sheep dog, Shetland',
+- 231: 'collie',
+- 232: 'Border collie',
+- 233: 'Bouvier des Flandres, Bouviers des Flandres',
+- 234: 'Rottweiler',
+- 235: 'German shepherd, German shepherd dog, German police dog, alsatian',
+- 236: 'Doberman, Doberman pinscher',
+- 237: 'miniature pinscher',
+- 238: 'Greater Swiss Mountain dog',
+- 239: 'Bernese mountain dog',
+- 240: 'Appenzeller',
+- 241: 'EntleBucher',
+- 242: 'boxer',
+- 243: 'bull mastiff',
+- 244: 'Tibetan mastiff',
+- 245: 'French bulldog',
+- 246: 'Great Dane',
+- 247: 'Saint Bernard, St Bernard',
+- 248: 'Eskimo dog, husky',
+- 249: 'malamute, malemute, Alaskan malamute',
+- 250: 'Siberian husky',
+- 251: 'dalmatian, coach dog, carriage dog',
+- 252: 'affenpinscher, monkey pinscher, monkey dog',
+- 253: 'basenji',
+- 254: 'pug, pug-dog',
+- 255: 'Leonberg',
+- 256: 'Newfoundland, Newfoundland dog',
+- 257: 'Great Pyrenees',
+- 258: 'Samoyed, Samoyede',
+- 259: 'Pomeranian',
+- 260: 'chow, chow chow',
+- 261: 'keeshond',
+- 262: 'Brabancon griffon',
+- 263: 'Pembroke, Pembroke Welsh corgi',
+- 264: 'Cardigan, Cardigan Welsh corgi',
+- 265: 'toy poodle',
+- 266: 'miniature poodle',
+- 267: 'standard poodle',
+- 268: 'Mexican hairless',
+- 269: 'timber wolf, grey wolf, gray wolf, Canis lupus',
+- 270: 'white wolf, Arctic wolf, Canis lupus tundrarum',
+- 271: 'red wolf, maned wolf, Canis rufus, Canis niger',
+- 272: 'coyote, prairie wolf, brush wolf, Canis latrans',
+- 273: 'dingo, warrigal, warragal, Canis dingo',
+- 274: 'dhole, Cuon alpinus',
+- 275: 'African hunting dog, hyena dog, Cape hunting dog, Lycaon pictus',
+- 276: 'hyena, hyaena',
+- 277: 'red fox, Vulpes vulpes',
+- 278: 'kit fox, Vulpes macrotis',
+- 279: 'Arctic fox, white fox, Alopex lagopus',
+- 280: 'grey fox, gray fox, Urocyon cinereoargenteus',
+- 281: 'tabby, tabby cat',
+- 282: 'tiger cat',
+- 283: 'Persian cat',
+- 284: 'Siamese cat, Siamese',
+- 285: 'Egyptian cat',
+- 286: 'cougar, puma, catamount, mountain lion, painter, panther, Felis concolor',
+- 287: 'lynx, catamount',
+- 288: 'leopard, Panthera pardus',
+- 289: 'snow leopard, ounce, Panthera uncia',
+- 290: 'jaguar, panther, Panthera onca, Felis onca',
+- 291: 'lion, king of beasts, Panthera leo',
+- 292: 'tiger, Panthera tigris',
+- 293: 'cheetah, chetah, Acinonyx jubatus',
+- 294: 'brown bear, bruin, Ursus arctos',
+- 295: 'American black bear, black bear, Ursus americanus, Euarctos americanus',
+- 296: 'ice bear, polar bear, Ursus Maritimus, Thalarctos maritimus',
+- 297: 'sloth bear, Melursus ursinus, Ursus ursinus',
+- 298: 'mongoose',
+- 299: 'meerkat, mierkat',
+- 300: 'tiger beetle',
+- 301: 'ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle',
+- 302: 'ground beetle, carabid beetle',
+- 303: 'long-horned beetle, longicorn, longicorn beetle',
+- 304: 'leaf beetle, chrysomelid',
+- 305: 'dung beetle',
+- 306: 'rhinoceros beetle',
+- 307: 'weevil',
+- 308: 'fly',
+- 309: 'bee',
+- 310: 'ant, emmet, pismire',
+- 311: 'grasshopper, hopper',
+- 312: 'cricket',
+- 313: 'walking stick, walkingstick, stick insect',
+- 314: 'cockroach, roach',
+- 315: 'mantis, mantid',
+- 316: 'cicada, cicala',
+- 317: 'leafhopper',
+- 318: 'lacewing, lacewing fly',
+- 319: 'dragonfly, darning needle, devil's darning needle, sewing needle, snake feeder, snake doctor, mosquito hawk, skeeter hawk',
+- 320: 'damselfly',
+- 321: 'admiral',
+- 322: 'ringlet, ringlet butterfly',
+- 323: 'monarch, monarch butterfly, milkweed butterfly, Danaus plexippus',
+- 324: 'cabbage butterfly',
+- 325: 'sulphur butterfly, sulfur butterfly',
+- 326: 'lycaenid, lycaenid butterfly',
+- 327: 'starfish, sea star',
+- 328: 'sea urchin',
+- 329: 'sea cucumber, holothurian',
+- 330: 'wood rabbit, cottontail, cottontail rabbit',
+- 331: 'hare',
+- 332: 'Angora, Angora rabbit',
+- 333: 'hamster',
+- 334: 'porcupine, hedgehog',
+- 335: 'fox squirrel, eastern fox squirrel, Sciurus niger',
+- 336: 'marmot',
+- 337: 'beaver',
+- 338: 'guinea pig, Cavia cobaya',
+- 339: 'sorrel',
+- 340: 'zebra',
+- 341: 'hog, pig, grunter, squealer, Sus scrofa',
+- 342: 'wild boar, boar, Sus scrofa',
+- 343: 'warthog',
+- 344: 'hippopotamus, hippo, river horse, Hippopotamus amphibius',
+- 345: 'ox',
+- 346: 'water buffalo, water ox, Asiatic buffalo, Bubalus bubalis',
+- 347: 'bison',
+- 348: 'ram, tup',
+- 349: 'bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis',
+- 350: 'ibex, Capra ibex',
+- 351: 'hartebeest',
+- 352: 'impala, Aepyceros melampus',
+- 353: 'gazelle',
+- 354: 'Arabian camel, dromedary, Camelus dromedarius',
+- 355: 'llama',
+- 356: 'weasel',
+- 357: 'mink',
+- 358: 'polecat, fitch, foulmart, foumart, Mustela putorius',
+- 359: 'black-footed ferret, ferret, Mustela nigripes',
+- 360: 'otter',
+- 361: 'skunk, polecat, wood pussy',
+- 362: 'badger',
+- 363: 'armadillo',
+- 364: 'three-toed sloth, ai, Bradypus tridactylus',
+- 365: 'orangutan, orang, orangutang, Pongo pygmaeus',
+- 366: 'gorilla, Gorilla gorilla',
+- 367: 'chimpanzee, chimp, Pan troglodytes',
+- 368: 'gibbon, Hylobates lar',
+- 369: 'siamang, Hylobates syndactylus, Symphalangus syndactylus',
+- 370: 'guenon, guenon monkey',
+- 371: 'patas, hussar monkey, Erythrocebus patas',
+- 372: 'baboon',
+- 373: 'macaque',
+- 374: 'langur',
+- 375: 'colobus, colobus monkey',
+- 376: 'proboscis monkey, Nasalis larvatus',
+- 377: 'marmoset',
+- 378: 'capuchin, ringtail, Cebus capucinus',
+- 379: 'howler monkey, howler',
+- 380: 'titi, titi monkey',
+- 381: 'spider monkey, Ateles geoffroyi',
+- 382: 'squirrel monkey, Saimiri sciureus',
+- 383: 'Madagascar cat, ring-tailed lemur, Lemur catta',
+- 384: 'indri, indris, Indri indri, Indri brevicaudatus',
+- 385: 'Indian elephant, Elephas maximus',
+- 386: 'African elephant, Loxodonta africana',
+- 387: 'lesser panda, red panda, panda, bear cat, cat bear, Ailurus fulgens',
+- 388: 'giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca',
+- 389: 'barracouta, snoek',
+- 390: 'eel',
+- 391: 'coho, cohoe, coho salmon, blue jack, silver salmon, Oncorhynchus kisutch',
+- 392: 'rock beauty, Holocanthus tricolor',
+- 393: 'anemone fish',
+- 394: 'sturgeon',
+- 395: 'gar, garfish, garpike, billfish, Lepisosteus osseus',
+- 396: 'lionfish',
+- 397: 'puffer, pufferfish, blowfish, globefish',
+- 398: 'abacus',
+- 399: 'abaya',
+- 400: 'academic gown, academic robe, judge's robe',
+- 401: 'accordion, piano accordion, squeeze box',
+- 402: 'acoustic guitar',
+- 403: 'aircraft carrier, carrier, flattop, attack aircraft carrier',
+- 404: 'airliner',
+- 405: 'airship, dirigible',
+- 406: 'altar',
+- 407: 'ambulance',
+- 408: 'amphibian, amphibious vehicle',
+- 409: 'analog clock',
+- 410: 'apiary, bee house',
+- 411: 'apron',
+- 412: 'ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin',
+- 413: 'assault rifle, assault gun',
+- 414: 'backpack, back pack, knapsack, packsack, rucksack, haversack',
+- 415: 'bakery, bakeshop, bakehouse',
+- 416: 'balance beam, beam',
+- 417: 'balloon',
+- 418: 'ballpoint, ballpoint pen, ballpen, Biro',
+- 419: 'Band Aid',
+- 420: 'banjo',
+- 421: 'bannister, banister, balustrade, balusters, handrail',
+- 422: 'barbell',
+- 423: 'barber chair',
+- 424: 'barbershop',
+- 425: 'barn',
+- 426: 'barometer',
+- 427: 'barrel, cask',
+- 428: 'barrow, garden cart, lawn cart, wheelbarrow',
+- 429: 'baseball',
+- 430: 'basketball',
+- 431: 'bassinet',
+- 432: 'bassoon',
+- 433: 'bathing cap, swimming cap',
+- 434: 'bath towel',
+- 435: 'bathtub, bathing tub, bath, tub',
+- 436: 'beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon',
+- 437: 'beacon, lighthouse, beacon light, pharos',
+- 438: 'beaker',
+- 439: 'bearskin, busby, shako',
+- 440: 'beer bottle',
+- 441: 'beer glass',
+- 442: 'bell cote, bell cot',
+- 443: 'bib',
+- 444: 'bicycle-built-for-two, tandem bicycle, tandem',
+- 445: 'bikini, two-piece',
+- 446: 'binder, ring-binder',
+- 447: 'binoculars, field glasses, opera glasses',
+- 448: 'birdhouse',
+- 449: 'boathouse',
+- 450: 'bobsled, bobsleigh, bob',
+- 451: 'bolo tie, bolo, bola tie, bola',
+- 452: 'bonnet, poke bonnet',
+- 453: 'bookcase',
+- 454: 'bookshop, bookstore, bookstall',
+- 455: 'bottlecap',
+- 456: 'bow',
+- 457: 'bow tie, bow-tie, bowtie',
+- 458: 'brass, memorial tablet, plaque',
+- 459: 'brassiere, bra, bandeau',
+- 460: 'breakwater, groin, groyne, mole, bulwark, seawall, jetty',
+- 461: 'breastplate, aegis, egis',
+- 462: 'broom',
+- 463: 'bucket, pail',
+- 464: 'buckle',
+- 465: 'bulletproof vest',
+- 466: 'bullet train, bullet',
+- 467: 'butcher shop, meat market',
+- 468: 'cab, hack, taxi, taxicab',
+- 469: 'caldron, cauldron',
+- 470: 'candle, taper, wax light',
+- 471: 'cannon',
+- 472: 'canoe',
+- 473: 'can opener, tin opener',
+- 474: 'cardigan',
+- 475: 'car mirror',
+- 476: 'carousel, carrousel, merry-go-round, roundabout, whirligig',
+- 477: 'carpenter's kit, tool kit',
+- 478: 'carton',
+- 479: 'car wheel',
+- 480: 'cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM',
+- 481: 'cassette',
+- 482: 'cassette player',
+- 483: 'castle',
+- 484: 'catamaran',
+- 485: 'CD player',
+- 486: 'cello, violoncello',
+- 487: 'cellular telephone, cellular phone, cellphone, cell, mobile phone',
+- 488: 'chain',
+- 489: 'chainlink fence',
+- 490: 'chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring armour',
+- 491: 'chain saw, chainsaw',
+- 492: 'chest',
+- 493: 'chiffonier, commode',
+- 494: 'chime, bell, gong',
+- 495: 'china cabinet, china closet',
+- 496: 'Christmas stocking',
+- 497: 'church, church building',
+- 498: 'cinema, movie theater, movie theatre, movie house, picture palace',
+- 499: 'cleaver, meat cleaver, chopper',
+- 500: 'cliff dwelling',
+- 501: 'cloak',
+- 502: 'clog, geta, patten, sabot',
+- 503: 'cocktail shaker',
+- 504: 'coffee mug',
+- 505: 'coffeepot',
+- 506: 'coil, spiral, volute, whorl, helix',
+- 507: 'combination lock',
+- 508: 'computer keyboard, keypad',
+- 509: 'confectionery, confectionary, candy store',
+- 510: 'container ship, containership, container vessel',
+- 511: 'convertible',
+- 512: 'corkscrew, bottle screw',
+- 513: 'cornet, horn, trumpet, trump',
+- 514: 'cowboy boot',
+- 515: 'cowboy hat, ten-gallon hat',
+- 516: 'cradle',
+- 517: 'crane',
+- 518: 'crash helmet',
+- 519: 'crate',
+- 520: 'crib, cot',
+- 521: 'Crock Pot',
+- 522: 'croquet ball',
+- 523: 'crutch',
+- 524: 'cuirass',
+- 525: 'dam, dike, dyke',
+- 526: 'desk',
+- 527: 'desktop computer',
+- 528: 'dial telephone, dial phone',
+- 529: 'diaper, nappy, napkin',
+- 530: 'digital clock',
+- 531: 'digital watch',
+- 532: 'dining table, board',
+- 533: 'dishrag, dishcloth',
+- 534: 'dishwasher, dish washer, dishwashing machine',
+- 535: 'disk brake, disc brake',
+- 536: 'dock, dockage, docking facility',
+- 537: 'dogsled, dog sled, dog sleigh',
+- 538: 'dome',
+- 539: 'doormat, welcome mat',
+- 540: 'drilling platform, offshore rig',
+- 541: 'drum, membranophone, tympan',
+- 542: 'drumstick',
+- 543: 'dumbbell',
+- 544: 'Dutch oven',
+- 545: 'electric fan, blower',
+- 546: 'electric guitar',
+- 547: 'electric locomotive',
+- 548: 'entertainment center',
+- 549: 'envelope',
+- 550: 'espresso maker',
+- 551: 'face powder',
+- 552: 'feather boa, boa',
+- 553: 'file, file cabinet, filing cabinet',
+- 554: 'fireboat',
+- 555: 'fire engine, fire truck',
+- 556: 'fire screen, fireguard',
+- 557: 'flagpole, flagstaff',
+- 558: 'flute, transverse flute',
+- 559: 'folding chair',
+- 560: 'football helmet',
+- 561: 'forklift',
+- 562: 'fountain',
+- 563: 'fountain pen',
+- 564: 'four-poster',
+- 565: 'freight car',
+- 566: 'French horn, horn',
+- 567: 'frying pan, frypan, skillet',
+- 568: 'fur coat',
+- 569: 'garbage truck, dustcart',
+- 570: 'gasmask, respirator, gas helmet',
+- 571: 'gas pump, gasoline pump, petrol pump, island dispenser',
+- 572: 'goblet',
+- 573: 'go-kart',
+- 574: 'golf ball',
+- 575: 'golfcart, golf cart',
+- 576: 'gondola',
+- 577: 'gong, tam-tam',
+- 578: 'gown',
+- 579: 'grand piano, grand',
+- 580: 'greenhouse, nursery, glasshouse',
+- 581: 'grille, radiator grille',
+- 582: 'grocery store, grocery, food market, market',
+- 583: 'guillotine',
+- 584: 'hair slide',
+- 585: 'hair spray',
+- 586: 'half track',
+- 587: 'hammer',
+- 588: 'hamper',
+- 589: 'hand blower, blow dryer, blow drier, hair dryer, hair drier',
+- 590: 'hand-held computer, hand-held microcomputer',
+- 591: 'handkerchief, hankie, hanky, hankey',
+- 592: 'hard disc, hard disk, fixed disk',
+- 593: 'harmonica, mouth organ, harp, mouth harp',
+- 594: 'harp',
+- 595: 'harvester, reaper',
+- 596: 'hatchet',
+- 597: 'holster',
+- 598: 'home theater, home theatre',
+- 599: 'honeycomb',
+- 600: 'hook, claw',
+- 601: 'hoopskirt, crinoline',
+- 602: 'horizontal bar, high bar',
+- 603: 'horse cart, horse-cart',
+- 604: 'hourglass',
+- 605: 'iPod',
+- 606: 'iron, smoothing iron',
+- 607: 'jack-o'-lantern',
+- 608: 'jean, blue jean, denim',
+- 609: 'jeep, landrover',
+- 610: 'jersey, T-shirt, tee shirt',
+- 611: 'jigsaw puzzle',
+- 612: 'jinrikisha, ricksha, rickshaw',
+- 613: 'joystick',
+- 614: 'kimono',
+- 615: 'knee pad',
+- 616: 'knot',
+- 617: 'lab coat, laboratory coat',
+- 618: 'ladle',
+- 619: 'lampshade, lamp shade',
+- 620: 'laptop, laptop computer',
+- 621: 'lawn mower, mower',
+- 622: 'lens cap, lens cover',
+- 623: 'letter opener, paper knife, paperknife',
+- 624: 'library',
+- 625: 'lifeboat',
+- 626: 'lighter, light, igniter, ignitor',
+- 627: 'limousine, limo',
+- 628: 'liner, ocean liner',
+- 629: 'lipstick, lip rouge',
+- 630: 'Loafer',
+- 631: 'lotion',
+- 632: 'loudspeaker, speaker, speaker unit, loudspeaker system, speaker system',
+- 633: 'loupe, jeweler's loupe',
+- 634: 'lumbermill, sawmill',
+- 635: 'magnetic compass',
+- 636: 'mailbag, postbag',
+- 637: 'mailbox, letter box',
+- 638: 'maillot',
+- 639: 'maillot, tank suit',
+- 640: 'manhole cover',
+- 641: 'maraca',
+- 642: 'marimba, xylophone',
+- 643: 'mask',
+- 644: 'matchstick',
+- 645: 'maypole',
+- 646: 'maze, labyrinth',
+- 647: 'measuring cup',
+- 648: 'medicine chest, medicine cabinet',
+- 649: 'megalith, megalithic structure',
+- 650: 'microphone, mike',
+- 651: 'microwave, microwave oven',
+- 652: 'military uniform',
+- 653: 'milk can',
+- 654: 'minibus',
+- 655: 'miniskirt, mini',
+- 656: 'minivan',
+- 657: 'missile',
+- 658: 'mitten',
+- 659: 'mixing bowl',
+- 660: 'mobile home, manufactured home',
+- 661: 'Model T',
+- 662: 'modem',
+- 663: 'monastery',
+- 664: 'monitor',
+- 665: 'moped',
+- 666: 'mortar',
+- 667: 'mortarboard',
+- 668: 'mosque',
+- 669: 'mosquito net',
+- 670: 'motor scooter, scooter',
+- 671: 'mountain bike, all-terrain bike, off-roader',
+- 672: 'mountain tent',
+- 673: 'mouse, computer mouse',
+- 674: 'mousetrap',
+- 675: 'moving van',
+- 676: 'muzzle',
+- 677: 'nail',
+- 678: 'neck brace',
+- 679: 'necklace',
+- 680: 'nipple',
+- 681: 'notebook, notebook computer',
+- 682: 'obelisk',
+- 683: 'oboe, hautboy, hautbois',
+- 684: 'ocarina, sweet potato',
+- 685: 'odometer, hodometer, mileometer, milometer',
+- 686: 'oil filter',
+- 687: 'organ, pipe organ',
+- 688: 'oscilloscope, scope, cathode-ray oscilloscope, CRO',
+- 689: 'overskirt',
+- 690: 'oxcart',
+- 691: 'oxygen mask',
+- 692: 'packet',
+- 693: 'paddle, boat paddle',
+- 694: 'paddlewheel, paddle wheel',
+- 695: 'padlock',
+- 696: 'paintbrush',
+- 697: 'pajama, pyjama, pj's, jammies',
+- 698: 'palace',
+- 699: 'panpipe, pandean pipe, syrinx',
+- 700: 'paper towel',
+- 701: 'parachute, chute',
+- 702: 'parallel bars, bars',
+- 703: 'park bench',
+- 704: 'parking meter',
+- 705: 'passenger car, coach, carriage',
+- 706: 'patio, terrace',
+- 707: 'pay-phone, pay-station',
+- 708: 'pedestal, plinth, footstall',
+- 709: 'pencil box, pencil case',
+- 710: 'pencil sharpener',
+- 711: 'perfume, essence',
+- 712: 'Petri dish',
+- 713: 'photocopier',
+- 714: 'pick, plectrum, plectron',
+- 715: 'pickelhaube',
+- 716: 'picket fence, paling',
+- 717: 'pickup, pickup truck',
+- 718: 'pier',
+- 719: 'piggy bank, penny bank',
+- 720: 'pill bottle',
+- 721: 'pillow',
+- 722: 'ping-pong ball',
+- 723: 'pinwheel',
+- 724: 'pirate, pirate ship',
+- 725: 'pitcher, ewer',
+- 726: 'plane, carpenter's plane, woodworking plane',
+- 727: 'planetarium',
+- 728: 'plastic bag',
+- 729: 'plate rack',
+- 730: 'plow, plough',
+- 731: 'plunger, plumber's helper',
+- 732: 'Polaroid camera, Polaroid Land camera',
+- 733: 'pole',
+- 734: 'police van, police wagon, paddy wagon, patrol wagon, wagon, black Maria',
+- 735: 'poncho',
+- 736: 'pool table, billiard table, snooker table',
+- 737: 'pop bottle, soda bottle',
+- 738: 'pot, flowerpot',
+- 739: 'potter's wheel',
+- 740: 'power drill',
+- 741: 'prayer rug, prayer mat',
+- 742: 'printer',
+- 743: 'prison, prison house',
+- 744: 'projectile, missile',
+- 745: 'projector',
+- 746: 'puck, hockey puck',
+- 747: 'punching bag, punch bag, punching ball, punchball',
+- 748: 'purse',
+- 749: 'quill, quill pen',
+- 750: 'quilt, comforter, comfort, puff',
+- 751: 'racer, race car, racing car',
+- 752: 'racket, racquet',
+- 753: 'radiator',
+- 754: 'radio, wireless',
+- 755: 'radio telescope, radio reflector',
+- 756: 'rain barrel',
+- 757: 'recreational vehicle, RV, R.V.',
+- 758: 'reel',
+- 759: 'reflex camera',
+- 760: 'refrigerator, icebox',
+- 761: 'remote control, remote',
+- 762: 'restaurant, eating house, eating place, eatery',
+- 763: 'revolver, six-gun, six-shooter',
+- 764: 'rifle',
+- 765: 'rocking chair, rocker',
+- 766: 'rotisserie',
+- 767: 'rubber eraser, rubber, pencil eraser',
+- 768: 'rugby ball',
+- 769: 'rule, ruler',
+- 770: 'running shoe',
+- 771: 'safe',
+- 772: 'safety pin',
+- 773: 'saltshaker, salt shaker',
+- 774: 'sandal',
+- 775: 'sarong',
+- 776: 'sax, saxophone',
+- 777: 'scabbard',
+- 778: 'scale, weighing machine',
+- 779: 'school bus',
+- 780: 'schooner',
+- 781: 'scoreboard',
+- 782: 'screen, CRT screen',
+- 783: 'screw',
+- 784: 'screwdriver',
+- 785: 'seat belt, seatbelt',
+- 786: 'sewing machine',
+- 787: 'shield, buckler',
+- 788: 'shoe shop, shoe-shop, shoe store',
+- 789: 'shoji',
+- 790: 'shopping basket',
+- 791: 'shopping cart',
+- 792: 'shovel',
+- 793: 'shower cap',
+- 794: 'shower curtain',
+- 795: 'ski',
+- 796: 'ski mask',
+- 797: 'sleeping bag',
+- 798: 'slide rule, slipstick',
+- 799: 'sliding door',
+- 800: 'slot, one-armed bandit',
+- 801: 'snorkel',
+- 802: 'snowmobile',
+- 803: 'snowplow, snowplough',
+- 804: 'soap dispenser',
+- 805: 'soccer ball',
+- 806: 'sock',
+- 807: 'solar dish, solar collector, solar furnace',
+- 808: 'sombrero',
+- 809: 'soup bowl',
+- 810: 'space bar',
+- 811: 'space heater',
+- 812: 'space shuttle',
+- 813: 'spatula',
+- 814: 'speedboat',
+- 815: 'spider web, spider's web',
+- 816: 'spindle',
+- 817: 'sports car, sport car',
+- 818: 'spotlight, spot',
+- 819: 'stage',
+- 820: 'steam locomotive',
+- 821: 'steel arch bridge',
+- 822: 'steel drum',
+- 823: 'stethoscope',
+- 824: 'stole',
+- 825: 'stone wall',
+- 826: 'stopwatch, stop watch',
+- 827: 'stove',
+- 828: 'strainer',
+- 829: 'streetcar, tram, tramcar, trolley, trolley car',
+- 830: 'stretcher',
+- 831: 'studio couch, day bed',
+- 832: 'stupa, tope',
+- 833: 'submarine, pigboat, sub, U-boat',
+- 834: 'suit, suit of clothes',
+- 835: 'sundial',
+- 836: 'sunglass',
+- 837: 'sunglasses, dark glasses, shades',
+- 838: 'sunscreen, sunblock, sun blocker',
+- 839: 'suspension bridge',
+- 840: 'swab, swob, mop',
+- 841: 'sweatshirt',
+- 842: 'swimming trunks, bathing trunks',
+- 843: 'swing',
+- 844: 'switch, electric switch, electrical switch',
+- 845: 'syringe',
+- 846: 'table lamp',
+- 847: 'tank, army tank, armored combat vehicle, armoured combat vehicle',
+- 848: 'tape player',
+- 849: 'teapot',
+- 850: 'teddy, teddy bear',
+- 851: 'television, television system',
+- 852: 'tennis ball',
+- 853: 'thatch, thatched roof',
+- 854: 'theater curtain, theatre curtain',
+- 855: 'thimble',
+- 856: 'thresher, thrasher, threshing machine',
+- 857: 'throne',
+- 858: 'tile roof',
+- 859: 'toaster',
+- 860: 'tobacco shop, tobacconist shop, tobacconist',
+- 861: 'toilet seat',
+- 862: 'torch',
+- 863: 'totem pole',
+- 864: 'tow truck, tow car, wrecker',
+- 865: 'toyshop',
+- 866: 'tractor',
+- 867: 'trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi',
+- 868: 'tray',
+- 869: 'trench coat',
+- 870: 'tricycle, trike, velocipede',
+- 871: 'trimaran',
+- 872: 'tripod',
+- 873: 'triumphal arch',
+- 874: 'trolleybus, trolley coach, trackless trolley',
+- 875: 'trombone',
+- 876: 'tub, vat',
+- 877: 'turnstile',
+- 878: 'typewriter keyboard',
+- 879: 'umbrella',
+- 880: 'unicycle, monocycle',
+- 881: 'upright, upright piano',
+- 882: 'vacuum, vacuum cleaner',
+- 883: 'vase',
+- 884: 'vault',
+- 885: 'velvet',
+- 886: 'vending machine',
+- 887: 'vestment',
+- 888: 'viaduct',
+- 889: 'violin, fiddle',
+- 890: 'volleyball',
+- 891: 'waffle iron',
+- 892: 'wall clock',
+- 893: 'wallet, billfold, notecase, pocketbook',
+- 894: 'wardrobe, closet, press',
+- 895: 'warplane, military plane',
+- 896: 'washbasin, handbasin, washbowl, lavabo, wash-hand basin',
+- 897: 'washer, automatic washer, washing machine',
+- 898: 'water bottle',
+- 899: 'water jug',
+- 900: 'water tower',
+- 901: 'whiskey jug',
+- 902: 'whistle',
+- 903: 'wig',
+- 904: 'window screen',
+- 905: 'window shade',
+- 906: 'Windsor tie',
+- 907: 'wine bottle',
+- 908: 'wing',
+- 909: 'wok',
+- 910: 'wooden spoon',
+- 911: 'wool, woolen, woollen',
+- 912: 'worm fence, snake fence, snake-rail fence, Virginia fence',
+- 913: 'wreck',
+- 914: 'yawl',
+- 915: 'yurt',
+- 916: 'web site, website, internet site, site',
+- 917: 'comic book',
+- 918: 'crossword puzzle, crossword',
+- 919: 'street sign',
+- 920: 'traffic light, traffic signal, stoplight',
+- 921: 'book jacket, dust cover, dust jacket, dust wrapper',
+- 922: 'menu',
+- 923: 'plate',
+- 924: 'guacamole',
+- 925: 'consomme',
+- 926: 'hot pot, hotpot',
+- 927: 'trifle',
+- 928: 'ice cream, icecream',
+- 929: 'ice lolly, lolly, lollipop, popsicle',
+- 930: 'French loaf',
+- 931: 'bagel, beigel',
+- 932: 'pretzel',
+- 933: 'cheeseburger',
+- 934: 'hotdog, hot dog, red hot',
+- 935: 'mashed potato',
+- 936: 'head cabbage',
+- 937: 'broccoli',
+- 938: 'cauliflower',
+- 939: 'zucchini, courgette',
+- 940: 'spaghetti squash',
+- 941: 'acorn squash',
+- 942: 'butternut squash',
+- 943: 'cucumber, cuke',
+- 944: 'artichoke, globe artichoke',
+- 945: 'bell pepper',
+- 946: 'cardoon',
+- 947: 'mushroom',
+- 948: 'Granny Smith',
+- 949: 'strawberry',
+- 950: 'orange',
+- 951: 'lemon',
+- 952: 'fig',
+- 953: 'pineapple, ananas',
+- 954: 'banana',
+- 955: 'jackfruit, jak, jack',
+- 956: 'custard apple',
+- 957: 'pomegranate',
+- 958: 'hay',
+- 959: 'carbonara',
+- 960: 'chocolate sauce, chocolate syrup',
+- 961: 'dough',
+- 962: 'meat loaf, meatloaf',
+- 963: 'pizza, pizza pie',
+- 964: 'potpie',
+- 965: 'burrito',
+- 966: 'red wine',
+- 967: 'espresso',
+- 968: 'cup',
+- 969: 'eggnog',
+- 970: 'alp',
+- 971: 'bubble',
+- 972: 'cliff, drop, drop-off',
+- 973: 'coral reef',
+- 974: 'geyser',
+- 975: 'lakeside, lakeshore',
+- 976: 'promontory, headland, head, foreland',
+- 977: 'sandbar, sand bar',
+- 978: 'seashore, coast, seacoast, sea-coast',
+- 979: 'valley, vale',
+- 980: 'volcano',
+- 981: 'ballplayer, baseball player',
+- 982: 'groom, bridegroom',
+- 983: 'scuba diver',
+- 984: 'rapeseed',
+- 985: 'daisy',
+- 986: 'yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum',
+- 987: 'corn',
+- 988: 'acorn',
+- 989: 'hip, rose hip, rosehip',
+- 990: 'buckeye, horse chestnut, conker',
+- 991: 'coral fungus',
+- 992: 'agaric',
+- 993: 'gyromitra',
+- 994: 'stinkhorn, carrion fungus',
+- 995: 'earthstar',
+- 996: 'hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa',
+- 997: 'bolete',
+- 998: 'ear, spike, capitulum',
+- 999: 'toilet tissue, toilet paper, bathroom tissue'
+\ No newline at end of file
+diff --git a/data/utils/__pycache__/feature_dataloader.cpython-310.pyc b/data/utils/__pycache__/feature_dataloader.cpython-310.pyc
+deleted file mode 100644
+index d844976..0000000
+Binary files a/data/utils/__pycache__/feature_dataloader.cpython-310.pyc and /dev/null differ
+diff --git a/data/utils/__pycache__/feature_dataloader.cpython-312.pyc b/data/utils/__pycache__/feature_dataloader.cpython-312.pyc
+deleted file mode 100644
+index 40eeee4..0000000
+Binary files a/data/utils/__pycache__/feature_dataloader.cpython-312.pyc and /dev/null differ
+diff --git a/data/utils/__pycache__/patch_embedding_dataloader.cpython-310.pyc b/data/utils/__pycache__/patch_embedding_dataloader.cpython-310.pyc
+deleted file mode 100644
+index 413ccdb..0000000
+Binary files a/data/utils/__pycache__/patch_embedding_dataloader.cpython-310.pyc and /dev/null differ
+diff --git a/data/utils/__pycache__/patch_embedding_dataloader.cpython-312.pyc b/data/utils/__pycache__/patch_embedding_dataloader.cpython-312.pyc
+deleted file mode 100644
+index c1b2c5a..0000000
+Binary files a/data/utils/__pycache__/patch_embedding_dataloader.cpython-312.pyc and /dev/null differ
+diff --git a/data/utils/__pycache__/pyramid_embedding_dataloader.cpython-310.pyc b/data/utils/__pycache__/pyramid_embedding_dataloader.cpython-310.pyc
+deleted file mode 100644
+index 4245576..0000000
+Binary files a/data/utils/__pycache__/pyramid_embedding_dataloader.cpython-310.pyc and /dev/null differ
+diff --git a/data/utils/__pycache__/pyramid_embedding_dataloader.cpython-312.pyc b/data/utils/__pycache__/pyramid_embedding_dataloader.cpython-312.pyc
+deleted file mode 100644
+index b539bed..0000000
+Binary files a/data/utils/__pycache__/pyramid_embedding_dataloader.cpython-312.pyc and /dev/null differ
+diff --git a/data/utils/feature_dataloader.py b/data/utils/feature_dataloader.py
+deleted file mode 100644
+index c4e6fe5..0000000
+--- a/data/utils/feature_dataloader.py
++++ /dev/null
+@@ -1,56 +0,0 @@
+-import json
+-import os
+-import typing
+-from abc import ABC, ABCMeta, abstractmethod
+-from pathlib import Path
+-
+-import numpy as np
+-import torch
+-
+-
+-class FeatureDataloader(ABC):
+-    def __init__(
+-            self,
+-            cfg: dict,
+-            device: torch.device,
+-            image_list: torch.Tensor, # (N, 3, H, W)
+-            cache_path: Path,
+-    ):
+-        self.cfg = cfg
+-        self.device = device
+-        self.cache_path = cache_path
+-        self.data = None # only expect data to be cached, nothing else
+-        # self.try_load(image_list) # don't save image_list, avoid duplicates
+-
+-    @abstractmethod
+-    def __call__(self, img_points):
+-        # img_points: (B, 3) # (img_ind, x, y)
+-        pass
+-
+-    # @abstractmethod
+-    # def create(self, image_list: torch.Tensor):
+-    #     pass
+-
+-    # def load(self):
+-    #     cache_info_path = self.cache_path.with_suffix(".info")
+-    #     if not cache_info_path.exists():
+-    #         raise FileNotFoundError
+-    #     with open(cache_info_path, "r") as f:
+-    #         cfg = json.loads(f.read())
+-    #     if cfg != self.cfg:
+-    #         raise ValueError("Config mismatch")
+-    #     self.data = torch.from_numpy(np.load(self.cache_path)).to(self.device)
+-
+-    # def save(self):
+-    #     os.makedirs(self.cache_path.parent, exist_ok=True)
+-    #     cache_info_path = self.cache_path.with_suffix(".info")
+-    #     with open(cache_info_path, "w") as f:
+-    #         f.write(json.dumps(self.cfg))
+-    #     np.save(self.cache_path, self.data)
+-
+-    # def try_load(self, img_list: torch.Tensor):
+-    #     try:
+-    #         self.load()
+-    #     except (FileNotFoundError, ValueError):
+-    #         self.create(img_list)
+-    #         self.save()
+\ No newline at end of file
+diff --git a/data/utils/patch_embedding_dataloader.py b/data/utils/patch_embedding_dataloader.py
+deleted file mode 100644
+index 7601a6a..0000000
+--- a/data/utils/patch_embedding_dataloader.py
++++ /dev/null
+@@ -1,122 +0,0 @@
+-import json
+-
+-import numpy as np
+-import torch
+-from data.utils.feature_dataloader import FeatureDataloader
+-from encoders.image_encoder import BaseImageEncoder
+-from tqdm import tqdm
+-
+-
+-class PatchEmbeddingDataloader(FeatureDataloader):
+-    def __init__(
+-        self,
+-        cfg: dict,
+-        device: torch.device,
+-        model: BaseImageEncoder,
+-        image_list: torch.Tensor = None,
+-        cache_path: str = None,
+-    ):
+-        assert "tile_ratio" in cfg
+-        assert "stride_ratio" in cfg
+-        # assert "image_shape" in cfg
+-        # assert "model_name" in cfg
+-        self.kernel_size = int(cfg["image_shape"][0] * cfg["tile_ratio"])
+-        self.stride = int(self.kernel_size * cfg["stride_ratio"])
+-        self.padding = self.kernel_size // 2
+-        self.center_x = (
+-            (self.kernel_size - 1) / 2
+-            - self.padding
+-            + self.stride
+-            * np.arange(
+-                np.floor((cfg["image_shape"][0] + 2 * self.padding - (self.kernel_size - 1) - 1) / self.stride + 1)
+-            )
+-        )
+-        self.center_y = (
+-            (self.kernel_size - 1) / 2
+-            - self.padding
+-            + self.stride
+-            * np.arange(
+-                np.floor((cfg["image_shape"][1] + 2 * self.padding - (self.kernel_size - 1) - 1) / self.stride + 1)
+-            )
+-        )
+-        self.center_x = torch.from_numpy(self.center_x).half()
+-        self.center_y = torch.from_numpy(self.center_y).half()
+-        self.start_x = self.center_x[0].float()
+-        self.start_y = self.center_y[0].float()
+-
+-        self.model = model
+-        self.embed_size = self.model.embedding_dim
+-        super().__init__(cfg, device, image_list, cache_path)
+-
+-    def load(self):
+-        raise ValueError("No cache in dynamic loader")
+-    
+-    def save(self):
+-        pass
+-
+-    def create(self, img_list):
+-        assert self.model is not None, "model must be provided to generate features"
+-        print("here",self.kernel_size,self.stride,self.padding)
+-        self.unfold_func = torch.nn.Unfold(
+-            kernel_size=self.kernel_size,
+-            stride=self.stride,
+-            padding=self.padding,
+-        ).to(self.device)
+-
+-
+-    def add_images(self,image_list):
+-        img_embeds = []
+-        for img in tqdm(image_list, desc="Embedding images", leave=False):
+-            img_embeds.append(self._embed_clip_tiles(img.unsqueeze(0), self.unfold_func))
+-        if self.data is not None:
+-            self.data = torch.cat([self.data, torch.stack(img_embeds).half()])
+-        else:
+-            self.data = torch.stack(img_embeds).half()
+-        return img_embeds
+-
+-    def __call__(self, img_points):
+-        # img_points: (B, 3) # (img_ind, x, y) (img_ind, row, col)
+-        # return: (B, 512)
+-        img_points = img_points.cpu()
+-        img_ind, img_points_x, img_points_y = img_points[:, 0], img_points[:, 1], img_points[:, 2]
+-
+-        x_ind = torch.floor((img_points_x - (self.start_x)) / self.stride).long()
+-        y_ind = torch.floor((img_points_y - (self.start_y)) / self.stride).long()
+-        return self._interp_inds(img_ind, x_ind, y_ind, img_points_x, img_points_y)
+-
+-    def _interp_inds(self, img_ind, x_ind, y_ind, img_points_x, img_points_y):
+-        img_ind = img_ind.to(self.data.device)  # self.data is on cpu to save gpu memory, hence this line
+-        topleft = self.data[img_ind, x_ind, y_ind].to(self.device)
+-        topright = self.data[img_ind, x_ind + 1, y_ind].to(self.device)
+-        botleft = self.data[img_ind, x_ind, y_ind + 1].to(self.device)
+-        botright = self.data[img_ind, x_ind + 1, y_ind + 1].to(self.device)
+-
+-        x_stride = self.stride
+-        y_stride = self.stride
+-        right_w = ((img_points_x - (self.center_x[x_ind])) / x_stride).to(self.device)  # .half()
+-        top = torch.lerp(topleft, topright, right_w[:, None])
+-        bot = torch.lerp(botleft, botright, right_w[:, None])
+-
+-        bot_w = ((img_points_y - (self.center_y[y_ind])) / y_stride).to(self.device)  # .half()
+-        return torch.lerp(top, bot, bot_w[:, None])
+-
+-    def _embed_clip_tiles(self, image, unfold_func):
+-        assert len(image.shape) == 4 and image.shape[0]==1
+-        # image augmentation: slow-ish (0.02s for 600x800 image per augmentation)
+-        aug_imgs = image #.permute(0,3,1,2) #input to unfold should be N x 3 x H x W 
+-        # import pdb; pdb.set_trace()
+-
+-        tiles = unfold_func(aug_imgs).permute(2, 0, 1).reshape(-1, 3, self.kernel_size, self.kernel_size).to(self.device)
+-
+-        with torch.no_grad():
+-            clip_embeds = []
+-            bsize = 1024
+-            for i in range(0,tiles.shape[0],bsize):
+-                embeds = self.model.encode_image(tiles[i:i+bsize,...])
+-                clip_embeds.append(embeds)
+-            clip_embeds = torch.concatenate(clip_embeds,dim=0)
+-        clip_embeds /= clip_embeds.norm(dim=-1, keepdim=True)
+-        clip_embeds = clip_embeds.reshape((self.center_x.shape[0], self.center_y.shape[0], -1))
+-        clip_embeds = torch.concat((clip_embeds, clip_embeds[:, [-1], :]), dim=1)
+-        clip_embeds = torch.concat((clip_embeds, clip_embeds[[-1], :, :]), dim=0)
+-        return clip_embeds
+\ No newline at end of file
+diff --git a/data/utils/pyramid_embedding_dataloader.py b/data/utils/pyramid_embedding_dataloader.py
+deleted file mode 100644
+index 82d9aba..0000000
+--- a/data/utils/pyramid_embedding_dataloader.py
++++ /dev/null
+@@ -1,167 +0,0 @@
+-import json
+-import os
+-from pathlib import Path
+-
+-import numpy as np
+-import torch
+-from data.utils.feature_dataloader import FeatureDataloader
+-from data.utils.patch_embedding_dataloader import PatchEmbeddingDataloader
+-from encoders.image_encoder import BaseImageEncoder
+-from encoders.openclip_encoder import OpenCLIPNetworkConfig
+-from tqdm import tqdm
+-import time
+-
+-class PyramidEmbeddingDataloader(FeatureDataloader):
+-    def __init__(
+-        self,
+-        cfg: dict,
+-        device: torch.device,
+-        model: BaseImageEncoder,
+-        image_list: torch.Tensor = None,
+-        cache_path: str = None,
+-    ):
+-        assert "tile_size_range" in cfg
+-        assert "tile_size_res" in cfg
+-        assert "stride_scaler" in cfg
+-        # assert "image_shape" in cfg
+-        # assert "model_name" in cfg
+-
+-        self.tile_sizes = torch.linspace(*cfg["tile_size_range"], cfg["tile_size_res"]).to(device)
+-        self.strider_scaler_list = [self._stride_scaler(tr.item(), cfg["stride_scaler"]) for tr in self.tile_sizes]
+-
+-        self.model = model
+-        self.embed_size = self.model.embedding_dim
+-        self.data_dict = {}
+-        super().__init__(cfg, device, image_list, cache_path)
+-
+-    def __call__(self, img_points, scale=None):
+-        if scale is None:
+-            return self._random_scales(img_points)
+-        else:
+-            return self._uniform_scales(img_points, scale)
+-
+-    def _stride_scaler(self, tile_ratio, stride_scaler):
+-        return np.interp(tile_ratio, [0.05, 0.15], [1.0, stride_scaler])
+-
+-    # def load(self):
+-    #     # don't create anything, PatchEmbeddingDataloader will create itself
+-    #     cache_info_path = self.cache_path.with_suffix(".info")
+-
+-    #     # check if cache exists
+-    #     if not cache_info_path.exists():
+-    #         raise FileNotFoundError
+-
+-    #     # if config is different, remove all cached content
+-    #     with open(cache_info_path, "r") as f:
+-    #         cfg = json.loads(f.read())
+-    #     if cfg != self.cfg:
+-    #         for f in os.listdir(self.cache_path):
+-    #             os.remove(os.path.join(self.cache_path, f))
+-    #         raise ValueError("Config mismatch")
+-
+-    #     raise FileNotFoundError  # trigger create
+-
+-    # def create(self, image_list):
+-    #     os.makedirs(self.cache_path, exist_ok=True)
+-    #     for i, tr in enumerate(tqdm(self.tile_sizes, desc="Scales")):
+-    #         stride_scaler = self.strider_scaler_list[i]
+-    #         self.data_dict[i] = PatchEmbeddingDataloader(
+-    #             cfg={
+-    #                 "tile_ratio": tr.item(),
+-    #                 "stride_ratio": stride_scaler,
+-    #                 "image_shape": self.cfg["image_shape"],
+-    #                 "model_name": self.cfg["model_name"],
+-    #             },
+-    #             device=self.device,
+-    #             model=self.model,
+-    #             image_list=image_list,
+-    #             cache_path=Path(f"{self.cache_path}/level_{i}.npy"),
+-    #         )
+-    #         print(image_list.shape)
+-
+-    # def save(self):
+-    #     cache_info_path = self.cache_path.with_suffix(".info")
+-    #     with open(cache_info_path, "w") as f:
+-    #         f.write(json.dumps(self.cfg))
+-    #     # don't save anything, PatchEmbeddingDataloader will save itself
+-    #     pass
+-
+-    def _random_scales(self, img_points):
+-        # img_points: (B, 3) # (img_ind, x, y)
+-        # return: (B, 512), some random scale (between 0, 1)
+-        img_points = img_points.to(self.device)
+-        random_scale_bin = torch.randint(self.tile_sizes.shape[0] - 1, size=(img_points.shape[0],), device=self.device)
+-        random_scale_weight = torch.rand(img_points.shape[0], dtype=torch.float16, device=self.device)
+-
+-        stepsize = (self.tile_sizes[1] - self.tile_sizes[0]) / (self.tile_sizes[-1] - self.tile_sizes[0])
+-
+-        bottom_interp = torch.zeros((img_points.shape[0], self.embed_size), dtype=torch.float16, device=self.device)
+-        top_interp = torch.zeros((img_points.shape[0], self.embed_size), dtype=torch.float16, device=self.device)
+-
+-        for i in range(len(self.tile_sizes) - 1):
+-            ids = img_points[random_scale_bin == i]
+-            bottom_interp[random_scale_bin == i] = self.data_dict[i](ids)
+-            top_interp[random_scale_bin == i] = self.data_dict[i + 1](ids)
+-
+-        return (
+-            torch.lerp(bottom_interp, top_interp, random_scale_weight[..., None]),
+-            (random_scale_bin * stepsize + random_scale_weight * stepsize)[..., None],
+-        )
+-
+-    def _uniform_scales(self, img_points, scale):
+-        # img_points: (B, 3) # (img_ind, x, y)
+-        scale_bin = torch.floor(
+-            (scale - self.tile_sizes[0]) / (self.tile_sizes[-1] - self.tile_sizes[0]) * (self.tile_sizes.shape[0] - 1)
+-        ).to(torch.int64)
+-        scale_weight = (scale - self.tile_sizes[scale_bin]) / (
+-            self.tile_sizes[scale_bin + 1] - self.tile_sizes[scale_bin]
+-        )
+-        interp_lst = torch.stack([interp(img_points) for interp in self.data_dict.values()])
+-        point_inds = torch.arange(img_points.shape[0])
+-        interp = torch.lerp(
+-            interp_lst[scale_bin, point_inds],
+-            interp_lst[scale_bin + 1, point_inds],
+-            torch.Tensor([scale_weight]).half().to(self.device)[..., None],
+-        )
+-        return interp / interp.norm(dim=-1, keepdim=True), scale
+-    
+-    def generate_clip_interp(self, image):
+-        # import pdb; pdb.set_trace()
+-        C, H, W = image.shape
+-        for i, tr in enumerate(tqdm(self.tile_sizes, desc="Scales")):
+-            stride_scaler = self.strider_scaler_list[i]
+-            self.data_dict[i] = PatchEmbeddingDataloader(
+-                cfg={
+-                    "tile_ratio": tr.item(),
+-                    "stride_ratio": stride_scaler,
+-                    "image_shape": [H,W],
+-                    # "model_name": self.cfg["model_name"],
+-                },
+-                device=self.device,
+-                model=self.model,
+-                # image_list=image_list,
+-                # cache_path=Path(f"{self.cache_path}/level_{i}.npy"),
+-            )
+-            self.data_dict[i].create(None)
+-        img_batch = image.unsqueeze(0)
+-        start = time.time()
+-
+-        clip_interp = []
+-        for i, tr in enumerate(tqdm(self.tile_sizes, desc="Scales")):
+-            clip_interpolations = self.data_dict[i].add_images(img_batch)
+-            # self.data_dict[i].data[0,...] = clip_interpolations
+-            clip_interp.append(clip_interpolations)
+-        
+-        assert len(self.data_dict) != 0
+-
+-        
+-        # for _ in img_batch:
+-            
+-        # for i, tr in enumerate(self.tile_sizes):
+-        #     clip_interp.append(self.data_dict[i].data[0,...])
+-
+-            # self.out_queue.put(updates)
+-        #     j+=1
+-        
+-        print(f"PyramidEmbeddingProcess took {time.time()-start} seconds")
+-        return clip_interp
+\ No newline at end of file
+diff --git a/dataloader_pytorch.py b/dataloader_pytorch.py
+deleted file mode 100644
+index 9633f5d..0000000
+--- a/dataloader_pytorch.py
++++ /dev/null
+@@ -1,113 +0,0 @@
+-from PIL import Image
+-import os
+-import io
+-import torch
+-from torch.utils.data import DataLoader, default_collate
+-from torchvision import datasets, transforms
+-
+-def create_webdataset(
+-    urls,
+-    image_transform,
+-    enable_text=True,
+-    enable_image=True,
+-    image_key="jpg",
+-    caption_key="txt",
+-    enable_metadata=False,
+-    cache_path=None,
+-):
+-    """Create a WebDataset reader, it can read a webdataset of image, text and json"""
+-    import clip  # pylint: disable=import-outside-toplevel
+-    import webdataset as wds  # pylint: disable=import-outside-toplevel
+-
+-
+-    dataset = wds.WebDataset(urls, cache_dir=cache_path, cache_size=10 ** 10, handler=wds.handlers.warn_and_continue)
+-    tokenizer = lambda text: clip.tokenize([text], truncate=True)[0]
+-
+-    def filter_dataset(item):
+-        if enable_text and caption_key not in item:
+-            return False
+-        if enable_image and image_key not in item:
+-            return False
+-        if enable_metadata and "json" not in item:
+-            return False
+-        return True
+-
+-    filtered_dataset = dataset.select(filter_dataset)
+-
+-    def preprocess_dataset(item):
+-        output = {}
+-        if enable_image:
+-            image_data = item[image_key]
+-            image = Image.open(io.BytesIO(image_data))
+-            image_tensor = image_transform(image)
+-            output["image_filename"] = item["__key__"]
+-            output["image_tensor"] = image_tensor
+-
+-        if enable_text:
+-            text = item[caption_key]
+-            caption = text.decode("utf-8")
+-            tokenized_text = tokenizer(caption)
+-            output["text_tokens"] = tokenized_text
+-            output["text"] = caption
+-
+-        if enable_metadata:
+-            metadata_file = item["json"]
+-            metadata = metadata_file.decode("utf-8")
+-            output["metadata"] = metadata
+-        return output
+-
+-    transformed_dataset = filtered_dataset.map(preprocess_dataset, handler=wds.handlers.warn_and_continue)
+-    return transformed_dataset
+-
+-
+-def dataset_to_dataloader(dataset, batch_size, num_prepro_workers, input_format):
+-    """Create a pytorch dataloader from a dataset"""
+-
+-    def collate_fn(batch):
+-        batch = list(filter(lambda x: x is not None, batch))
+-        return default_collate(batch)
+-
+-    data = DataLoader(
+-        dataset,
+-        batch_size=batch_size,
+-        shuffle=False,
+-        num_workers=num_prepro_workers,
+-        pin_memory=True,
+-        prefetch_factor=2,
+-        collate_fn=collate_fn if input_format == "files" else None,
+-    )
+-    return data
+-
+-
+-class WebdatasetReader:
+-    """WebdatasetReader is a reader that reads samples from a webdataset"""
+-
+-    def __init__(
+-        self,
+-        preprocess,
+-        input_dataset,
+-        batch_size,
+-        num_prepro_workers,
+-        enable_text=True,
+-        enable_image=True,
+-        enable_metadata=False,
+-        wds_image_key="jpg",
+-        wds_caption_key="txt",
+-        cache_path=None,
+-    ):
+-        self.batch_size = batch_size
+-        dataset = create_webdataset(
+-            input_dataset,
+-            preprocess,
+-            enable_text=enable_text,
+-            enable_image=enable_image,
+-            image_key=wds_image_key,
+-            caption_key=wds_caption_key,
+-            enable_metadata=enable_metadata,
+-            cache_path=cache_path,
+-        )
+-        self.dataloader = dataset_to_dataloader(dataset, batch_size, num_prepro_workers, "webdataset")
+-
+-    def __iter__(self):
+-        for batch in self.dataloader:
+-            yield batch
+diff --git a/encoders/__pycache__/image_encoder.cpython-310.pyc b/encoders/__pycache__/image_encoder.cpython-310.pyc
+deleted file mode 100644
+index 20f0eed..0000000
+Binary files a/encoders/__pycache__/image_encoder.cpython-310.pyc and /dev/null differ
+diff --git a/encoders/__pycache__/image_encoder.cpython-312.pyc b/encoders/__pycache__/image_encoder.cpython-312.pyc
+deleted file mode 100644
+index 420c45d..0000000
+Binary files a/encoders/__pycache__/image_encoder.cpython-312.pyc and /dev/null differ
+diff --git a/encoders/__pycache__/openclip_encoder.cpython-312.pyc b/encoders/__pycache__/openclip_encoder.cpython-312.pyc
+deleted file mode 100644
+index 7f3415f..0000000
+Binary files a/encoders/__pycache__/openclip_encoder.cpython-312.pyc and /dev/null differ
+diff --git a/encoders/image_encoder.py b/encoders/image_encoder.py
+deleted file mode 100644
+index 3e316c2..0000000
+--- a/encoders/image_encoder.py
++++ /dev/null
+@@ -1,37 +0,0 @@
+-from abc import abstractmethod, abstractproperty
+-from dataclasses import dataclass, field
+-from typing import Type
+-
+-import torch
+-from torch import nn
+-from configs import base_config as cfg
+-
+-@dataclass
+-class BaseImageEncoderConfig(cfg.InstantiateConfig):
+-    _target: Type = field(default_factory=lambda: BaseImageEncoder)
+-
+-
+-class BaseImageEncoder(nn.Module):
+-    @abstractproperty
+-    def name(self) -> str:
+-        """
+-        returns the name of the encoder
+-        """
+-
+-    @abstractproperty
+-    def embedding_dim(self) -> int:
+-        """
+-        returns the dimension of the embeddings
+-        """
+-
+-    @abstractmethod
+-    def encode_image(self, input: torch.Tensor) -> torch.Tensor:
+-        """
+-        Given a batch of input images, return their encodings
+-        """
+-
+-    @abstractmethod
+-    def get_relevancy(self, embed: torch.Tensor, positive_id: int) -> torch.Tensor:
+-        """
+-        Given a batch of embeddings, return the relevancy to the given positive id
+-        """
+diff --git a/encoders/openclip_encoder.py b/encoders/openclip_encoder.py
+deleted file mode 100644
+index ab2c19c..0000000
+--- a/encoders/openclip_encoder.py
++++ /dev/null
+@@ -1,104 +0,0 @@
+-from dataclasses import dataclass, field
+-from typing import Tuple, Type
+-
+-import torch
+-import torchvision
+-
+-try:
+-    import open_clip
+-except ImportError:
+-    assert False, "open_clip is not installed, install it with `pip install open-clip-torch`"
+-
+-from encoders.image_encoder import (BaseImageEncoder,
+-                                         BaseImageEncoderConfig)
+-
+-@dataclass
+-class OpenCLIPNetworkConfig(BaseImageEncoderConfig):
+-    _target: Type = field(default_factory=lambda: OpenCLIPNetwork)
+-    clip_model_type: str = "ViT-B-16"
+-    clip_model_pretrained: str = "laion2b_s34b_b88k"
+-    clip_n_dims: int = 512
+-    negatives: Tuple[str] = ("object", "things", "stuff", "texture")
+-    device: str = 'cuda'
+-
+-    @property
+-    def name(self) -> str:
+-        return "openclip_{}_{}".format(self.clip_model_type, self.clip_model_pretrained)
+-
+-
+-class OpenCLIPNetwork(BaseImageEncoder):
+-    def __init__(self, config: OpenCLIPNetworkConfig):
+-        super().__init__()
+-        self.config = config
+-        self.process = torchvision.transforms.Compose(
+-            [
+-                torchvision.transforms.Resize((224, 224)),
+-                torchvision.transforms.Normalize(
+-                    mean=[0.48145466, 0.4578275, 0.40821073],
+-                    std=[0.26862954, 0.26130258, 0.27577711],
+-                ),
+-            ]
+-        )
+-        model, _, _ = open_clip.create_model_and_transforms(
+-            self.config.clip_model_type,  # e.g., ViT-B-16
+-            pretrained=self.config.clip_model_pretrained,  # e.g., laion2b_s34b_b88k
+-            precision="fp16",
+-        )
+-        model.eval()
+-        self.tokenizer = open_clip.get_tokenizer(self.config.clip_model_type)
+-        self.model = model.to(self.config.device)
+-        self.clip_n_dims = self.config.clip_n_dims
+-
+-        # self.positives = self.positive_input.value.split(";")
+-        self.negatives = self.config.negatives
+-        with torch.no_grad():
+-            # tok_phrases = torch.cat([self.tokenizer(phrase) for phrase in self.positives]).to(self.config.device)
+-            # self.pos_embeds = model.encode_text(tok_phrases)
+-            tok_phrases = torch.cat([self.tokenizer(phrase) for phrase in self.negatives]).to(self.config.device)
+-            self.neg_embeds = model.encode_text(tok_phrases)
+-        # self.pos_embeds /= self.pos_embeds.norm(dim=-1, keepdim=True)
+-        self.neg_embeds /= self.neg_embeds.norm(dim=-1, keepdim=True)
+-
+-        # assert (
+-        #     self.pos_embeds.shape[1] == self.neg_embeds.shape[1]
+-        # ), "Positive and negative embeddings must have the same dimensionality"
+-        # assert (
+-        #     self.pos_embeds.shape[1] == self.clip_n_dims
+-        # ), "Embedding dimensionality must match the model dimensionality"
+-
+-    @property
+-    def name(self) -> str:
+-        return "openclip_{}_{}".format(self.config.clip_model_type, self.config.clip_model_pretrained)
+-
+-    @property
+-    def embedding_dim(self) -> int:
+-        return self.config.clip_n_dims
+-    
+-    # def gui_cb(self,element):
+-    #     self.set_positives(element.value.split(";"))
+-
+-    def set_positives(self, text_list):
+-        self.positives = text_list
+-        with torch.no_grad():
+-            tok_phrases = torch.cat([self.tokenizer(phrase) for phrase in self.positives]).to(self.config.device)
+-            self.pos_embeds = self.model.encode_text(tok_phrases)
+-        self.pos_embeds /= self.pos_embeds.norm(dim=-1, keepdim=True)
+-
+-    def get_relevancy(self, embed: torch.Tensor, positive_id: int) -> torch.Tensor:
+-        phrases_embeds = torch.cat([self.pos_embeds, self.neg_embeds], dim=0)
+-        p = phrases_embeds.to(embed.dtype)  # phrases x 512
+-        output = torch.mm(embed, p.T)  # rays x phrases
+-        positive_vals = output[..., positive_id : positive_id + 1]  # rays x 1
+-        negative_vals = output[..., len(self.positives) :]  # rays x N_phrase
+-        repeated_pos = positive_vals.repeat(1, len(self.negatives))  # rays x N_phrase
+-
+-        sims = torch.stack((repeated_pos, negative_vals), dim=-1)  # rays x N-phrase x 2
+-        softmax = torch.softmax(10 * sims, dim=-1)  # rays x n-phrase x 2
+-        best_id = softmax[..., 0].argmin(dim=1)  # rays x 2
+-        return torch.gather(softmax, 1, best_id[..., None, None].expand(best_id.shape[0], len(self.negatives), 2))[
+-            :, 0, :
+-        ]
+-
+-    def encode_image(self, input):
+-        processed_input = self.process(input).half()
+-        return self.model.encode_image(processed_input)
+diff --git a/foveation/DSC_1625.jpg b/foveation/DSC_1625.jpg
+deleted file mode 100644
+index a2d35ee..0000000
+Binary files a/foveation/DSC_1625.jpg and /dev/null differ
+diff --git a/foveation/__pycache__/foveate_image.cpython-311.pyc b/foveation/__pycache__/foveate_image.cpython-311.pyc
+deleted file mode 100644
+index bfadb60..0000000
+Binary files a/foveation/__pycache__/foveate_image.cpython-311.pyc and /dev/null differ
+diff --git a/foveation/__pycache__/foveate_image.cpython-39.pyc b/foveation/__pycache__/foveate_image.cpython-39.pyc
+deleted file mode 100644
+index e6af3cf..0000000
+Binary files a/foveation/__pycache__/foveate_image.cpython-39.pyc and /dev/null differ
+diff --git a/foveation/foveate_image.py b/foveation/foveate_image.py
+deleted file mode 100644
+index daac1c3..0000000
+--- a/foveation/foveate_image.py
++++ /dev/null
+@@ -1,119 +0,0 @@
+-import torch
+-# import cv2
+-import numpy as np
+-from matplotlib import pyplot as plt
+-
+-class FoveateImage:
+-    def __init__(
+-        self,
+-        # device: torch.device,
+-        # width: int,
+-        # height: int,
+-        sigma: float = 1000.5,
+-    ):
+-        self.sigma = sigma
+-
+-    # def greyscale(self):
+-        # plt.imshow(self.image[:,:,0])
+-        # plt.show()
+-        # greyscale = 0.22self.image[:,:,0]
+-    
+-    def foveate(self, image: np.array) -> np.array:
+-        """
+-        Processes captured image and stores results in class object.
+-        :param image: np.array object
+-        :return: Foveated image
+-        """
+-        self.image = image
+-
+-        # self.greyscale()
+-
+-        w, h, c = image.shape
+-        self.width = w
+-        self.height = h
+-
+-        # Process RGB
+-        if c == 3:
+-            mask = self.sample_mask(mode='conic')
+-            mask = mask.unsqueeze(-1)
+-            channel_mask = torch.concat([mask, mask, mask], dim = -1).int()
+-            self.result = torch.tensor(image) * channel_mask
+-        else:
+-            print("Image should contain 3 channels")
+-            raise AttributeError 
+-        
+-        return self.result
+-    
+-    def linear_dist_center(self, focus_cone = 0):
+-        x = torch.linspace(0, self.width - 1, self.width)
+-        y = torch.linspace(0, self.height - 1, self.height)
+-        x, y = torch.meshgrid(x, y)
+-        x_centered = x - self.width/2
+-        y_centered = y - self.height/2
+-        # import pdb; pdb.set_trace()
+-        rad = torch.maximum(torch.sqrt(x_centered**2 + y_centered**2) - focus_cone, torch.zeros_like(x_centered))
+-        return rad
+-    
+-    def gaussian_2d(self):
+-        x = torch.linspace(0, self.width - 1, self.width)
+-        y = torch.linspace(0, self.height - 1, self.height)
+-        x, y = torch.meshgrid(x, y)
+-        x_centered = x - self.width/2
+-        y_centered = y - self.height/2
+-        
+-        exponent = -((x_centered**2) / (2*self.sigma**2) + (y_centered**2) / (2*self.sigma**2))
+-        return (torch.exp(exponent))
+-
+-    def conic_2d(self, focus_cone):
+-
+-        return 1-torch.tanh(self.linear_dist_center(focus_cone)/self.width)
+-
+-    def sample_mask(self, mode = 'conic', pixel_ratio = 0.2, focus_cone = None):
+-        print("Original Size: " + str(self.width*self.height * 3 * 10e-6) + " MB")
+-
+-        print("New Size: " + str(pixel_ratio * self.width * self.height * 3 * 10e-6) + " MB")
+-
+-        print("Reduction: " + str(pixel_ratio*100) + "%")
+-
+-        if focus_cone is None: 
+-            focus_cone = self.width * 0.03
+-
+-        if mode == 'gaussian':
+-            gaussian = self.gaussian_2d()
+-            torch.random.manual_seed(1)
+-            rng = torch.rand((self.width,self.height))
+-
+-            sample_mask_idx = torch.topk((rng * gaussian).reshape(-1), int(pixel_ratio * self.width * self.height))
+-            sample_mask = torch.zeros_like(rng.reshape(-1))
+-
+-            sample_mask[sample_mask_idx[1]] = 1
+-
+-            sample_mask = sample_mask.reshape((self.width, self.height))
+-
+-
+-            plt.imshow(sample_mask)
+-            plt.show()
+-            
+-        if mode == 'conic':
+-            conic = self.conic_2d(focus_cone)
+-
+-            plt.imshow(conic)
+-            plt.show()
+-            torch.random.manual_seed(1)
+-            rng = torch.rand((self.width,self.height))
+-
+-            # Full-res for center of visual field
+-            rad = self.linear_dist_center()
+-            rad[rad <= focus_cone] = 1
+-            rad[rad > focus_cone] = 0
+-            
+-            rng = torch.maximum(rng+0.3, rad)
+-            
+-            sample_mask_idx = torch.topk((rng * conic).reshape(-1), int(pixel_ratio * self.width * self.height))
+-            sample_mask = torch.zeros_like(rng.reshape(-1))
+-
+-            sample_mask[sample_mask_idx[1]] = 1
+-
+-            sample_mask = sample_mask.reshape((self.width, self.height))
+-
+-        return sample_mask
+\ No newline at end of file
+diff --git a/foveation/main.py b/foveation/main.py
+deleted file mode 100644
+index f5c2633..0000000
+--- a/foveation/main.py
++++ /dev/null
+@@ -1,33 +0,0 @@
+-from foveate_image import *
+-from matplotlib import pyplot as plt
+-from PIL import Image
+-# import numpy
+-
+-def main():
+-    # img = open('DSC_1625.jpg')
+-    img = Image.open('that_dog_in_me.jpg')
+-
+-    w, h = img.size
+-    print("Original Image Size", w, h)
+-    print("Pixel Count", w*h)
+-
+-    img = np.array(list(img.getdata()))
+-    img = img.reshape((h,w,3))
+-    
+-    # print(img)
+-
+-    # plt.imshow(img)
+-    # plt.show()
+-
+-    fimg = FoveateImage()
+-    foveatedimg = fimg.foveate(img)
+-    #Number of non-zero pixels in the foveated image
+-    # import pdb; pdb.set_trace()
+-    print("Foveated Pixel Count", np.count_nonzero(foveatedimg[:,:,0]))
+-
+-    plt.imshow(foveatedimg)
+-    plt.show()
+-
+-
+-if __name__ == "__main__":
+-    main()
+diff --git a/foveation/that_dog_in_me.jpg b/foveation/that_dog_in_me.jpg
+deleted file mode 100644
+index f139772..0000000
+Binary files a/foveation/that_dog_in_me.jpg and /dev/null differ
+diff --git a/model_transformer.py b/model_transformer.py
+deleted file mode 100644
+index 1c7df13..0000000
+--- a/model_transformer.py
++++ /dev/null
+@@ -1,288 +0,0 @@
+-from typing import Callable, Optional, Union
+-
+-import torch
+-from torch import Tensor
+-import torch.nn.functional as F
+-from torch_geometric.nn import MLP
+-from torch_geometric.nn.conv import MessagePassing
+-from torch_geometric.nn.inits import reset
+-from torch_geometric.typing import OptTensor, PairOptTensor, PairTensor
+-from torch_cluster import knn
+-from torch_scatter import scatter_softmax
+-from torch_geometric.utils import coalesce
+-# from torch_geometric.nn import DynamicEdgeConv
+-from timm.models.layers import DropPath, trunc_normal_
+-import torch.nn as nn
+-import math
+-# from kpconv.kernels import KPConvLayer
+-# from kpconv.base_modules import FastBatchNorm1d
+-from lib.pointops2.functions import pointops
+-
+-
+-class Mlp(nn.Module):
+-    """ Multilayer perceptron."""
+-
+-    def __init__(self, in_features, hidden_features=None, out_features=None, act_layer=nn.GELU, dropout=0.):
+-        super().__init__()
+-        out_features = out_features or in_features
+-        hidden_features = hidden_features or in_features
+-        self.fc1 = nn.Linear(in_features, hidden_features)
+-        self.act = act_layer()
+-        self.fc2 = nn.Linear(hidden_features, out_features)
+-        self.drop = nn.Dropout(dropout, inplace=True)
+-
+-    def forward(self, x):
+-        x = self.fc1(x)
+-        x = self.act(x)
+-        x = self.drop(x)
+-        x = self.fc2(x)
+-        x = self.drop(x)
+-        return x
+-
+-# class KPConvSimpleBlock(nn.Module):
+-#     def __init__(self, in_channels, out_channels, prev_grid_size, sigma=1.0, negative_slope=0.2, bn_momentum=0.02):
+-#         super().__init__()
+-#         self.kpconv = KPConvLayer(in_channels, out_channels, point_influence=prev_grid_size * sigma, add_one=False)
+-#         self.bn = FastBatchNorm1d(out_channels, momentum=bn_momentum)
+-#         self.activation = nn.LeakyReLU(negative_slope=negative_slope)
+-
+-#     def forward(self, feats, xyz, neighbor_idx):
+-#         '''
+-#             feats: [N, C]
+-#             xyz: [N, 3]
+-#             batch: [N,]
+-#             neighbor_idx: [N, M]
+-#         '''
+-
+-#         feats = self.kpconv(xyz, xyz, neighbor_idx, feats)
+-#         feats = self.activation(self.bn(feats))
+-#         return feats
+-
+-
+-class Attention(nn.Module):
+-    """ Multi-head self attention (MSA) module
+-
+-    Args:
+-        dim (int): Number of input channels.
+-        window_size (tuple[int]): The height and width of the window.
+-        num_heads (int): Number of attention heads.
+-        qkv_bias (bool, optional):  If True, add a learnable bias to query, key, value. Default: True
+-        qk_scale (float | None, optional): Override default qk scale of head_dim ** -0.5 if set
+-        attn_drop (float, optional): Dropout ratio of attention weight. Default: 0.0
+-        proj_drop (float, optional): Dropout ratio of output. Default: 0.0
+-    """
+-
+-    def __init__(self, dim, num_heads, qkv_bias=True, qk_scale=None, attn_drop=0., proj_drop=0.):
+-
+-        super().__init__()
+-        self.dim = dim
+-        self.num_heads = num_heads
+-        head_dim = dim // num_heads
+-        self.scale = qk_scale or head_dim ** -0.5
+-        # self.window_size = window_size
+-
+-        # self.quant_size = quant_size
+-        # self.rel_query = rel_query
+-        # self.rel_key = rel_key
+-        # self.rel_value = rel_value
+-
+-        # quant_grid_length = int((2 * window_size + 1e-4) // quant_size)
+-
+-        # if rel_query:
+-        #     self.relative_pos_query_table = nn.Parameter(torch.zeros(2*quant_grid_length, num_heads, head_dim, 3))
+-        #     trunc_normal_(self.relative_pos_query_table, std=.02)
+-        # if rel_key:
+-        #     self.relative_pos_key_table = nn.Parameter(torch.zeros(2*quant_grid_length, num_heads, head_dim, 3))
+-        #     trunc_normal_(self.relative_pos_key_table, std=.02)
+-        # if rel_value:
+-        #     self.relative_pos_value_table = nn.Parameter(torch.zeros(2*quant_grid_length, num_heads, head_dim, 3))
+-        #     trunc_normal_(self.relative_pos_value_table, std=.02)
+-
+-        # self.quant_grid_length = quant_grid_length
+-
+-        self.qkv = nn.Linear(dim, dim * 3, bias=qkv_bias)
+-        self.attn_drop = nn.Dropout(attn_drop, inplace=True)
+-        self.proj = nn.Linear(dim, dim)
+-        self.proj_drop = nn.Dropout(proj_drop, inplace=True)
+-
+-        self.softmax = nn.Softmax(dim=-1)
+-
+-    # def forward(self, feats, xyz, index_0, index_1):
+-    def forward(self, feats, xyz, index_0, index_1, index_0_offsets, n_max):
+-        """ Forward function.
+-
+-        Args:
+-            feats: N, C
+-            xyz: N, 3
+-            index_0: M,
+-            index_1: M,
+-        """
+-
+-        N, C = feats.shape
+-        # import pdb; pdb.set_trace()
+-        M = index_0.shape[0]
+- 
+-        assert index_0.shape[0] == index_1.shape[0]
+-        
+-        # Query, Key, Value
+-        qkv = self.qkv(feats).reshape(N, 3, self.num_heads, C // self.num_heads).permute(1, 0, 2, 3).contiguous()
+-        query, key, value = qkv[0], qkv[1], qkv[2] #[N, num_heads, C//num_heads]
+-        query = query * self.scale
+-        # import pdb; pdb.set_trace()
+-        attn_flat = pointops.attention_step1_v2(query.float(), key.float(), index_1.int(), index_0_offsets.int(), n_max).to(feats.device) #[M, num_heads]
+-        # import pdb; pdb.set_trace()
+-        # # Position embedding
+-        # relative_position = xyz[index_0] - xyz[index_1]
+-        # relative_position = torch.round(relative_position * 100000) / 100000
+-        # relative_position_index = (relative_position + 2 * self.window_size - 0.0001) // self.quant_size
+-        # assert (relative_position_index >= 0).all()
+-        # assert (relative_position_index <= 2*self.quant_grid_length - 1).all()
+-
+-        # assert self.rel_query and self.rel_key
+-        # if self.rel_query and self.rel_key:
+-        #     relative_position_bias = pointops.dot_prod_with_idx_v3(query.float(), index_0_offsets.int(), n_max, key.float(), index_1.int(), self.relative_pos_query_table.float(), self.relative_pos_key_table.float(), relative_position_index.int())
+-        # elif self.rel_query:
+-        #     relative_position_bias = pointops.dot_prod_with_idx(query.float(), index_0.int(), self.relative_pos_query_table.float(), relative_position_index.int()) #[M, num_heads]
+-        # elif self.rel_key:
+-        #     relative_position_bias = pointops.dot_prod_with_idx(key.float(), index_1.int(), self.relative_pos_key_table.float(), relative_position_index.int()) #[M, num_heads]
+-        # else:
+-        #     relative_position_bias = 0.0
+-
+-
+-        # attn_flat = attn_flat #[M, num_heads]
+-        # import pdb; pdb.set_trace()
+-        
+-        softmax_attn_flat = scatter_softmax(src=attn_flat, index=index_0, dim=0) #[M, num_heads]
+-
+-        # if self.rel_value:
+-        #     x = pointops.attention_step2_with_rel_pos_value_v2(softmax_attn_flat.float(), value.float(), index_0_offsets.int(), n_max, index_1.int(), self.relative_pos_value_table.float(), relative_position_index.int())
+-        # else:
+-        x = pointops.attention_step2(softmax_attn_flat.float(), value.float(), index_0.int(), index_1.int()).to(feats.device)
+-        
+-        # import pdb; pdb.set_trace()
+-        x = x.view(N, C)
+-
+-        x = self.proj(x)
+-        x = self.proj_drop(x) #[N, C]
+-
+-        return x
+-    
+-class TransformerBlock(nn.Module):
+-    def __init__(self, dim, num_heads, k, out_channels = None, dropout=0.0,
+-            ratio=4.0, norm_layer=nn.LayerNorm):
+-        super().__init__()
+-        self.k = k
+-        self.norm1 = norm_layer(dim)
+-
+-        self.attn = Attention(dim, num_heads=num_heads, qkv_bias=True)
+-
+-        self.drop_path = DropPath(dropout) if dropout > 0. else nn.Identity()
+-        self.norm2 = norm_layer(dim)
+-        mlp_hidden_dim = int(dim * ratio)
+-        self.mlp = Mlp(in_features=dim, hidden_features=mlp_hidden_dim, act_layer=nn.GELU)
+-        self.linear_o = nn.Linear(dim, out_channels) if out_channels else None
+-
+-    def forward(self, feats, xyz, temporal_edge_index, spatial_edge_index, batch):
+-        skip = feats
+-
+-        feats = self.norm1(feats)
+-
+-        if spatial_edge_index is None:
+-            spatial_edge_index = knn(xyz, xyz, self.k, batch, batch).flip([0])
+-
+-        edge_index = coalesce(torch.cat([spatial_edge_index, spatial_edge_index.flip([0]), temporal_edge_index], dim=-1)) #[2, M]
+-        # edge_index = coalesce(torch.cat([spatial_edge_index, spatial_edge_index.flip([0])]))
+-        
+-        index_0, index_1 = edge_index.chunk(2, dim=0)
+-        index_0 = index_0.view(-1) #[M,]
+-        index_1 = index_1.view(-1) #[M,]
+-        index_0, indices = torch.sort(index_0) #[M,]
+-        index_1 = index_1[indices] #[M,]
+-        index_0_counts = index_0.bincount()
+-        n_max = index_0_counts.max()
+-        index_0_offsets = index_0_counts.cumsum(dim=-1) #[N]
+-        index_0_offsets = torch.cat([torch.zeros(1, dtype=torch.long, device=feats.device), index_0_offsets], 0)
+-
+-        feats = self.attn(feats, xyz, index_0, index_1, index_0_offsets, n_max)
+-        feats = skip + self.drop_path(feats)
+-        feats = feats + self.drop_path(self.mlp(self.norm2(feats)))
+-        if self.linear_o is not None:
+-            feats = self.linear_o(feats)
+-        return feats
+-
+-class MLPPointEmbedding(nn.Module):
+-    def __init__(self, in_dim, out_dim):
+-        super().__init__()
+-        self.mlp = nn.Sequential(
+-            nn.Linear(in_dim, 64),
+-            nn.ReLU(),
+-            nn.Linear(64, 128),
+-            nn.ReLU(),
+-            nn.Linear(128, out_dim)
+-        )
+-
+-    def forward(self, x):
+-        return self.mlp(x)
+-    
+-class PositionalEncoding(nn.Module):
+-    def __init__(self, d_model, max_len=50):
+-        super(PositionalEncoding, self).__init__()
+-        self.encoding = nn.Parameter(torch.zeros(max_len, d_model), requires_grad=False)  # Make sure gradients are not computed
+-        position = torch.arange(0, max_len).unsqueeze(1).float()
+-        div_term = torch.exp(torch.arange(0, d_model, 2).float() * -(math.log(10000.0) / d_model))
+-        self.encoding[:, 0::2] = torch.sin(position * div_term)
+-        self.encoding[:, 1::2] = torch.cos(position * div_term)
+-
+-    def forward(self, x):
+-        return self.encoding[:len(x), :]
+-    
+-class DeformTransformer2(torch.nn.Module):
+-    def __init__(self, k, out_channels, dropout=0.5, num_layers = 2, channels=[48, 64], num_heads=[3, 4], ratio=4.0):
+-        super().__init__()
+-        assert len(channels) == len(num_heads) == num_layers
+-
+-        self.point_embedding = MLPPointEmbedding(in_dim=3, out_dim = channels[0])
+-        self.positional_encoding = PositionalEncoding(channels[0])
+-
+-        self.layers = nn.ModuleList(
+-            [TransformerBlock(channels[i], num_heads[i], k, out_channels=channels[i+1] if i < num_layers-1 else channels[-1], dropout=dropout,
+-            ratio=ratio) for i in range(num_layers)
+-            ]
+-        )
+-
+-        self.out_dim = sum(channels[1:]) + channels[-1]
+-        
+-        self.mlp = MLP(
+-            [self.out_dim, 512, 256, out_channels],
+-            dropout=dropout, norm=None
+-        )
+-
+-    def forward(self, data):
+-        pos, batch = data.pos, data.batch # pos: (N, 3), batch: (N), i.e. [ 0,  0,  0,  ..., 49, 49, 49]
+-        # import pdb; pdb.set_trace()
+-        pe_batch = self.positional_encoding(torch.unique(batch))
+-        p_enc = torch.zeros((len(batch), pe_batch.shape[1]), device=pe_batch.device)
+-        # import pdb; pdb.set_trace()
+-        p_enc[torch.arange(0, len(batch)), :] = pe_batch[batch, :]
+-
+-        feats = self.point_embedding(pos) + p_enc # feats: (N, 48)
+-
+-        temporal_edge_index, spatial_edge_index = data.temporal_edge_index, data.edge_index # temporal_edge_index: (2, TE), spatial_edge_index: (2, SE)
+-        # spatial_edge_index = data.edge_index
+-        # temporal_edge_index = None
+-        xyz = pos
+-        # feats = xyz
+-        # import pdb; pdb.set_trace()
+-        
+-        feats_stack = []
+-        xyz_stack = []
+-
+-        for i, layer in enumerate(self.layers):
+-            feats = layer(feats, xyz, temporal_edge_index, spatial_edge_index if i == 0 else None, batch)
+-
+-            feats_stack.append(feats)
+-            xyz_stack.append(xyz)
+-        
+-        out = self.mlp(torch.cat(feats_stack, dim=1))
+-
+-        return F.log_softmax(out, dim=1)
+\ No newline at end of file
+diff --git a/test_clip_interp.py b/test_clip_interp.py
+deleted file mode 100644
+index cfb56a6..0000000
+--- a/test_clip_interp.py
++++ /dev/null
+@@ -1,94 +0,0 @@
+-from data.utils.pyramid_embedding_dataloader import PyramidEmbeddingDataloader
+-from encoders.image_encoder import BaseImageEncoderConfig
+-from encoders.openclip_encoder import OpenCLIPNetworkConfig
+-from datasets import load_dataset
+-from torch.utils import data
+-from typing import Dict, ForwardRef, Generic, List, Literal, Optional, Tuple, Type, Union, cast, get_args, get_origin
+-from torchvision import transforms
+-import matplotlib.pyplot as plt
+-from utils.colormaps import apply_colormap
+-import torch
+-
+-def main():
+-    device = 'cuda:6'
+-    """The device to run on"""
+-    patch_tile_size_range: Tuple[int, int] = (0.08, 0.5)
+-    """The range of tile sizes to sample from for patch-based training"""
+-    patch_tile_size_res: int = 7
+-    """The number of tile sizes to sample from for patch-based training"""
+-    patch_stride_scaler: float = 0.5
+-    """The stride scaler for patch-based training"""
+-    network: BaseImageEncoderConfig = OpenCLIPNetworkConfig(device=device)
+-    """specifies the vision-language network config"""
+-    clip_downscale_factor: int = 1
+-    """The downscale factor for the clip pyramid"""
+-
+-    clip_interpolator = PyramidEmbeddingDataloader(
+-        device=device,
+-        cfg={
+-            "tile_size_range": list(patch_tile_size_range),
+-            "tile_size_res": patch_tile_size_res,
+-            "stride_scaler": patch_stride_scaler,
+-            # "image_shape": [h,w],
+-        },
+-        model=network.setup()
+-    )
+-    image_encoder = clip_interpolator.model
+-
+-    dataset = load_dataset("imagenet-1k")
+-    transform = transforms.Compose([
+-        transforms.ToTensor()
+-    ])
+-    ### Load human readable labels dictionary from data/labels/imagenet1k_labels.txt
+-    with open("data/labels/imagenet1k_labels.txt", "r") as f:
+-        labels = f.readlines()
+-    labels = [label.strip() for label in labels]
+-    # List of "930: 'ear, spike, capitulum'," to dictionary
+-    labels = {int(label.split(":")[0]): label.split(":")[1].strip(",").strip().strip("'") for label in labels}
+-    # import pdb; pdb.set_trace()
+-
+-    data = {}
+-    for i, batch in enumerate(dataset['train']):
+-
+-        image = transform(batch['image'])
+-        try:
+-            clip_interpolator.generate_clip_interp(image)
+-        except:
+-            continue
+-        H, W = image.shape[1:]
+-
+-        scale = torch.tensor(0.1).to(device)
+-        scaled_height = H//clip_downscale_factor
+-        scaled_width = W//clip_downscale_factor
+-        # random_pixels = torch.randperm(scaled_height*scaled_width)[:int((scaled_height*scaled_height)*0.5)]
+-
+-        x = torch.arange(0, scaled_width*clip_downscale_factor, clip_downscale_factor).view(1, scaled_width, 1).expand(scaled_height, scaled_width, 1).to(device)
+-        y = torch.arange(0, scaled_height*clip_downscale_factor, clip_downscale_factor).view(scaled_height, 1, 1).expand(scaled_height, scaled_width, 1).to(device)
+-        image_idx_tensor = torch.zeros(scaled_height, scaled_width, 1).to(device)
+-        positions = torch.cat((image_idx_tensor, y, x), dim=-1).view(-1, 3).to(int)
+-        # positions = positions[random_pixels]
+-        with torch.no_grad():
+-            # data["clip"], data["clip_scale"] = clip_interpolator(positions, scale)[0], clip_interpolator(positions, scale)[1]
+-            data["clip"] = clip_interpolator(positions)[0]
+-
+-        # import pdb; pdb.set_trace()
+-
+-        positive = labels[batch["label"]].split(", ")
+-        # import pdb; pdb.set_trace()
+-        image_encoder.set_positives(positive)
+-        probs = image_encoder.get_relevancy(data["clip"].view(-1, image_encoder.embedding_dim), 0)
+-        color = apply_colormap(probs[..., 0:1])
+-        color = color.reshape([H,W,3])
+-        # Show image and heatmap side by side
+-        fig, ax = plt.subplots(1, 2)
+-        ax[0].imshow(image.permute(1,2,0))
+-        ax[1].imshow(color.cpu().numpy())
+-        fig.suptitle(positive)
+-        plt.savefig(f"test_clip_interp_{i}_{positive}.png")
+-
+-        if i == 100:
+-            break
+-    
+-
+-if __name__ == '__main__':
+-    main()
+\ No newline at end of file
+diff --git a/train_gen.py b/train_gen.py
+deleted file mode 100644
+index 4d36220..0000000
+--- a/train_gen.py
++++ /dev/null
+@@ -1,130 +0,0 @@
+-#!/usr/bin/env python3
+-
+-
+-import argparse
+-import json
+-import pickle
+-import pprint
+-
+-import torch
+-from torch.utils import data
+-from torchvision import datasets, transforms
+-from torchvision.transforms.functional import pil_to_tensor
+-from tqdm import trange, tqdm
+-import webdataset as wds
+-from datasets import load_dataset
+-import pandas as pd
+-import os
+-from concurrent.futures import ThreadPoolExecutor
+-from functools import partial
+-import io
+-import urllib
+-import matplotlib.pyplot as plt
+-import PIL.Image
+-
+-from datasets import load_dataset
+-from datasets.utils.file_utils import get_datasets_user_agent
+-
+-
+-USER_AGENT = get_datasets_user_agent()
+-
+-
+-def fetch_single_image(image_url, timeout=None, retries=0):
+-    for _ in range(retries + 1):
+-        try:
+-            request = urllib.request.Request(
+-                image_url,
+-                data=None,
+-                headers={"user-agent": USER_AGENT},
+-            )
+-            with urllib.request.urlopen(request, timeout=timeout) as req:
+-                image = PIL.Image.open(io.BytesIO(req.read()))
+-            break
+-        except Exception:
+-            image = None
+-    return image
+-
+-
+-def fetch_images(batch, num_threads, timeout=None, retries=0):
+-    fetch_single_image_with_args = partial(fetch_single_image, timeout=timeout, retries=retries)
+-    with ThreadPoolExecutor(max_workers=num_threads) as executor:
+-        batch["image"] = list(executor.map(fetch_single_image_with_args, batch["image_url"]))
+-    return batch
+-
+-def main():
+-    p = argparse.ArgumentParser(description=__doc__)
+-    p.add_argument('model_config', type=str,
+-                   help='the model config file')
+-    p.add_argument('training_config', type=str,
+-                   help='the training config file')
+-    p.add_argument('--resume', type=str,
+-                   help='the checkpoint to resume from')
+-    args = p.parse_args()
+-
+-    config = json.load(open(args.model_config))
+-    training_config = json.load(open(args.training_config))
+-    dataset_config = training_config['dataset']
+-    opt_config = training_config['optimizer']
+-    sched_config = opt_config['schedule']
+-    wandb_config = training_config['wandb']
+-    print('Model config:')
+-    pprint.pprint(config)
+-    print('\nTraining config:')
+-    pprint.pprint(training_config)
+-    print()
+-    batch_size = training_config['batch_size_per_device']
+-
+-    num_threads = 20
+-    dataset = load_dataset("conceptual_captions")
+-
+-    train_loader = data.DataLoader(dataset["train"], batch_size, drop_last=True,
+-                             num_workers=dataset_config['num_workers'],
+-                             persistent_workers=True)
+-    
+-    test_loader = data.DataLoader(dataset["validation"], batch_size, drop_last=True,
+-                             num_workers=dataset_config['num_workers'],
+-                             persistent_workers=True)
+-
+-    def train_one_epoch():
+-        for i, batch in enumerate(tqdm(train_loader)):
+-            
+-            for id, img in enumerate(batch['image_url']):
+-                # import pdb; pdb.set_trace()
+-                if "image_filtered" not in batch:
+-                    batch["image_filtered"] = []
+-                    batch["text_filtered"] = []
+-                pil_img = fetch_single_image(img)
+-                if pil_img is None:
+-                    continue
+-                batch["image_filtered"].append(pil_to_tensor(pil_img))
+-                batch["text_filtered"].append(batch["caption"][id])
+-                print(batch["image_filtered"][-1])
+-                print(batch["text_filtered"][-1])
+-                import pdb; pdb.set_trace()
+-
+-            import pdb; pdb.set_trace()
+-
+-
+-    if wandb_config['use_wandb'] == 0:
+-        import wandb
+-        wandb.init(project=wandb_config['project'],
+-                   config={'model': config,
+-                           'training': training_config},
+-                   save_code=True)
+-
+-    epoch = 0
+-    try:
+-        while True:
+-            tqdm.write(f'Epoch {epoch}')
+-            train_one_epoch()
+-            epoch += 1
+-            tqdm.write('')
+-            # save()
+-    except KeyboardInterrupt:
+-        pass
+-
+-
+-if __name__ == '__main__':
+-    import multiprocessing as mp
+-    mp.set_start_method('spawn')
+-    main()
+\ No newline at end of file
+diff --git a/utils/__pycache__/colormaps.cpython-312.pyc b/utils/__pycache__/colormaps.cpython-312.pyc
+deleted file mode 100644
+index 2b25f35..0000000
+Binary files a/utils/__pycache__/colormaps.cpython-312.pyc and /dev/null differ
+diff --git a/utils/__pycache__/colors.cpython-312.pyc b/utils/__pycache__/colors.cpython-312.pyc
+deleted file mode 100644
+index ffa231b..0000000
+Binary files a/utils/__pycache__/colors.cpython-312.pyc and /dev/null differ
+diff --git a/utils/colormaps.py b/utils/colormaps.py
+deleted file mode 100644
+index 4f95b06..0000000
+--- a/utils/colormaps.py
++++ /dev/null
+@@ -1,194 +0,0 @@
+-from dataclasses import dataclass
+-from typing import Literal, Optional
+-
+-import matplotlib
+-import torch
+-from jaxtyping import Bool, Float
+-from torch import Tensor
+-
+-from utils import colors
+-
+-Colormaps = Literal["default", "turbo", "viridis", "magma", "inferno", "cividis", "gray", "pca"]
+-
+-
+-@dataclass(frozen=True)
+-class ColormapOptions:
+-    """Options for colormap"""
+-
+-    colormap: Colormaps = "default"
+-    """ The colormap to use """
+-    normalize: bool = False
+-    """ Whether to normalize the input tensor image """
+-    colormap_min: float = 0
+-    """ Minimum value for the output colormap """
+-    colormap_max: float = 1
+-    """ Maximum value for the output colormap """
+-    invert: bool = False
+-    """ Whether to invert the output colormap """
+-
+-
+-def apply_colormap(
+-    image: Float[Tensor, "*bs channels"],
+-    colormap_options: ColormapOptions = ColormapOptions(),
+-    eps: float = 1e-9,
+-) -> Float[Tensor, "*bs rgb=3"]:
+-    """
+-    Applies a colormap to a tensor image.
+-    If single channel, applies a colormap to the image.
+-    If 3 channel, treats the channels as RGB.
+-    If more than 3 channel, applies a PCA reduction on the dimensions to 3 channels
+-
+-    Args:
+-        image: Input tensor image.
+-        eps: Epsilon value for numerical stability.
+-
+-    Returns:
+-        Tensor with the colormap applied.
+-    """
+-
+-    # default for rgb images
+-    if image.shape[-1] == 3:
+-        return image
+-
+-    # rendering depth outputs
+-    if image.shape[-1] == 1 and torch.is_floating_point(image):
+-        output = image
+-        if colormap_options.normalize:
+-            output = output - torch.min(output)
+-            output = output / (torch.max(output) + eps)
+-        output = (
+-            output * (colormap_options.colormap_max - colormap_options.colormap_min) + colormap_options.colormap_min
+-        )
+-        output = torch.clip(output, 0, 1)
+-        if colormap_options.invert:
+-            output = 1 - output
+-        return apply_float_colormap(output, colormap=colormap_options.colormap)
+-
+-    # rendering boolean outputs
+-    if image.dtype == torch.bool:
+-        return apply_boolean_colormap(image)
+-
+-    if image.shape[-1] > 3:
+-        return apply_pca_colormap(image)
+-
+-    raise NotImplementedError
+-
+-
+-def apply_float_colormap(image: Float[Tensor, "*bs 1"], colormap: Colormaps = "viridis") -> Float[Tensor, "*bs rgb=3"]:
+-    """Convert single channel to a color image.
+-
+-    Args:
+-        image: Single channel image.
+-        colormap: Colormap for image.
+-
+-    Returns:
+-        Tensor: Colored image with colors in [0, 1]
+-    """
+-    if colormap == "default":
+-        colormap = "turbo"
+-
+-    image = torch.nan_to_num(image, 0)
+-    if colormap == "gray":
+-        return image.repeat(1, 1, 3)
+-    image_long = (image * 255).long()
+-    image_long_min = torch.min(image_long)
+-    image_long_max = torch.max(image_long)
+-    assert image_long_min >= 0, f"the min value is {image_long_min}"
+-    assert image_long_max <= 255, f"the max value is {image_long_max}"
+-    return torch.tensor(matplotlib.colormaps[colormap].colors, device=image.device)[image_long[..., 0]]
+-
+-
+-def apply_depth_colormap(
+-    depth: Float[Tensor, "*bs 1"],
+-    accumulation: Optional[Float[Tensor, "*bs 1"]] = None,
+-    near_plane: Optional[float] = None,
+-    far_plane: Optional[float] = None,
+-    colormap_options: ColormapOptions = ColormapOptions(),
+-) -> Float[Tensor, "*bs rgb=3"]:
+-    """Converts a depth image to color for easier analysis.
+-
+-    Args:
+-        depth: Depth image.
+-        accumulation: Ray accumulation used for masking vis.
+-        near_plane: Closest depth to consider. If None, use min image value.
+-        far_plane: Furthest depth to consider. If None, use max image value.
+-        colormap: Colormap to apply.
+-
+-    Returns:
+-        Colored depth image with colors in [0, 1]
+-    """
+-
+-    near_plane = near_plane or float(torch.min(depth))
+-    far_plane = far_plane or float(torch.max(depth))
+-
+-    depth = (depth - near_plane) / (far_plane - near_plane + 1e-10)
+-    depth = torch.clip(depth, 0, 1)
+-    # depth = torch.nan_to_num(depth, nan=0.0) # TODO(ethan): remove this
+-
+-    colored_image = apply_colormap(depth, colormap_options=colormap_options)
+-
+-    if accumulation is not None:
+-        colored_image = colored_image * accumulation + (1 - accumulation)
+-
+-    return colored_image
+-
+-
+-def apply_boolean_colormap(
+-    image: Bool[Tensor, "*bs 1"],
+-    true_color: Float[Tensor, "*bs rgb=3"] = colors.WHITE,
+-    false_color: Float[Tensor, "*bs rgb=3"] = colors.BLACK,
+-) -> Float[Tensor, "*bs rgb=3"]:
+-    """Converts a depth image to color for easier analysis.
+-
+-    Args:
+-        image: Boolean image.
+-        true_color: Color to use for True.
+-        false_color: Color to use for False.
+-
+-    Returns:
+-        Colored boolean image
+-    """
+-
+-    colored_image = torch.ones(image.shape[:-1] + (3,))
+-    colored_image[image[..., 0], :] = true_color
+-    colored_image[~image[..., 0], :] = false_color
+-    return colored_image
+-
+-
+-def apply_pca_colormap(image: Float[Tensor, "*bs dim"]) -> Float[Tensor, "*bs rgb=3"]:
+-    """Convert feature image to 3-channel RGB via PCA. The first three principle
+-    components are used for the color channels, with outlier rejection per-channel
+-
+-    Args:
+-        image: image of arbitrary vectors
+-
+-    Returns:
+-        Tensor: Colored image
+-    """
+-    original_shape = image.shape
+-    image = image.view(-1, image.shape[-1])
+-    _, _, v = torch.pca_lowrank(image)
+-    image = torch.matmul(image, v[..., :3])
+-    d = torch.abs(image - torch.median(image, dim=0).values)
+-    mdev = torch.median(d, dim=0).values
+-    s = d / mdev
+-    m = 3.0  # this is a hyperparam controlling how many std dev outside for outliers
+-    rins = image[s[:, 0] < m, 0]
+-    gins = image[s[:, 1] < m, 1]
+-    bins = image[s[:, 2] < m, 2]
+-
+-    image[:, 0] -= rins.min()
+-    image[:, 1] -= gins.min()
+-    image[:, 2] -= bins.min()
+-
+-    image[:, 0] /= rins.max() - rins.min()
+-    image[:, 1] /= gins.max() - gins.min()
+-    image[:, 2] /= bins.max() - bins.min()
+-
+-    image = torch.clamp(image, 0, 1)
+-    image_long = (image * 255).long()
+-    image_long_min = torch.min(image_long)
+-    image_long_max = torch.max(image_long)
+-    assert image_long_min >= 0, f"the min value is {image_long_min}"
+-    assert image_long_max <= 255, f"the max value is {image_long_max}"
+-    return image.view(*original_shape[:-1], 3)
+\ No newline at end of file
+diff --git a/utils/colors.py b/utils/colors.py
+deleted file mode 100644
+index 4c53286..0000000
+--- a/utils/colors.py
++++ /dev/null
+@@ -1,55 +0,0 @@
+-# Copyright 2022 the Regents of the University of California, Nerfstudio Team and contributors. All rights reserved.
+-#
+-# Licensed under the Apache License, Version 2.0 (the "License");
+-# you may not use this file except in compliance with the License.
+-# You may obtain a copy of the License at
+-#
+-#     http://www.apache.org/licenses/LICENSE-2.0
+-#
+-# Unless required by applicable law or agreed to in writing, software
+-# distributed under the License is distributed on an "AS IS" BASIS,
+-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-# See the License for the specific language governing permissions and
+-# limitations under the License.
+-
+-"""Common Colors"""
+-from typing import Union
+-
+-import torch
+-from jaxtyping import Float
+-from torch import Tensor
+-
+-WHITE = torch.tensor([1.0, 1.0, 1.0])
+-BLACK = torch.tensor([0.0, 0.0, 0.0])
+-RED = torch.tensor([1.0, 0.0, 0.0])
+-GREEN = torch.tensor([0.0, 1.0, 0.0])
+-BLUE = torch.tensor([0.0, 0.0, 1.0])
+-
+-COLORS_DICT = {
+-    "white": WHITE,
+-    "black": BLACK,
+-    "red": RED,
+-    "green": GREEN,
+-    "blue": BLUE,
+-}
+-
+-
+-def get_color(color: Union[str, list]) -> Float[Tensor, "3"]:
+-    """
+-    Args:
+-        Color as a string or a rgb list
+-
+-    Returns:
+-        Parsed color
+-    """
+-    if isinstance(color, str):
+-        color = color.lower()
+-        if color not in COLORS_DICT:
+-            raise ValueError(f"{color} is not a valid preset color")
+-        return COLORS_DICT[color]
+-    if isinstance(color, list):
+-        if len(color) != 3:
+-            raise ValueError(f"Color should be 3 values (RGB) instead got {color}")
+-        return torch.tensor(color)
+-
+-    raise ValueError(f"Color should be an RGB list or string, instead got {type(color)}")
+\ No newline at end of file

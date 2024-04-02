@@ -1,0 +1,29 @@
+Training from scratch
+Epoch 0
+  0%|                                                                                                                                                                                                      | 0/4427 [00:00<?, ?it/s]/home/yujustin/anaconda3/envs/fov/lib/python3.11/site-packages/torch/functional.py:507: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3549.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/yujustin/SSD/DeepUL294Proj/DUL294P/foveation/foveate_image.py:66: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  self.result = torch.tensor(image).flatten(end_dim=-2)[self.sample_mask_idx,:]
+/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py:133: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+Original Image Size 480 640
+Pixel Count 307200
+Compression: 50.0%
+> /home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py(143)train_one_epoch()
+-> fovenc = model(foveatedimg, idxs)
+tensor([[-240., -239., -238.,  ...,  237.,  238.,  239.],
+        [-240., -239., -238.,  ...,  237.,  238.,  239.],
+        [-240., -239., -238.,  ...,  237.,  238.,  239.],
+        ...,
+        [-240., -239., -238.,  ...,  237.,  238.,  239.],
+        [-240., -239., -238.,  ...,  237.,  238.,  239.],
+        [-240., -239., -238.,  ...,  237.,  238.,  239.]])
+*** TypeError: transpose() received an invalid combination of arguments - got (), but expected one of:
+ * (int dim0, int dim1)
+ * (name dim0, name dim1)
+tensor([[-240., -240., -240.,  ..., -240., -240., -240.],
+        [-239., -239., -239.,  ..., -239., -239., -239.],
+        [-238., -238., -238.,  ..., -238., -238., -238.],
+        ...,
+        [ 237.,  237.,  237.,  ...,  237.,  237.,  237.],
+        [ 238.,  238.,  238.,  ...,  238.,  238.,  238.],

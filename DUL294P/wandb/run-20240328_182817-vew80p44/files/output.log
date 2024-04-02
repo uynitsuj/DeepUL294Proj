@@ -1,0 +1,9 @@
+
+Training from scratch
+Traceback (most recent call last):
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 151, in <module>
+    main()
+  File "/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py", line 83, in main
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, sched_config['T_max'])
+                                                                      ~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'T_max'

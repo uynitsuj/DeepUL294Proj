@@ -1,0 +1,27 @@
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_setup.py:_flush():76] Configure stats pid to 9409
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_setup.py:_flush():76] Loading settings from /home/yujustin/.config/wandb/settings
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_setup.py:_flush():76] Loading settings from /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/settings
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'DUL294P/train_gen.py', 'program_abspath': '/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py', 'program': '/home/yujustin/SSD/DeepUL294Proj/DUL294P/train_gen.py'}
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_init.py:_log_setup():527] Logging user logs to /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_182855-veijsw7g/logs/debug.log
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_init.py:_log_setup():528] Logging internal logs to /home/yujustin/SSD/DeepUL294Proj/DUL294P/wandb/run-20240328_182855-veijsw7g/logs/debug-internal.log
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_init.py:init():567] calling init triggers
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_init.py:init():574] wandb.init called with sweep_config: {}
+config: {'model': {'k': 40, 'dropout': 0.5, 'num_layers': 4, 'channels': [48, 64, 96, 128], 'num_heads': [3, 4, 6, 8], 'ratio': 4.0}, 'training': {'epochs': 1000, 'batch_size_per_device': 128, 'precision': 'float32', 'optimizer': {'lr': 0.001, 'schedule': {'lr': 0.001, 'type': 'cosine', 'steps': 781250.0, 'warmup': 0.9995, 'final_lr': 0.0}}, 'wandb': {'use_wandb': True, 'project': 'DUL294P'}}, 'dataset name': 'HuggingFaceM4/COCO'}
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_init.py:init():617] starting backend
+2024-03-28 18:28:55,395 INFO    MainThread:9409 [wandb_init.py:init():621] setting up manager
+2024-03-28 18:28:55,396 INFO    MainThread:9409 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-03-28 18:28:55,396 INFO    MainThread:9409 [wandb_init.py:init():629] backend started and connected
+2024-03-28 18:28:55,397 INFO    MainThread:9409 [wandb_init.py:init():721] updated telemetry
+2024-03-28 18:28:55,400 INFO    MainThread:9409 [wandb_init.py:init():754] communicating run to backend with 90.0 second timeout
+2024-03-28 18:28:55,710 INFO    MainThread:9409 [wandb_run.py:_on_init():2344] communicating current version
+2024-03-28 18:28:55,755 INFO    MainThread:9409 [wandb_run.py:_on_init():2353] got version response 
+2024-03-28 18:28:55,755 INFO    MainThread:9409 [wandb_init.py:init():805] starting run threads in backend
+2024-03-28 18:28:57,738 INFO    MainThread:9409 [wandb_run.py:_console_start():2323] atexit reg
+2024-03-28 18:28:57,739 INFO    MainThread:9409 [wandb_run.py:_redirect():2178] redirect: wrap_raw
+2024-03-28 18:28:57,739 INFO    MainThread:9409 [wandb_run.py:_redirect():2243] Wrapping output streams.
+2024-03-28 18:28:57,739 INFO    MainThread:9409 [wandb_run.py:_redirect():2268] Redirects installed.
+2024-03-28 18:28:57,739 INFO    MainThread:9409 [wandb_init.py:init():848] run started, returning control to user process
