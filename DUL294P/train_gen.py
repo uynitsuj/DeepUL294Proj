@@ -12,12 +12,7 @@ from torchvision import transforms
 from torchvision.transforms.functional import pil_to_tensor
 from tqdm import trange, tqdm
 from datasets import load_dataset
-import pandas as pd
 import os
-from concurrent.futures import ThreadPoolExecutor
-from functools import partial
-import io
-import urllib
 import matplotlib.pyplot as plt
 import PIL.Image
 from DUL294P.model_transformer import FoveatedTransformer
@@ -25,7 +20,6 @@ from DUL294P.foveation.foveate_image import FoveateImage
 from DUL294P.encoders.openclip_encoder import *
 import time
 from datasets.utils.file_utils import get_datasets_user_agent
-
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
@@ -118,29 +112,39 @@ def main():
                 img = image.permute((1,2,0)) # [H, W, C]
                 fimg = FoveateImage(w, h)
                 # start = time.time()
-                foveatedimg, idxs = fimg.foveate(img)
+                foveatedimg, idxs, rs, thetas = fimg.foveate(img)
                 # elapsed = (time.time() - start)
                 # print(f"Elapsed time: {elapsed}(s)")
                 # print(f"Frequency: {1/elapsed}(fps)")
                 # print("Foveated Pixel Count", foveatedimg.shape)
 
-                recon = torch.zeros((h,w,3), dtype=foveatedimg.dtype)
-                recon.view(-1, 3)[idxs] = foveatedimg[range(len(foveatedimg))]
+                # recon = torch.zeros((h,w,3), dtype=foveatedimg.dtype)
+                # recon.view(-1, 3)[idxs] = foveatedimg[range(len(foveatedimg))]
 
-                print(f"Compression: {len(idxs)/(w*h)*100}%")
-                plt.title(sentences['raw'])
-                plt.imshow(recon)
-                plt.show()
+                # print(f"Compression: {len(idxs)/(w*h)*100}%")
+                # plt.title(sentences['raw'])
+                # plt.imshow(recon)
+                # plt.show()
 
-                x = torch.linspace(0, h - 1, h)
-                y = torch.linspace(0, w - 1, w)
-                x, y = torch.meshgrid(x, y)
-                x_centered = x - h/2
-                y_centered = y - w/2
-                imgspacex = x_centered.view(-1)[idxs]
-                # imgspacey = torch.transpose(y_centered, 0,1).view(-1)[idxs]
-                import pdb; pdb.set_trace()
-                fovenc = model(foveatedimg, idxs)
+                # x = torch.linspace(0, h - 1, h)
+                # y = torch.linspace(0, w - 1, w)
+                # x, y = torch.meshgrid(x, y)
+                # x_centered = x - h/2
+                # y_centered = y - w/2
+                # imgspacex = x_centered.view(-1)[idxs]
+                # # imgspacey = torch.transpose(y_centered, 0,1).view(-1)[idxs]
+                # import pdb; pdb.set_trace()
+                start = time.time()
+                fovenc = model(foveatedimg, rs, thetas)
+                elapsed = (time.time() - start)
+                print(f"Elapsed time: {elapsed}(s)")
+                print(f"Frequency: {1/elapsed}(fps)")
+                optimizer.zero_grad()
+                loss = torch.nn.MSELoss()(fovenc, imgenc)
+                loss.backward()
+                optimizer.step()
+                scheduler.step()
+
 
 
     epoch = 0

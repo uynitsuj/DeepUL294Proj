@@ -21,9 +21,9 @@ def main():
     # plt.imshow(img)
     # plt.show()
 
-    fimg = FoveateImage(w, h)
+    fimg = FoveateImage(w, h, focus_cone = 0.05, pixel_ratio=0.3)
     start = time.time()
-    foveatedimg, idxs = fimg.foveate(img)
+    foveatedimg, idxs, rs, thetas = fimg.foveate(img)
     elapsed = (time.time() - start)
     print(f"Elapsed time: {elapsed}(s)")
     print(f"Frequency: {1/elapsed}(fps)")
@@ -32,6 +32,9 @@ def main():
     recon = torch.zeros((h,w,3), dtype=foveatedimg.dtype)
     # import pdb; pdb.set_trace()
     recon.view(-1, 3)[idxs] = foveatedimg[range(len(foveatedimg))]
+    # recon.view(-1, 3)[idxs[0]] = torch.tensor([255, 0, 0])
+    # recon.view(-1, 3)[idxs[1]] = torch.tensor([0, 255, 0])
+    # recon.view(-1, 3)[idxs[2]] = torch.tensor([0, 0, 255])
 
     print(f"Compression: {len(idxs)/(w*h)*100}%")
 

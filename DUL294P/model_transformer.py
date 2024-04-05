@@ -87,38 +87,12 @@ class Attention(nn.Module):
         qkv = self.qkv(feats).reshape(N, 3, self.num_heads, C // self.num_heads).permute(1, 0, 2, 3).contiguous()
         query, key, value = qkv[0], qkv[1], qkv[2] #[N, num_heads, C//num_heads]
         query = query * self.scale
-        # import pdb; pdb.set_trace()
         attn_flat = pointops.attention_step1_v2(query.float(), key.float(), index_1.int(), index_0_offsets.int(), n_max).to(feats.device) #[M, num_heads]
-        # import pdb; pdb.set_trace()
-        # # Position embedding
-        # relative_position = xyz[index_0] - xyz[index_1]
-        # relative_position = torch.round(relative_position * 100000) / 100000
-        # relative_position_index = (relative_position + 2 * self.window_size - 0.0001) // self.quant_size
-        # assert (relative_position_index >= 0).all()
-        # assert (relative_position_index <= 2*self.quant_grid_length - 1).all()
 
-        # assert self.rel_query and self.rel_key
-        # if self.rel_query and self.rel_key:
-        #     relative_position_bias = pointops.dot_prod_with_idx_v3(query.float(), index_0_offsets.int(), n_max, key.float(), index_1.int(), self.relative_pos_query_table.float(), self.relative_pos_key_table.float(), relative_position_index.int())
-        # elif self.rel_query:
-        #     relative_position_bias = pointops.dot_prod_with_idx(query.float(), index_0.int(), self.relative_pos_query_table.float(), relative_position_index.int()) #[M, num_heads]
-        # elif self.rel_key:
-        #     relative_position_bias = pointops.dot_prod_with_idx(key.float(), index_1.int(), self.relative_pos_key_table.float(), relative_position_index.int()) #[M, num_heads]
-        # else:
-        #     relative_position_bias = 0.0
-
-
-        # attn_flat = attn_flat #[M, num_heads]
-        # import pdb; pdb.set_trace()
-        
         softmax_attn_flat = scatter_softmax(src=attn_flat, index=index_0, dim=0) #[M, num_heads]
 
-        # if self.rel_value:
-        #     x = pointops.attention_step2_with_rel_pos_value_v2(softmax_attn_flat.float(), value.float(), index_0_offsets.int(), n_max, index_1.int(), self.relative_pos_value_table.float(), relative_position_index.int())
-        # else:
         x = pointops.attention_step2(softmax_attn_flat.float(), value.float(), index_0.int(), index_1.int()).to(feats.device)
         
-        # import pdb; pdb.set_trace()
         x = x.view(N, C)
 
         x = self.proj(x)

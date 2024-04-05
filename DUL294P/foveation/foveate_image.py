@@ -16,6 +16,9 @@ class FoveateImage:
     ):
         self.width = width
         self.height = height
+        assert width%2 == 0
+        assert height%2 == 0 # Assert even dimensions
+
         if sigma is None:
             self.sigma = (width) / 1.8
         else:
@@ -25,17 +28,19 @@ class FoveateImage:
             self.focus_cone = width * 0.10
         else:
             assert type(focus_cone) is float
-            self.focus_cone = focus_cone
+            self.focus_cone = width * focus_cone
         assert type(pixel_ratio) is float
         self.pixel_ratio = pixel_ratio
 
-        torch.random.manual_seed(1)
+        torch.random.manual_seed(2)
 
         # Initialize and cache foveated masks
         if mode == 'tanh':
             func = self.tanh_2d(self.focus_cone)
         if mode == 'gaussian':
             func = self.gaussian_2d(self.focus_cone)
+            plt.imshow(func)
+            plt.show()
         
         rng = torch.rand((self.height,self.width))
         mask = torch.where(func > rng, func+rng*(1-pff), 0.0)
@@ -46,12 +51,27 @@ class FoveateImage:
 
         self.sample_mask = sample_mask.reshape((self.height, self.width))
 
-    
+        x = torch.linspace(0, self.width - 1, self.width, dtype=torch.int)
+        y = torch.linspace(0, self.height - 1, self.height, dtype=torch.int)
+        x, y = torch.meshgrid(x, y)
+        
+
+        xgrid_centered = (x - self.width/2 + 0.5).transpose(1,0).contiguous()
+        ygrid_centered = (y - self.height/2 + 0.5).transpose(1,0).contiguous()
+        
+        centered_xs = xgrid_centered.view(-1)[self.sample_mask_idx]
+        centered_ys = ygrid_centered.view(-1)[self.sample_mask_idx]
+
+        self.coord_from_center = torch.stack((centered_xs, centered_ys)).T
+
+        self.rs = torch.sqrt(centered_xs**2 + centered_ys**2)
+        self.thetas = torch.atan2(centered_ys, centered_xs) * -180 / np.pi
+
     # @profile
     def foveate(self, image: np.array) -> np.array:
         """
         Processes captured image and stores results in class object.
-        :param image: np.array object [H, W, C]
+        :param image: np.array object [W, H, C]
         :return: Foveated image [# Pixels, C]
         """ 
         self.image = image
@@ -68,7 +88,7 @@ class FoveateImage:
             print("Image should contain 3 channels")
             raise AttributeError 
         
-        return self.result, self.sample_mask_idx
+        return self.result, self.sample_mask_idx, self.rs, self.thetas
     
     def linear_dist_center(self, focus_cone = 0):
         x = torch.linspace(0, self.height - 1, self.height)
