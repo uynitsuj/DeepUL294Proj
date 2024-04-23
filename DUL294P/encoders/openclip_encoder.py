@@ -17,9 +17,10 @@ class OpenCLIPNetworkConfig(BaseImageEncoderConfig):
     _target: Type = field(default_factory=lambda: OpenCLIPNetwork)
     clip_model_type: str = "ViT-B-16"
     clip_model_pretrained: str = "laion2b_s34b_b88k"
-    clip_n_dims: int = 512
+    clip_n_dims: int = 768
     negatives: Tuple[str] = ("object", "things", "stuff", "texture")
     device: str = 'cuda'
+    output_tokens: bool = True
 
     @property
     def name(self) -> str:
@@ -45,6 +46,7 @@ class OpenCLIPNetwork(BaseImageEncoder):
             precision="fp16",
         )
         model.eval()
+        model.visual.output_tokens = self.config.output_tokens
         self.tokenizer = open_clip.get_tokenizer(self.config.clip_model_type)
         self.model = model.to(self.config.device)
         self.clip_n_dims = self.config.clip_n_dims
