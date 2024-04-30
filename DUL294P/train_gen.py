@@ -188,19 +188,6 @@ def main():
             # print(f"Frequency: {1/elapsed}(fps)")
             mask = mask.bool()
             optimizer.zero_grad()
-            # check for NaNs
-            if torch.isnan(pred_mae).any():
-                print("NaN in prediction")
-                raise ValueError("NaN in prediction")
-
-            if torch.isnan(pooled_mae).any():
-                print("NaN in pooled")
-                raise ValueError("NaN in pooled")
-            
-            if torch.isnan(pred_clip).any():
-                print("NaN in clip prediction")
-                raise ValueError("NaN in clip prediction")
-            
                 
             loss = torch.nn.MSELoss()(pred_mae[mask], pred_clip[mask])
             loss += torch.nn.MSELoss()(pooled_mae, pooled_clip) * training_config["pooled_loss_weight"]
@@ -219,23 +206,43 @@ def main():
         clip_sims = []
         pbar = tqdm(enumerate(loader), total=len(loader))
         for i, batch in pbar:
-            for image, sentences in zip(batch["image"], batch["sentences"]):
-                clipimg = clipencoder.process(image).unsqueeze(0).float().to(device)
-                pooled_clip, pred_clip = clipencoder.model.encode_image(clipimg)
-                clip_sent = clipencoder.model.encode_text(clipencoder.tokenizer(sentences['raw']).to(device), normalize=True)
-                start = time.time()
-                latent, mask, ids_restore = model.forward_encoder(clipimg, training_config['masking_prob'])
+            if i < 2:
+                for image, sentences in zip(batch["image"], batch["sentences"]):
+                    clipimg = clipencoder.process(image).unsqueeze(0).float().to(device)
+                    pooled_clip, pred_clip = clipencoder.model.encode_image(clipimg)
+                    clip_sent = clipencoder.model.encode_text(clipencoder.tokenizer(sentences['raw']).to(device), normalize=True)
+                    start = time.time()
+                    latent, mask, ids_restore = model.forward_encoder(clipimg, training_config['masking_prob'])
+                    pred_mae, pooled_mae = model.forward_decoder(latent, ids_restore)
+                    elapsed = time.time() - start
+                    mask = mask.bool()
+                    loss = torch.nn.MSELoss()(pred_mae[mask], pred_clip[mask])
+                    loss += torch.nn.MSELoss()(pooled_mae, pooled_clip) * training_config["pooled_loss_weight"]
+                    clip_sim = F.cosine_similarity(pooled_mae, clip_sent).item()
+                    # print(clip_sim.shape, clipimg.shape, clip_sent.shape)
+                    # losses.append(loss.item())
+                    times.append(elapsed)
+                    # clip_sims.append(clip_sim)
+                    pbar.set_description(f"Loss: {loss.item():4f}, Time: {elapsed:4f}(s), Frequency: {(1/elapsed):4f}(fps), Text Sim: {clip_sim:4f}")
+            else:
+                img = batch['clip_image'].to(device)
+                pooled_clip, pred_clip = clipencoder.model.encode_image(img)
+                clip_sent = clipencoder.model.encode_text(
+                    clipencoder.tokenizer(
+                        [s['raw'] for s in batch['sentences']]
+                    ).to(device), normalize=True)
+                
+                latent, mask, ids_restore = model.forward_encoder(img, training_config['masking_prob'])
                 pred_mae, pooled_mae = model.forward_decoder(latent, ids_restore)
-                elapsed = time.time() - start
                 mask = mask.bool()
+                
                 loss = torch.nn.MSELoss()(pred_mae[mask], pred_clip[mask])
                 loss += torch.nn.MSELoss()(pooled_mae, pooled_clip) * training_config["pooled_loss_weight"]
-                clip_sim = F.cosine_similarity(pooled_mae, clip_sent).item()
-                # print(clip_sim.shape, clipimg.shape, clip_sent.shape)
-                losses.append(loss.item())
-                times.append(elapsed)
+                loss = loss.item()
+                clip_sim = F.cosine_similarity(pooled_mae, clip_sent).mean().item()
+                losses.append(loss)
                 clip_sims.append(clip_sim)
-                pbar.set_description(f"Loss: {loss.item():4f}, Time: {elapsed:4f}(s), Frequency: {(1/elapsed):4f}(fps), Text Sim: {clip_sim:4f}")
+                pbar.set_description(f"Loss: {loss:4f}, Text Sim: {clip_sim:4f}, Avg Freq: {(len(times) / (sum(times)+1)):4f}")
         
         print(f"Mean Loss: {sum(losses) / len(losses)}")
         print(f"Mean Time: {sum(times) / len(times)}")
