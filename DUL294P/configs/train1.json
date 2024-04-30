@@ -1,7 +1,8 @@
 {
-    "epochs": 1000,
-    "batch_size_per_device": 128,
+    "epochs": 20,
+    "batch_size_per_device": 512,
     "precision": "float32",
+    "masking_prob": 0.75, 
     "optimizer": {
         "lr": 1e-3,
         "schedule": {
@@ -12,8 +13,10 @@
             "final_lr": 0.0
         }
     },
+    "pooled_weight": 1.0,
     "wandb": {
         "use_wandb": true,
         "project": "DUL294P"
-    }
+    },
+    "pooled_loss_weight": 1
 }
