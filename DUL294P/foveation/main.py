@@ -20,8 +20,9 @@ def main():
 
     # plt.imshow(img)
     # plt.show()
+    # fimg = FoveateImage(w, h, focus_cone = 0.02, pixel_ratio=0.5, sigma=0.49, mode='gaussian')
 
-    fimg = FoveateImage(w, h, focus_cone = 0.05, pixel_ratio=0.3)
+    fimg = FoveateImage(w, h, focus_cone = 0.05, pixel_ratio=0.5)
     start = time.time()
     foveatedimg, idxs, rs, thetas = fimg.foveate(img)
     elapsed = (time.time() - start)

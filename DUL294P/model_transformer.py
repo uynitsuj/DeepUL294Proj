@@ -17,8 +17,38 @@ import math
 # from kpconv.kernels import KPConvLayer
 # from kpconv.base_modules import FastBatchNorm1d
 from lib.pointops2.functions import pointops
+import time
 
+class ConvTokenizer(nn.Module):
+    def __init__(self, in_chans=3, embed_dim=128, norm_layer=None):
+        super().__init__()
+        self.proj = nn.Sequential(
+            nn.Conv2d(
+                in_chans,
+                embed_dim,
+                kernel_size=(3, 3),
+                stride=(1, 1),
+                padding=(1, 1),
+            ),
+            # nn.Conv2d(
+            #     embed_dim // 2,
+            #     embed_dim,
+            #     kernel_size=(3, 3),
+            #     stride=(2, 2),
+            #     padding=(1, 1),
+            # ),
+        )
+        if norm_layer is not None:
+            self.norm = norm_layer(embed_dim)
+        else:
+            self.norm = None
 
+    def forward(self, x):
+        x = self.proj(x).permute(0, 2, 3, 1)
+        if self.norm is not None:
+            x = self.norm(x)
+        return x
+    
 class Mlp(nn.Module):
     """ Multilayer perceptron."""
 
@@ -67,7 +97,7 @@ class Attention(nn.Module):
 
         self.softmax = nn.Softmax(dim=-1)
 
-    def forward(self, feats, xyz, index_0, index_1, index_0_offsets, n_max):
+    def forward(self, feats, index_0, index_1, index_0_offsets, n_max):
         """ Forward function.
 
         Args:
@@ -76,6 +106,7 @@ class Attention(nn.Module):
             index_0: M,
             index_1: M,
         """
+        # print(self.dim)
 
         N, C = feats.shape
         # import pdb; pdb.set_trace()
@@ -87,6 +118,7 @@ class Attention(nn.Module):
         qkv = self.qkv(feats).reshape(N, 3, self.num_heads, C // self.num_heads).permute(1, 0, 2, 3).contiguous()
         query, key, value = qkv[0], qkv[1], qkv[2] #[N, num_heads, C//num_heads]
         query = query * self.scale
+        # import pdb; pdb.set_trace()
         attn_flat = pointops.attention_step1_v2(query.float(), key.float(), index_1.int(), index_0_offsets.int(), n_max).to(feats.device) #[M, num_heads]
 
         softmax_attn_flat = scatter_softmax(src=attn_flat, index=index_0, dim=0) #[M, num_heads]
@@ -115,16 +147,17 @@ class TransformerBlock(nn.Module):
         self.mlp = Mlp(in_features=dim, hidden_features=mlp_hidden_dim, act_layer=nn.GELU)
         self.linear_o = nn.Linear(dim, out_channels) if out_channels else None
 
-    def forward(self, feats, xyz, temporal_edge_index, spatial_edge_index, batch):
+    def forward(self, feats, polar_pos, edge_index = None):
         skip = feats
 
         feats = self.norm1(feats)
 
-        if spatial_edge_index is None:
-            spatial_edge_index = knn(xyz, xyz, self.k, batch, batch).flip([0])
-
-        edge_index = coalesce(torch.cat([spatial_edge_index, spatial_edge_index.flip([0]), temporal_edge_index], dim=-1)) #[2, M]
-        # edge_index = coalesce(torch.cat([spatial_edge_index, spatial_edge_index.flip([0])]))
+        # if edge_index is None:
+        #     start = time.time()
+        #     edge_index = knn(feats, feats, self.k) #.flip([0])
+        #     # edge_index = coalesce(torch.cat([edge_index, edge_index.flip([0])]))
+        #     elapsed = (time.time() - start)
+        #     print(f"Feat KNN Elapsed time: {elapsed}(s)")
         
         index_0, index_1 = edge_index.chunk(2, dim=0)
         index_0 = index_0.view(-1) #[M,]
@@ -136,7 +169,7 @@ class TransformerBlock(nn.Module):
         index_0_offsets = index_0_counts.cumsum(dim=-1) #[N]
         index_0_offsets = torch.cat([torch.zeros(1, dtype=torch.long, device=feats.device), index_0_offsets], 0)
 
-        feats = self.attn(feats, xyz, index_0, index_1, index_0_offsets, n_max)
+        feats = self.attn(feats, index_0, index_1, index_0_offsets, n_max)
         feats = skip + self.drop_path(feats)
         feats = feats + self.drop_path(self.mlp(self.norm2(feats)))
         if self.linear_o is not None:
@@ -153,29 +186,21 @@ class MLPPointEmbedding(nn.Module):
             nn.ReLU(),
             nn.Linear(128, out_dim)
         )
-
     def forward(self, x):
         return self.mlp(x)
     
-class PositionalEncoding(nn.Module):
-    def __init__(self, d_model, max_len=50):
-        super(PositionalEncoding, self).__init__()
-        self.encoding = nn.Parameter(torch.zeros(max_len, d_model), requires_grad=False)  # Make sure gradients are not computed
-        position = torch.arange(0, max_len).unsqueeze(1).float()
-        div_term = torch.exp(torch.arange(0, d_model, 2).float() * -(math.log(10000.0) / d_model))
-        self.encoding[:, 0::2] = torch.sin(position * div_term)
-        self.encoding[:, 1::2] = torch.cos(position * div_term)
-
-    def forward(self, x):
-        return self.encoding[:len(x), :]
-    
 class FoveatedTransformer(torch.nn.Module):
-    def __init__(self, k, out_channels, dropout=0.5, num_layers = 2, channels=[48, 64], num_heads=[3, 4], ratio=4.0):
+    def __init__(self, k, out_channels, dropout=0.1, num_layers = 2, channels=[256, 512], num_heads=[2, 3], ratio=4.0):
         super().__init__()
         assert len(channels) == len(num_heads) == num_layers
+        self.channels = channels
+        self.k = k
+        self.patch_embed = ConvTokenizer(
+            in_chans=3, embed_dim=channels[0], norm_layer=nn.LayerNorm
+        )
 
         self.point_embedding = MLPPointEmbedding(in_dim=3, out_dim = channels[0])
-        self.positional_encoding = PositionalEncoding(channels[0])
+        self.positional_encoding = MLPPointEmbedding(in_dim=2, out_dim = channels[0])
 
         self.layers = nn.ModuleList(
             [TransformerBlock(channels[i], num_heads[i], k, out_channels=channels[i+1] if i < num_layers-1 else channels[-1], dropout=dropout,
@@ -186,36 +211,38 @@ class FoveatedTransformer(torch.nn.Module):
         self.out_dim = sum(channels[1:]) + channels[-1]
         
         self.mlp = MLP(
-            [self.out_dim, 512, 256, out_channels],
+            [channels[-1], 256, 512],
             dropout=dropout, norm=None
         )
 
-    def forward(self, clr, pos):
-        # pos, batch = data.pos, data.batch # pos: (N, 3), batch: (N), i.e. [ 0,  0,  0,  ..., 49, 49, 49]
+    def forward(self, img, pix, idxs, rs, thetas, edge_index):
+        # pix [N, 3]
+        # rs [N]
+        # thetas [N]
         # import pdb; pdb.set_trace()
-        pe_batch = self.positional_encoding(torch.unique(batch))
-        p_enc = torch.zeros((len(batch), pe_batch.shape[1]), device=pe_batch.device)
-        # import pdb; pdb.set_trace()
-        p_enc[torch.arange(0, len(batch)), :] = pe_batch[batch, :]
 
-        feats = self.point_embedding(pos) + p_enc # feats: (N, 48)
-
-        temporal_edge_index, spatial_edge_index = data.temporal_edge_index, data.edge_index # temporal_edge_index: (2, TE), spatial_edge_index: (2, SE)
-        # spatial_edge_index = data.edge_index
-        # temporal_edge_index = None
-        xyz = pos
-        # feats = xyz
+        # start = time.time()
+        patch_embed = self.patch_embed(img.permute(0, 3, 1, 2)) # patch_embed: (N, c0)
+        # elapsed = (time.time() - start)
+        # print(f"Patch Embed Elapsed time: {elapsed}(s)")
         # import pdb; pdb.set_trace()
+
+
+        polar_pos = torch.stack([rs,thetas]).T
+        polar_pos_enc = self.positional_encoding(polar_pos)
+
+        # feats = self.point_embedding(pix) + polar_pos_enc # feats: (N, c0)
+        feats = patch_embed.squeeze(0).view(-1, self.channels[0])[idxs] + polar_pos_enc
         
-        feats_stack = []
-        xyz_stack = []
+        # start = time.time()
+        # edge_index = knn(polar_pos, polar_pos, 9) #.flip([0])
+        # # edge_index = coalesce(torch.cat([edge_index, edge_index.flip([0])]))
+        # elapsed = (time.time() - start)
+        # print(f"KNN Elapsed time: {elapsed}(s)")
 
         for i, layer in enumerate(self.layers):
-            feats = layer(feats, xyz, temporal_edge_index, spatial_edge_index if i == 0 else None, batch)
+            feats = layer(feats, polar_pos, edge_index)
 
-            feats_stack.append(feats)
-            xyz_stack.append(xyz)
-        
-        out = self.mlp(torch.cat(feats_stack, dim=1))
+        pooled = feats.mean(dim = 0)
 
-        return F.log_softmax(out, dim=1)
+        return self.mlp(pooled)

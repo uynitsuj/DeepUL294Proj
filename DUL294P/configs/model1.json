@@ -1,8 +1,8 @@
 {
-    "k": 40,
+    "k": 9,
     "dropout": 0.5, 
-    "num_layers": 4, 
-    "channels": [48, 64, 96, 128], 
-    "num_heads": [3, 4, 6, 8], 
+    "num_layers": 3, 
+    "channels": [48, 128, 256], 
+    "num_heads": [3, 8, 16], 
     "ratio": 4.0
 }

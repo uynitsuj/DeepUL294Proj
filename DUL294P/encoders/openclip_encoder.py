@@ -42,7 +42,7 @@ class OpenCLIPNetwork(BaseImageEncoder):
         model, _, self.preprocess = open_clip.create_model_and_transforms(
             self.config.clip_model_type,  # e.g., ViT-B-16
             pretrained=self.config.clip_model_pretrained,  # e.g., laion2b_s34b_b88k
-            precision="fp16",
+            precision="fp32",
         )
         model.eval()
         self.tokenizer = open_clip.get_tokenizer(self.config.clip_model_type)

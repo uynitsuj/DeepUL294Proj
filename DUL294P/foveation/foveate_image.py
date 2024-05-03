@@ -16,8 +16,8 @@ class FoveateImage:
     ):
         self.width = width
         self.height = height
-        assert width%2 == 0
-        assert height%2 == 0 # Assert even dimensions
+        # assert width%2 == 0
+        # assert height%2 == 0 # Assert even dimensions
 
         if sigma is None:
             self.sigma = (width) / 1.8
@@ -37,10 +37,12 @@ class FoveateImage:
         # Initialize and cache foveated masks
         if mode == 'tanh':
             func = self.tanh_2d(self.focus_cone)
+            # plt.imshow(func)
+            # plt.show()
         if mode == 'gaussian':
             func = self.gaussian_2d(self.focus_cone)
-            plt.imshow(func)
-            plt.show()
+            # plt.imshow(func)
+            # plt.show()
         
         rng = torch.rand((self.height,self.width))
         mask = torch.where(func > rng, func+rng*(1-pff), 0.0)
@@ -72,7 +74,14 @@ class FoveateImage:
         """
         Processes captured image and stores results in class object.
         :param image: np.array object [W, H, C]
-        :return: Foveated image [# Pixels, C]
+        :return: 
+            Foveated image [# Pixels, C]
+            Indices of foveated pixels from original image [# Pixels] 
+                -> allows for foveated reconstruction of img via 
+                recon = torch.zeros((h,w,3), dtype=foveatedimg.dtype)
+                recon.view(-1, 3)[idxs] = foveatedimg[range(len(foveatedimg))]
+            Radial distance of foveated pixels from center [# Pixels]
+            Angle (deg.) of foveated pixels from center [# Pixels]
         """ 
         self.image = image
         w, h, c = image.shape
@@ -108,8 +117,6 @@ class FoveateImage:
         
         exponent = -((x_centered**2) / (2*self.sigma**2) + (y_centered**2) / (2*self.sigma**2))
         rad = torch.maximum((1-torch.exp(exponent)), torch.zeros_like(x_centered))
-        plt.imshow(rad)
-        plt.show()
 
         return (1-rad)*(focus_cone/self.width+1)
 

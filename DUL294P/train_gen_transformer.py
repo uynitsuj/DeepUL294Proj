@@ -14,6 +14,8 @@ from tqdm import trange, tqdm
 from datasets import load_dataset
 import os
 import matplotlib.pyplot as plt
+from torch_cluster import knn
+
 import PIL.Image
 from DUL294P.model_transformer import FoveatedTransformer
 from DUL294P.foveation.foveate_image import FoveateImage
@@ -30,6 +32,7 @@ def main():
     p.add_argument('--resume', type=str,
                    help='the checkpoint to resume from')
     p.add_argument('--debug', action='store_true', default=False)
+    p.add_argument('--num_accumulation_steps', type=int, default=32)
     args = p.parse_args()
 
     dir = os.path.dirname(os.path.abspath(__file__))
@@ -54,13 +57,13 @@ def main():
     if wandb_config['use_wandb'] == 1:
         print('Logging on wandb')
         import wandb
-        wandb.init(project=wandb_config['project'],
+        wandb_run = wandb.init(project=wandb_config['project'],
                    config={'model': model_config,
                            'training': training_config,
                            'dataset name': ds_name},
                    save_code=True)
         
-    model = FoveatedTransformer(k = model_config["k"], out_channels=5, dropout=model_config["dropout"], num_layers=model_config["num_layers"], channels = model_config["channels"], num_heads=model_config["num_heads"], ratio=model_config["ratio"])
+    model = FoveatedTransformer(k = model_config["k"], out_channels=5, dropout=model_config["dropout"], num_layers=model_config["num_layers"], channels = model_config["channels"], num_heads=model_config["num_heads"], ratio=model_config["ratio"]).cuda()
     if args.resume:
         model = torch.load(args.resume)
     else:
@@ -85,8 +88,9 @@ def main():
     dataset.set_format(type='torch')
 
     def collate_fn(batch):
+        # import pdb; pdb.set_trace()
         return {
-            'image': [(x['image'].permute(2,0,1)/255.0) for x in batch],
+            'image': [(x['image']/255.0) for x in batch if (len(x['image'].shape) == 3 and x['image'].shape[0] == 3)],
             # 'clip_image': torch.stack([clipencoder.preprocess(x['image']) for x in batch]),
             'sentences': [x['sentences'] for x in batch]
         }
@@ -99,11 +103,16 @@ def main():
                             num_workers=0,
                             collate_fn=collate_fn)
     
+    cos2 = torch.nn.CosineSimilarity(dim=1) 
+    tokenizer = open_clip.get_tokenizer('ViT-B-32')
+    
     def train_one_epoch():
         model.train()
         for i, batch in enumerate(tqdm(trainloader)):
-            for image, sentences in zip(batch['image'], batch['sentences']):
-                clipimg = clipencoder.process(image).unsqueeze(0).half().cuda()
+            for idx, (image, sentences) in enumerate(zip(batch['image'], batch['sentences'])):
+                # import pdb; pdb.set_trace()
+                text_embed = clipencoder.model.encode_text(tokenizer(sentences['raw']).cuda())
+                clipimg = clipencoder.process(image).unsqueeze(0).cuda()
                 imgenc = clipencoder.model.encode_image(clipimg).float()
                 # import pdb; pdb.set_trace()
                 c, h, w = image.size()
@@ -111,40 +120,62 @@ def main():
                 print("Pixel Count", w*h)
                 img = image.permute((1,2,0)) # [H, W, C]
                 fimg = FoveateImage(w, h)
-                # start = time.time()
-                foveatedimg, idxs, rs, thetas = fimg.foveate(img)
-                # elapsed = (time.time() - start)
-                # print(f"Elapsed time: {elapsed}(s)")
-                # print(f"Frequency: {1/elapsed}(fps)")
-                # print("Foveated Pixel Count", foveatedimg.shape)
-
-                # recon = torch.zeros((h,w,3), dtype=foveatedimg.dtype)
-                # recon.view(-1, 3)[idxs] = foveatedimg[range(len(foveatedimg))]
-
-                # print(f"Compression: {len(idxs)/(w*h)*100}%")
-                # plt.title(sentences['raw'])
-                # plt.imshow(recon)
-                # plt.show()
-
-                # x = torch.linspace(0, h - 1, h)
-                # y = torch.linspace(0, w - 1, w)
-                # x, y = torch.meshgrid(x, y)
-                # x_centered = x - h/2
-                # y_centered = y - w/2
-                # imgspacex = x_centered.view(-1)[idxs]
-                # # imgspacey = torch.transpose(y_centered, 0,1).view(-1)[idxs]
-                # import pdb; pdb.set_trace()
+                foveatedimg, indexes, rs, thetas = fimg.foveate(img)
+                foveatedimg = foveatedimg.cuda()
+                img = img.cuda()
+                rs = rs.cuda()
+                thetas = thetas.cuda()
+                polar_pos = torch.stack([rs,thetas]).T
+                
                 start = time.time()
-                fovenc = model(foveatedimg, rs, thetas)
+                edge_index = knn(polar_pos, polar_pos, 9) #.flip([0])
+                # edge_index = coalesce(torch.cat([edge_index, edge_index.flip([0])]))
                 elapsed = (time.time() - start)
-                print(f"Elapsed time: {elapsed}(s)")
+                # print(f"KNN Elapsed time: {elapsed}(s)")
+
+                start = time.time()
+                fovenc = model(img.unsqueeze(0), foveatedimg, indexes, rs, thetas, edge_index)
+                elapsed = (time.time() - start)
+                # print(f"Elapsed time: {elapsed}(s)")
                 print(f"Frequency: {1/elapsed}(fps)")
                 optimizer.zero_grad()
                 loss = torch.nn.MSELoss()(fovenc, imgenc)
+                loss += torch.nn.MSELoss()(fovenc, text_embed)
+                loss = loss / args.num_accumulation_steps
                 loss.backward()
-                optimizer.step()
-                scheduler.step()
+                print("Cosine similarity between text and clip image: ", cos2(text_embed, imgenc).data.cpu().numpy())
+                print("Cosine similarity between text and foveated image: ", cos2(text_embed, fovenc).data.cpu().numpy())
 
+
+                # print(idx)
+                if ((idx + 1) % args.num_accumulation_steps == 0) or (idx + 1 == len(trainloader)):
+                    # print("step")
+                    optimizer.step()
+                    scheduler.step()
+                    wandb_run.log({'train_loss': loss.item()})
+            
+            torch.save(model.state_dict(), f'checkpoints/model.pth')
+
+    def test_one_epoch():
+        model.eval()
+        for i, batch in enumerate(tqdm(testloader)):
+            for image, sentences in zip(batch['image'], batch['sentences']):
+                clipimg = clipencoder.process(image).unsqueeze(0).cuda()
+                imgenc = clipencoder.model.encode_image(clipimg).float()
+                c, h, w = image.size()
+                img = image.permute((1,2,0))
+                fimg = FoveateImage(w, h)
+                foveatedimg, indexes, rs, thetas = fimg.foveate(img)
+                foveatedimg = foveatedimg.cuda()
+                img = img.cuda()
+                rs = rs.cuda()
+                thetas = thetas.cuda()
+                polar_pos = torch.stack([rs,thetas]).T
+                
+                edge_index = knn(polar_pos, polar_pos, 9) #.flip([0])
+                fovenc = model(img.unsqueeze(0), foveatedimg, indexes, rs, thetas, edge_index)
+                loss = torch.nn.MSELoss()(fovenc, imgenc)
+                wandb_run.log({'test_loss': loss.item()})
 
 
     epoch = 0
@@ -152,6 +183,7 @@ def main():
         while True:
             tqdm.write(f'Epoch {epoch}')
             train_one_epoch()
+            test_one_epoch()
             epoch += 1
             tqdm.write('')
             torch.save(model.state_dict(), f'checkpoints/model.pth')
