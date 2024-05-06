@@ -67,8 +67,8 @@ def main():
     if args.resume:
         model = torch.load(args.resume)
     else:
-        if os.path.exists('checkpoints/model.pth'):
-            model.load_state_dict(torch.load('checkpoints/model.pth'))
+        if os.path.exists('checkpoints/48-256-3-8.pth'):
+            model.load_state_dict(torch.load('checkpoints/48-256-3-8.pth'))
             print('Loaded pretrained model')
         else:
             print('Training from scratch')
@@ -112,8 +112,12 @@ def main():
             for idx, (image, sentences) in enumerate(zip(batch['image'], batch['sentences'])):
                 # import pdb; pdb.set_trace()
                 text_embed = clipencoder.model.encode_text(tokenizer(sentences['raw']).cuda())
+                start = time.time()
                 clipimg = clipencoder.process(image).unsqueeze(0).cuda()
                 imgenc = clipencoder.model.encode_image(clipimg).float()
+                elapsed = (time.time() - start)
+                # print(f"CLIP Elapsed time: {elapsed}(s)")
+                # print(f"CLIP Frequency: {1/elapsed}(fps)")
                 # import pdb; pdb.set_trace()
                 c, h, w = image.size()
                 print("Original Image Size", w, h)
