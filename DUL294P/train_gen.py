@@ -17,8 +17,10 @@ from tqdm import tqdm
 from datasets import load_dataset
 import os
 import logging
+from open_clip.loss import DistillClipLoss
 import sys
-torch.multiprocessing.set_sharing_strategy('file_system')
+
+torch.multiprocessing.set_sharing_strategy("file_system")
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
 
@@ -27,8 +29,19 @@ sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from DUL294P.encoders.openclip_encoder import *
 from DUL294P.mae.models_mae import MaskedAutoencoderViT, partial
 import time
+
 # from datasets.utils.file_utils import get_datasets_user_agent
 
+def mae_inference(model, img, training_config):
+    latent, mask, ids_restore = model.forward_encoder(
+        img, training_config["masking_prob"]
+    )
+    pred_mae, pooled_mae = model.forward_decoder(latent, ids_restore)
+    return pooled_mae, pred_mae
+
+def clip_inference(model, img, training_config):
+    pooled_mae, pred_mae = model(img) 
+    return pooled_mae, pred_mae
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
@@ -50,8 +63,14 @@ def main():
     args = p.parse_args()
 
     dir = os.path.dirname(os.path.abspath(__file__))
-    
-    log = logging.getLogger()
+
+    logging.basicConfig(
+        filename=f"{dir}/logs/train.log",
+        filemode="a",
+        format="%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s",
+        datefmt="%H:%M:%S",
+        level=logging.DEBUG,
+    )
 
     ### Setup model and train config ###
     print(
@@ -70,7 +89,9 @@ def main():
     pprint.pprint(model_config)
     print("\nTraining config:")
     pprint.pprint(training_config)
-    device = torch.device(f"cuda:{args.device_id}" if torch.cuda.is_available() else "cpu")
+    device = torch.device(
+        f"cuda:{args.device_id}" if torch.cuda.is_available() else "cpu"
+    )
     batch_size = training_config["batch_size_per_device"]
 
     ds_name = "HuggingFaceM4/COCO"
@@ -104,7 +125,16 @@ def main():
             norm_layer=partial(nn.LayerNorm, eps=1e-6),
             return_pooled=True,
         )
-        model.load_state_dict(torch.load(model_config['pretrained_path'])["model"], strict=False)
+
+        model.load_state_dict(
+            torch.load(model_config["pretrained_path"])["model"], strict=False
+        )
+        inf_func = mae_inference
+    elif model_config["model"] == "CLIP":
+        model = OpenCLIPNetworkConfig(device=device).setup().float().model.visual
+        model.patch_dropout = PatchDropout(model_config["patch_dropout"])
+        inf_func = clip_inference
+            
     else:
         raise ValueError("Model not supported")
         # model = FoveatedTransformer(
@@ -133,24 +163,24 @@ def main():
     optimizer = torch.optim.Adam(model.parameters(), lr=opt_config["lr"])
     num_iter = 500
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
-        optimizer, training_config["epochs"]*num_iter, eta_min=1e-7
+        optimizer, training_config["epochs"] * num_iter, eta_min=1e-7
     )
 
     ### Dataloaders ###
     dataset.set_format(type="torch")
 
     def collate_fn(batch):
-        
+
         images = []
         for ex in batch:
-            img = ex['image']
+            img = ex["image"]
             if img.size(0) == 1:
                 img = img.repeat(3, 1, 1)
-            images.append(img / 255.)
-        
+            images.append(img / 255.0)
+
         return {
             "image": images,
-            'clip_image': torch.stack([clipencoder.process(x) for x in images]),
+            "clip_image": torch.stack([clipencoder.process(x) for x in images]),
             "sentences": [x["sentences"] for x in batch],
         }
 
@@ -158,7 +188,7 @@ def main():
         dataset["train"],
         batch_size,
         drop_last=True,
-        num_workers=5,
+        num_workers=6,
         shuffle=True,
         collate_fn=collate_fn,
     )
@@ -167,37 +197,76 @@ def main():
         dataset["validation"],
         batch_size,
         drop_last=False,
-        num_workers=5,
+        num_workers=6,
         collate_fn=collate_fn,
     )
 
+    # @profile
     def train_one_epoch():
         model.train()
         pbar = tqdm(enumerate(trainloader), total=num_iter)
         for i, (batch) in pbar:
-            img = batch['clip_image']
+            img = batch["clip_image"]
             with torch.no_grad():
                 clipimg = clipencoder.process(img).float().to(device)
                 pooled_clip, pred_clip = clipencoder.model.encode_image(clipimg)
+                sent_clip = clipencoder.model.encode_text(
+                    clipencoder.tokenizer([s["raw"] for s in batch["sentences"]]).to(
+                        device
+                    ),
+                    normalize=True,
+                )
             # import pdb; pdb.set_trace()
             start = time.time()
-            latent, mask, ids_restore = model.forward_encoder(clipimg, training_config['masking_prob'])
-            pred_mae, pooled_mae = model.forward_decoder(latent, ids_restore)
+            pooled_mae, pred_mae = inf_func(model, clipimg, training_config)
             elapsed = time.time() - start
             # print(f"Elapsed time: {elapsed}(s)")
             # print(f"Frequency: {1/elapsed}(fps)")
-            mask = mask.bool()
             optimizer.zero_grad()
+            # print(pooled_clip.shape, pooled_mae.shape, pred_clip.shape, pred_mae.shape)
+
+            if training_config["loss"] == "MSE":
+                if model_config["model"] == "MAE":
+                    loss = torch.nn.MSELoss()(pred_mae, pred_clip)
+                else: 
+                    loss = 0.
+                loss = loss + (
+                    torch.nn.MSELoss()(pooled_mae, pooled_clip)
+                    * training_config["pooled_loss_weight"]
+                )
+                loss = loss + torch.nn.MSELoss()(pooled_mae, sent_clip)
                 
-            loss = torch.nn.MSELoss()(pred_mae[mask], pred_clip[mask])
-            loss += torch.nn.MSELoss()(pooled_mae, pooled_clip) * training_config["pooled_loss_weight"]
+                if training_config["clip_loss_weight"] > 0:
+                    loss -= (
+                        F.cosine_similarity(pooled_mae, sent_clip).mean()
+                        * training_config["clip_loss_weight"]
+                    )
+            elif training_config["loss"] == "DistillClip":
+                loss = torch.nn.MSELoss()(pred_mae, pred_clip)
+                logit_scale = clipencoder.model.logit_scale
+                loss = loss + sum(DistillClipLoss().forward(
+                    pooled_mae,
+                    sent_clip,
+                    logit_scale,
+                    pooled_clip,
+                    sent_clip,
+                    logit_scale,
+                ))
+            else:
+                raise ValueError("Loss not supported")
             loss.backward()
             optimizer.step()
             scheduler.step()
-            pbar.set_description(f"Loss: {loss.item()}, Time: {elapsed}(s), Frequency: {1/elapsed}(fps)")
+            if i % 100 == 0:
+                logging.info(
+                    f"Train {i}/{num_iter} Loss: {loss.item()}, Time: {elapsed}(s), Frequency: {1/elapsed}(fps)"
+                )
+            pbar.set_description(
+                f"Loss: {loss.item()}, Time: {elapsed}(s), Frequency: {1/elapsed}(fps)"
+            )
             if i > num_iter:
                 break
-    
+
     @torch.no_grad()
     def val_one_epoch(loader):
         model.eval()
@@ -210,45 +279,63 @@ def main():
                 for image, sentences in zip(batch["image"], batch["sentences"]):
                     clipimg = clipencoder.process(image).unsqueeze(0).float().to(device)
                     pooled_clip, pred_clip = clipencoder.model.encode_image(clipimg)
-                    clip_sent = clipencoder.model.encode_text(clipencoder.tokenizer(sentences['raw']).to(device), normalize=True)
+                    clip_sent = clipencoder.model.encode_text(
+                        clipencoder.tokenizer(sentences["raw"]).to(device),
+                        normalize=True,
+                    )
                     start = time.time()
-                    latent, mask, ids_restore = model.forward_encoder(clipimg, training_config['masking_prob'])
-                    pred_mae, pooled_mae = model.forward_decoder(latent, ids_restore)
+                    pooled_mae, _ = inf_func(model, clipimg, training_config)
                     elapsed = time.time() - start
-                    mask = mask.bool()
-                    loss = torch.nn.MSELoss()(pred_mae[mask], pred_clip[mask])
-                    loss += torch.nn.MSELoss()(pooled_mae, pooled_clip) * training_config["pooled_loss_weight"]
+                    # loss = torch.nn.MSELoss()(pred_mae, pred_clip)
+                    loss = (
+                        torch.nn.MSELoss()(pooled_mae, pooled_clip)
+                        * training_config["pooled_loss_weight"]
+                    )
                     clip_sim = F.cosine_similarity(pooled_mae, clip_sent).item()
                     # print(clip_sim.shape, clipimg.shape, clip_sent.shape)
                     # losses.append(loss.item())
                     times.append(elapsed)
                     # clip_sims.append(clip_sim)
-                    pbar.set_description(f"Loss: {loss.item():4f}, Time: {elapsed:4f}(s), Frequency: {(1/elapsed):4f}(fps), Text Sim: {clip_sim:4f}")
+                    pbar.set_description(
+                        f"Loss: {loss.item():4f}, Time: {elapsed:4f}(s), Frequency: {(1/elapsed):4f}(fps), Text Sim: {clip_sim:4f}"
+                    )
             else:
-                img = batch['clip_image'].to(device)
+                img = batch["clip_image"].to(device)
                 pooled_clip, pred_clip = clipencoder.model.encode_image(img)
                 clip_sent = clipencoder.model.encode_text(
-                    clipencoder.tokenizer(
-                        [s['raw'] for s in batch['sentences']]
-                    ).to(device), normalize=True)
+                    clipencoder.tokenizer([s["raw"] for s in batch["sentences"]]).to(
+                        device
+                    ),
+                    normalize=True,
+                )
                 
-                latent, mask, ids_restore = model.forward_encoder(img, training_config['masking_prob'])
-                pred_mae, pooled_mae = model.forward_decoder(latent, ids_restore)
-                mask = mask.bool()
-                
-                loss = torch.nn.MSELoss()(pred_mae[mask], pred_clip[mask])
-                loss += torch.nn.MSELoss()(pooled_mae, pooled_clip) * training_config["pooled_loss_weight"]
+                pooled_mae, _ = inf_func(model, img, training_config)
+
+
+                # loss = torch.nn.MSELoss()(pred_mae, pred_clip)
+                loss = (
+                    torch.nn.MSELoss()(pooled_mae, pooled_clip)
+                    * training_config["pooled_loss_weight"]
+                )
                 loss = loss.item()
-                clip_sim = F.cosine_similarity(pooled_mae, clip_sent).mean().item()
+                clip_sim = (F.cosine_similarity(pooled_clip, clip_sent) - F.cosine_similarity(pooled_mae, clip_sent)).abs().mean().item()
                 losses.append(loss)
                 clip_sims.append(clip_sim)
-                pbar.set_description(f"Loss: {loss:4f}, Text Sim: {clip_sim:4f}, Avg Freq: {(len(times) / (sum(times)+1)):4f}")
-        
+                pbar.set_description(
+                    f"Loss: {loss:4f}, Text Sim: {clip_sim:4f}, Avg Freq: {(len(times) / (sum(times)+1)):4f}"
+                )
+
         print(f"Mean Loss: {sum(losses) / len(losses)}")
         print(f"Mean Time: {sum(times) / len(times)}")
         print(f"Mean Clip Similarity: {sum(clip_sims) / len(clip_sims)}")
-        return sum(losses) / len(losses), sum(times) / len(times), sum(clip_sims) / len(clip_sims)
-    
+        logging.info(
+            f"Val Stats: Loss: {sum(losses) / len(losses)}, Time: {sum(times) / len(times)}, Clip Sim: {sum(clip_sims) / len(clip_sims)}"
+        )
+        return (
+            sum(losses) / len(losses),
+            sum(times) / len(times),
+            sum(clip_sims) / len(clip_sims),
+        )
 
     epoch = 0
     for _ in range(training_config["epochs"]):
@@ -256,7 +343,7 @@ def main():
         train_one_epoch()
         loss, val_time, clip_sims = val_one_epoch(valloader)
         epoch += 1
-        tqdm.write("")
+        # tqdm.write("")
         torch.save(model.state_dict(), f"checkpoints/model.pth")
 
 

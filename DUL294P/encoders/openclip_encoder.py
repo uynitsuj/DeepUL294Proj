@@ -2,6 +2,7 @@ from dataclasses import dataclass, field
 from typing import Tuple, Type
 
 import torch
+from scipy.stats import norm
 import torchvision
 
 try:
@@ -21,6 +22,7 @@ class OpenCLIPNetworkConfig(BaseImageEncoderConfig):
     negatives: Tuple[str] = ("object", "things", "stuff", "texture")
     device: str = 'cuda'
     output_tokens: bool = True
+    masking_prob: float = 0.75
 
     @property
     def name(self) -> str:
@@ -47,6 +49,7 @@ class OpenCLIPNetwork(BaseImageEncoder):
         )
         model.eval()
         model.visual.output_tokens = self.config.output_tokens
+        model.visual.patch_dropout = PatchDropoutFov(self.config.masking_prob)
         self.tokenizer = open_clip.get_tokenizer(self.config.clip_model_type)
         self.model = model.to(self.config.device)
         self.clip_n_dims = self.config.clip_n_dims
@@ -104,3 +107,98 @@ class OpenCLIPNetwork(BaseImageEncoder):
     def encode_image(self, input):
         processed_input = self.process(input).half()
         return self.model.encode_image(processed_input)
+
+class PatchDropout(torch.nn.Module):
+    """
+    https://arxiv.org/abs/2212.00794
+    """
+
+    def __init__(self, prob, exclude_first_token=True):
+        super().__init__()
+        assert 0 <= prob < 1.
+        self.prob = prob
+        self.exclude_first_token = exclude_first_token  # exclude CLS token
+
+    def forward(self, x):
+        if self.prob == 0.:
+            return x
+
+        if self.exclude_first_token:
+            cls_tokens, x = x[:, :1], x[:, 1:]
+        else:
+            cls_tokens = torch.jit.annotate(torch.Tensor, x[:, :1])
+
+        batch = x.size()[0]
+        num_tokens = x.size()[1]
+
+        batch_indices = torch.arange(batch)
+        batch_indices = batch_indices[..., None]
+
+        keep_prob = 1 - self.prob
+        num_patches_keep = max(1, int(num_tokens * keep_prob))
+
+        rand = torch.randn(batch, num_tokens)
+        patch_indices_keep = rand.topk(num_patches_keep, dim=-1).indices
+
+        x = x[batch_indices, patch_indices_keep]
+
+        if self.exclude_first_token:
+            x = torch.cat((cls_tokens, x), dim=1)
+
+        return x
+    
+class PatchDropoutFov(torch.nn.Module):
+    """
+    https://arxiv.org/abs/2212.00794
+
+    Modified to include patch selection with a normal distribution bias
+    """
+
+    def __init__(self, prob, exclude_first_token=True):
+        super().__init__()
+        assert 0 <= prob < 1.
+        self.prob = prob
+        self.exclude_first_token = exclude_first_token  # exclude CLS token
+
+    def forward(self, x, center_coord, std_dev, return_indices=False):
+        if self.prob == 0.:
+            return x
+
+        if self.exclude_first_token:
+            cls_tokens, x = x[:, :1], x[:, 1:]
+        else:
+            cls_tokens = torch.jit.annotate(torch.Tensor, x[:, :1])
+
+        batch_size, num_tokens, _ = x.size()
+
+        # Calculate distances from center coordinate
+        # get grid of token coordinates
+        token_locs = torch.arange(num_tokens)
+        distances = ((token_locs // num_tokens**.5) - center_coord[0])**2 \
+                               + ((token_locs % num_tokens**.5) - center_coord[1])**2
+
+        # Calculate probabilities based on normal distribution
+        # probabilities = torch.exp(-distances / (2 * std_dev**2))
+        probabilities = 1/(std_dev*(1+distances/std_dev**2))
+
+        # Normalize probabilities to sum to 1
+        probabilities /= probabilities.sum()
+
+        # Determine how many patches to keep based on overall dropout probability
+        keep_prob = 1 - self.prob
+        num_patches_keep = max(1, int(num_tokens * keep_prob))
+
+        # Sample patches to keep based on probabilities
+        keep_indices = torch.multinomial(probabilities, num_patches_keep, replacement=False)
+
+        # Gather the selected patches
+        batch_indices = torch.arange(batch_size, device=x.device).unsqueeze(1)
+        x = x[batch_indices, keep_indices]
+
+        if self.exclude_first_token:
+            x = torch.cat((cls_tokens, x), dim=1)
+            
+        if return_indices:
+            return x, keep_indices
+
+        return x

@@ -1,0 +1,336 @@
+16:32:35,748 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+16:32:35,991 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+16:32:36,87 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+16:32:36,230 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+16:32:36,316 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+16:32:36,318 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+16:32:36,645 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+16:32:36,649 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+16:32:36,837 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+16:32:36,843 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+16:32:37,53 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+16:32:37,59 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+16:32:37,282 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+16:32:37,299 filelock DEBUG Attempting to acquire lock 140018764900832 on /home/sandeepmukh/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+16:32:37,299 filelock DEBUG Lock 140018764900832 acquired on /home/sandeepmukh/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+16:32:37,302 filelock DEBUG Attempting to release lock 140018764900832 on /home/sandeepmukh/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+16:32:37,302 filelock DEBUG Lock 140018764900832 released on /home/sandeepmukh/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+16:32:37,304 filelock DEBUG Attempting to acquire lock 140018660238832 on /home/sandeepmukh/.cache/huggingface/datasets/_home_sandeepmukh_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+16:32:37,304 filelock DEBUG Lock 140018660238832 acquired on /home/sandeepmukh/.cache/huggingface/datasets/_home_sandeepmukh_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+16:32:37,305 fsspec.local DEBUG open file: /home/sandeepmukh/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+16:32:37,305 filelock DEBUG Attempting to release lock 140018660238832 on /home/sandeepmukh/.cache/huggingface/datasets/_home_sandeepmukh_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+16:32:37,305 filelock DEBUG Lock 140018660238832 released on /home/sandeepmukh/.cache/huggingface/datasets/_home_sandeepmukh_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+16:32:37,469 filelock DEBUG Attempting to acquire lock 140018350503392 on /home/sandeepmukh/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+16:32:37,470 filelock DEBUG Lock 140018350503392 acquired on /home/sandeepmukh/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+16:32:37,477 filelock DEBUG Attempting to release lock 140018350503392 on /home/sandeepmukh/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+16:32:37,477 filelock DEBUG Lock 140018350503392 released on /home/sandeepmukh/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+16:32:37,477 filelock DEBUG Attempting to acquire lock 140018660233216 on /home/sandeepmukh/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+16:32:37,477 filelock DEBUG Lock 140018660233216 acquired on /home/sandeepmukh/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+16:32:37,477 fsspec.local DEBUG open file: /home/sandeepmukh/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+16:32:37,478 filelock DEBUG Attempting to release lock 140018660233216 on /home/sandeepmukh/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+16:32:37,478 filelock DEBUG Lock 140018660233216 released on /home/sandeepmukh/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+16:32:40,653 root INFO Loaded ViT-B-16 model config.
+16:32:42,230 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+16:32:42,232 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+16:33:00,968 root INFO Train 0/500 Loss: 14.9938383102417, Time: 0.7491495609283447(s), Frequency: 1.334846941324776(fps)
+16:39:25,385 root INFO Train 100/500 Loss: 12.241917610168457, Time: 0.026467323303222656(s), Frequency: 37.7824379346377(fps)
+16:46:14,702 root INFO Train 200/500 Loss: 11.322693824768066, Time: 0.015269994735717773(s), Frequency: 65.4879073180633(fps)
+16:52:58,610 root INFO Train 300/500 Loss: 10.608271598815918, Time: 0.014392375946044922(s), Frequency: 69.48123115661134(fps)
+16:59:29,493 root INFO Train 400/500 Loss: 10.562541961669922, Time: 0.03427410125732422(s), Frequency: 29.176549152731017(fps)
+17:06:07,304 root INFO Train 500/500 Loss: 10.47802448272705, Time: 0.0193483829498291(s), Frequency: 51.683905708969476(fps)
+17:29:07,753 root INFO Val Stats: Loss: 1.2957817874056228, Time: 0.012349433032795787, Clip Sim: 0.048411106888918164
+17:29:21,361 root INFO Train 0/500 Loss: 10.113701820373535, Time: 0.027588367462158203(s), Frequency: 36.247161104101494(fps)
+17:35:58,719 root INFO Train 100/500 Loss: 9.772736549377441, Time: 0.015731334686279297(s), Frequency: 63.567397168924856(fps)
+17:42:30,933 root INFO Train 200/500 Loss: 9.590046882629395, Time: 0.014556407928466797(s), Frequency: 68.6982671078062(fps)
+17:49:12,192 root INFO Train 300/500 Loss: 9.621715545654297, Time: 0.014159679412841797(s), Frequency: 70.62306785654151(fps)
+17:55:51,286 root INFO Train 400/500 Loss: 9.049521446228027, Time: 0.014902591705322266(s), Frequency: 67.10242216747193(fps)
+18:02:20,479 root INFO Train 500/500 Loss: 9.328264236450195, Time: 0.019861698150634766(s), Frequency: 50.34816219720068(fps)
+18:06:00,318 root INFO Val Stats: Loss: 1.3047405176974358, Time: 0.012357745552435517, Clip Sim: 0.06420822774476194
+18:06:13,22 root INFO Train 0/500 Loss: 9.434925079345703, Time: 0.017563581466674805(s), Frequency: 56.93599576472505(fps)
+18:12:57,473 root INFO Train 100/500 Loss: 8.752613067626953, Time: 0.01628255844116211(s), Frequency: 61.41540984566726(fps)
+18:19:30,736 root INFO Train 200/500 Loss: 9.231661796569824, Time: 0.012743234634399414(s), Frequency: 78.4730116559711(fps)
+18:26:01,253 root INFO Train 300/500 Loss: 8.837977409362793, Time: 0.0213320255279541(s), Frequency: 46.877873771975906(fps)
+18:32:31,994 root INFO Train 400/500 Loss: 8.729975700378418, Time: 0.012846946716308594(s), Frequency: 77.83950708930294(fps)
+18:39:01,795 root INFO Train 500/500 Loss: 8.747523307800293, Time: 0.013830900192260742(s), Frequency: 72.30187378255847(fps)
+18:43:12,319 root INFO Val Stats: Loss: 1.3181021923714495, Time: 0.012719431659206748, Clip Sim: 0.07403988945991435
+18:43:24,439 root INFO Train 0/500 Loss: 8.600789070129395, Time: 0.019794464111328125(s), Frequency: 50.519175178261705(fps)
+18:49:59,403 root INFO Train 100/500 Loss: 8.553766250610352, Time: 0.014758586883544922(s), Frequency: 67.75716455041841(fps)
+18:56:32,203 root INFO Train 200/500 Loss: 8.318940162658691, Time: 0.014223098754882812(s), Frequency: 70.30816682311922(fps)
+19:02:59,691 root INFO Train 300/500 Loss: 8.492999076843262, Time: 0.012580633163452148(s), Frequency: 79.48725529213334(fps)
+19:09:21,326 root INFO Train 400/500 Loss: 8.548280715942383, Time: 0.014087677001953125(s), Frequency: 70.98402382886542(fps)
+19:15:42,787 root INFO Train 500/500 Loss: 8.464048385620117, Time: 0.014454841613769531(s), Frequency: 69.18097248795935(fps)
+19:27:10,99 root INFO Val Stats: Loss: 1.3912865861933281, Time: 0.011418284615501761, Clip Sim: 0.05402278503839006
+19:27:22,279 root INFO Train 0/500 Loss: 8.418219566345215, Time: 0.01988077163696289(s), Frequency: 50.299858489434676(fps)
+19:34:01,233 root INFO Train 100/500 Loss: 8.188497543334961, Time: 0.015077829360961914(s), Frequency: 66.32254391929287(fps)
+19:40:31,572 root INFO Train 200/500 Loss: 8.210935592651367, Time: 0.018351078033447266(s), Frequency: 54.49271144601793(fps)
+19:46:52,303 root INFO Train 300/500 Loss: 8.150028228759766, Time: 0.015026330947875977(s), Frequency: 66.54984529948433(fps)
+19:53:13,652 root INFO Train 400/500 Loss: 8.009147644042969, Time: 0.01772928237915039(s), Frequency: 56.4038621876765(fps)
+19:59:32,603 root INFO Train 500/500 Loss: 8.19089126586914, Time: 0.014109134674072266(s), Frequency: 70.87606880935483(fps)
+20:02:53,364 root INFO Val Stats: Loss: 1.3296637915550393, Time: 0.01208758819848299, Clip Sim: 0.08769262724734367
+20:03:03,575 root INFO Train 0/500 Loss: 8.262754440307617, Time: 0.016443729400634766(s), Frequency: 60.81345512541685(fps)
+20:09:25,642 root INFO Train 100/500 Loss: 7.982844352722168, Time: 0.019629716873168945(s), Frequency: 50.94316981040409(fps)
+20:16:05,133 root INFO Train 200/500 Loss: 8.034815788269043, Time: 0.024005889892578125(s), Frequency: 41.65644366756714(fps)
+20:22:37,658 root INFO Train 300/500 Loss: 7.880108833312988, Time: 0.014785051345825195(s), Frequency: 67.635882798768(fps)
+20:29:14,318 root INFO Train 400/500 Loss: 7.815028667449951, Time: 0.021283388137817383(s), Frequency: 46.985000392073395(fps)
+20:36:06,424 root INFO Train 500/500 Loss: 7.789534568786621, Time: 0.014699459075927734(s), Frequency: 68.02971421156778(fps)
+20:40:38,571 root INFO Val Stats: Loss: 1.3424317405578938, Time: 0.012819787953048944, Clip Sim: 0.08137742762869977
+20:40:55,898 root INFO Train 0/500 Loss: 7.605309009552002, Time: 0.017342329025268555(s), Frequency: 57.66238194091203(fps)
+20:47:38,682 root INFO Train 100/500 Loss: 7.606749057769775, Time: 0.023538589477539062(s), Frequency: 42.48342921967426(fps)
+20:54:42,423 root INFO Train 200/500 Loss: 7.554329872131348, Time: 0.019296884536743164(s), Frequency: 51.821836737215364(fps)
+21:01:38,241 root INFO Train 300/500 Loss: 7.5484724044799805, Time: 0.014364957809448242(s), Frequency: 69.61384873280112(fps)
+21:08:35,720 root INFO Train 400/500 Loss: 7.442605495452881, Time: 0.029935836791992188(s), Frequency: 33.404778591908254(fps)
+21:15:29,333 root INFO Train 500/500 Loss: 7.112525463104248, Time: 0.01590418815612793(s), Frequency: 62.876519705578126(fps)
+21:21:12,364 root INFO Val Stats: Loss: 1.3680773060372535, Time: 0.015532725490629673, Clip Sim: 0.08211779657830583
+21:21:25,41 root INFO Train 0/500 Loss: 7.640054225921631, Time: 0.029890775680541992(s), Frequency: 33.45513715293011(fps)
+21:28:12,27 root INFO Train 100/500 Loss: 7.466963768005371, Time: 0.03430986404418945(s), Frequency: 29.14613706169305(fps)
+21:34:55,383 root INFO Train 200/500 Loss: 7.349265098571777, Time: 0.016781330108642578(s), Frequency: 59.59003210865797(fps)
+21:41:42,696 root INFO Train 300/500 Loss: 7.448852062225342, Time: 0.01903986930847168(s), Frequency: 52.52136891270865(fps)
+21:48:40,230 root INFO Train 400/500 Loss: 7.167944431304932, Time: 0.015156745910644531(s), Frequency: 65.9772226766501(fps)
+21:55:37,346 root INFO Train 500/500 Loss: 7.14342737197876, Time: 0.03605008125305176(s), Frequency: 27.739188518898185(fps)
+22:01:45,790 root INFO Val Stats: Loss: 1.3602784846691376, Time: 0.018611750099807978, Clip Sim: 0.08229189231357675
+22:01:58,820 root INFO Train 0/500 Loss: 7.236934661865234, Time: 0.023118019104003906(s), Frequency: 43.256301307701825(fps)
+22:08:49,29 root INFO Train 100/500 Loss: 7.37471866607666, Time: 0.0235745906829834(s), Frequency: 42.418551967556304(fps)
+22:15:33,691 root INFO Train 200/500 Loss: 7.107525825500488, Time: 0.019277572631835938(s), Frequency: 51.87375086573662(fps)
+22:22:30,310 root INFO Train 300/500 Loss: 7.0675950050354, Time: 0.042833805084228516(s), Frequency: 23.346046377005198(fps)
+22:29:13,757 root INFO Train 400/500 Loss: 7.122930526733398, Time: 0.016176462173461914(s), Frequency: 61.818213975150705(fps)
+22:35:52,447 root INFO Train 500/500 Loss: 6.948589324951172, Time: 0.015468597412109375(s), Frequency: 64.64710234278668(fps)
+22:42:00,685 root INFO Val Stats: Loss: 1.380915454093446, Time: 0.01639171177521348, Clip Sim: 0.06502926262452248
+22:42:19,980 root INFO Train 0/500 Loss: 6.81794548034668, Time: 0.052518367767333984(s), Frequency: 19.040957335730305(fps)
+22:49:18,990 root INFO Train 100/500 Loss: 7.04102087020874, Time: 0.016376733779907227(s), Frequency: 61.06223703940951(fps)
+22:56:02,972 root INFO Train 200/500 Loss: 6.700960636138916, Time: 0.021749019622802734(s), Frequency: 45.97908399289645(fps)
+23:03:08,846 root INFO Train 300/500 Loss: 7.054355621337891, Time: 0.017023563385009766(s), Frequency: 58.74210806419988(fps)
+23:10:04,722 root INFO Train 400/500 Loss: 7.004194736480713, Time: 0.016516923904418945(s), Frequency: 60.54396119924362(fps)
+23:16:53,666 root INFO Train 500/500 Loss: 6.738986492156982, Time: 0.015781164169311523(s), Frequency: 63.36668127086764(fps)
+23:22:41,493 root INFO Val Stats: Loss: 1.3674082172677873, Time: 0.016853560926392674, Clip Sim: 0.08173864144594112
+23:22:56,803 root INFO Train 0/500 Loss: 6.95420503616333, Time: 0.01653313636779785(s), Frequency: 60.48459153507823(fps)
+23:29:48,208 root INFO Train 100/500 Loss: 6.560266494750977, Time: 0.018361806869506836(s), Frequency: 54.46087125884568(fps)
+23:36:29,649 root INFO Train 200/500 Loss: 6.7544989585876465, Time: 0.020065784454345703(s), Frequency: 49.83607803997053(fps)
+23:43:28,134 root INFO Train 300/500 Loss: 6.5111403465271, Time: 0.030529260635375977(s), Frequency: 32.75546080016244(fps)
+23:50:22,478 root INFO Train 400/500 Loss: 6.554989337921143, Time: 0.0154876708984375(s), Frequency: 64.56748768472906(fps)
+23:57:07,594 root INFO Train 500/500 Loss: 6.7640275955200195, Time: 0.030324459075927734(s), Frequency: 32.97668055664754(fps)
+00:02:41,295 root INFO Val Stats: Loss: 1.3772881031036377, Time: 0.015964152058586478, Clip Sim: 0.07149066427286635
+00:02:54,422 root INFO Train 0/500 Loss: 6.583954811096191, Time: 0.01976752281188965(s), Frequency: 50.58802812654533(fps)
+00:04:51,582 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 122 - value: b'NIKON CORPORATION\x00'
+00:04:51,583 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 140 - value: b'NIKON D3000\x00'
+00:04:51,583 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 152 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+00:04:51,583 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 160 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+00:04:51,584 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+00:04:51,584 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 168 - value: b'picnik.com\x00'
+00:04:51,584 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 180 - value: b'2010:02:16 04:35:46\x00'
+00:04:51,584 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+00:04:51,584 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xc8'
+00:07:41,763 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+00:07:41,764 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+00:08:46,538 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 146 - value: b'Nikon\x00'
+00:08:46,538 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 152 - value: b'Nikon COOLSCAN IV ED\x00'
+00:08:46,539 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 174 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+00:08:46,539 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 182 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+00:08:46,539 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+00:08:46,539 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 190 - value: b'Nikon Scan 4.0.3 W\x00'
+00:08:46,539 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 210 - value: b'2009:12:26 21:54:08\x00'
+00:08:46,539 PIL.TiffImagePlugin DEBUG tag: Artist (315) - type: string (2) Tag Location: 106 - Data Location: 230 - value: b'FarTripper\x00'
+00:08:46,539 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+00:08:46,539 PIL.TiffImagePlugin DEBUG tag: Copyright (33432) - type: string (2) Tag Location: 130 - Data Location: 242 - value: b'All Rights Reserved\x00'
+00:08:46,539 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01\x06'
+00:09:57,410 root INFO Train 100/500 Loss: 6.215514183044434, Time: 0.01544189453125(s), Frequency: 64.7588932806324(fps)
+00:16:51,839 root INFO Train 200/500 Loss: 6.666388988494873, Time: 0.015313863754272461(s), Frequency: 65.30030670548489(fps)
+00:22:12,876 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 122 - value: b'NIKON CORPORATION\x00'
+00:22:12,877 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 140 - value: b'NIKON D3000\x00'
+00:22:12,877 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 152 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+00:22:12,877 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 160 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+00:22:12,877 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+00:22:12,878 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 168 - value: b'picnik.com\x00'
+00:22:12,878 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 180 - value: b'2010:02:16 04:35:46\x00'
+00:22:12,878 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+00:22:12,878 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xc8'
+00:23:40,350 root INFO Train 300/500 Loss: 6.509280681610107, Time: 0.019815444946289062(s), Frequency: 50.46568485898546(fps)
+00:24:01,723 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 146 - value: b'Nikon\x00'
+00:24:01,724 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 152 - value: b'Nikon COOLSCAN IV ED\x00'
+00:24:01,724 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 174 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+00:24:01,724 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 182 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+00:24:01,724 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+00:24:01,724 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 190 - value: b'Nikon Scan 4.0.3 W\x00'
+00:24:01,724 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 210 - value: b'2009:12:26 21:54:08\x00'
+00:24:01,724 PIL.TiffImagePlugin DEBUG tag: Artist (315) - type: string (2) Tag Location: 106 - Data Location: 230 - value: b'FarTripper\x00'
+00:24:01,725 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+00:24:01,725 PIL.TiffImagePlugin DEBUG tag: Copyright (33432) - type: string (2) Tag Location: 130 - Data Location: 242 - value: b'All Rights Reserved\x00'
+00:24:01,725 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01\x06'
+00:25:14,353 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+00:25:14,353 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+00:30:32,975 root INFO Train 400/500 Loss: 6.502828121185303, Time: 0.01709461212158203(s), Frequency: 58.497963737796375(fps)
+00:31:55,966 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+00:31:55,966 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+00:37:13,779 root INFO Train 500/500 Loss: 6.645334243774414, Time: 0.0203094482421875(s), Frequency: 49.2381667918858(fps)
+00:42:43,406 root INFO Val Stats: Loss: 1.3710842893478719, Time: 0.015173677122220397, Clip Sim: 0.07651938664469313
+00:42:50,574 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+00:42:50,575 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+00:42:55,331 root INFO Train 0/500 Loss: 6.4853034019470215, Time: 0.018230438232421875(s), Frequency: 54.85331659342959(fps)
+00:43:47,651 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 122 - value: b'NIKON CORPORATION\x00'
+00:43:47,652 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 140 - value: b'NIKON D3000\x00'
+00:43:47,652 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 152 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+00:43:47,652 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 160 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+00:43:47,652 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+00:43:47,652 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 168 - value: b'picnik.com\x00'
+00:43:47,652 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 180 - value: b'2010:02:16 04:35:46\x00'
+00:43:47,652 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+00:43:47,652 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xc8'
+00:49:21,65 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 146 - value: b'Nikon\x00'
+00:49:21,66 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 152 - value: b'Nikon COOLSCAN IV ED\x00'
+00:49:21,66 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 174 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+00:49:21,66 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 182 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+00:49:21,66 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+00:49:21,66 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 190 - value: b'Nikon Scan 4.0.3 W\x00'
+00:49:21,66 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 210 - value: b'2009:12:26 21:54:08\x00'
+00:49:21,66 PIL.TiffImagePlugin DEBUG tag: Artist (315) - type: string (2) Tag Location: 106 - Data Location: 230 - value: b'FarTripper\x00'
+00:49:21,66 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+00:49:21,66 PIL.TiffImagePlugin DEBUG tag: Copyright (33432) - type: string (2) Tag Location: 130 - Data Location: 242 - value: b'All Rights Reserved\x00'
+00:49:21,66 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01\x06'
+00:49:49,635 root INFO Train 100/500 Loss: 6.474036693572998, Time: 0.01586627960205078(s), Frequency: 63.02674761074713(fps)
+00:50:48,870 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 122 - value: b'NIKON CORPORATION\x00'
+00:50:48,871 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 140 - value: b'NIKON D3000\x00'
+00:50:48,871 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 152 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+00:50:48,872 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 160 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+00:50:48,872 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+00:50:48,872 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 168 - value: b'picnik.com\x00'
+00:50:48,872 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 180 - value: b'2010:02:16 04:35:46\x00'
+00:50:48,872 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+00:50:48,872 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xc8'
+00:55:54,256 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+00:55:54,256 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+00:56:47,466 root INFO Train 200/500 Loss: 6.510359287261963, Time: 0.030088424682617188(s), Frequency: 33.23537242472266(fps)
+01:03:37,436 root INFO Train 300/500 Loss: 6.660621166229248, Time: 0.016949892044067383(s), Frequency: 58.997425906910664(fps)
+01:09:31,801 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 122 - value: b'NIKON CORPORATION\x00'
+01:09:31,801 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 140 - value: b'NIKON D3000\x00'
+01:09:31,801 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 152 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+01:09:31,801 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 160 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+01:09:31,801 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+01:09:31,801 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 168 - value: b'picnik.com\x00'
+01:09:31,801 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 180 - value: b'2010:02:16 04:35:46\x00'
+01:09:31,801 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+01:09:31,801 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xc8'
+01:10:35,760 root INFO Train 400/500 Loss: 6.4303412437438965, Time: 0.015250682830810547(s), Frequency: 65.57083450583123(fps)
+01:12:36,300 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+01:12:36,300 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+01:13:59,27 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+01:13:59,27 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+01:17:43,639 root INFO Train 500/500 Loss: 6.4779462814331055, Time: 0.015568971633911133(s), Frequency: 64.23031806557327(fps)
+01:22:26,943 root INFO Val Stats: Loss: 1.3741193223506847, Time: 0.0148108487483114, Clip Sim: 0.073304867649332
+01:22:38,776 root INFO Train 0/500 Loss: 6.4763593673706055, Time: 0.01797938346862793(s), Frequency: 55.619259789685856(fps)
+01:29:15,657 root INFO Train 100/500 Loss: 6.479592323303223, Time: 0.02418065071105957(s), Frequency: 41.35538004949665(fps)
+01:32:00,166 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 146 - value: b'Nikon\x00'
+01:32:00,167 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 152 - value: b'Nikon COOLSCAN IV ED\x00'
+01:32:00,167 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 174 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+01:32:00,167 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 182 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+01:32:00,167 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+01:32:00,167 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 190 - value: b'Nikon Scan 4.0.3 W\x00'
+01:32:00,172 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 210 - value: b'2009:12:26 21:54:08\x00'
+01:32:00,173 PIL.TiffImagePlugin DEBUG tag: Artist (315) - type: string (2) Tag Location: 106 - Data Location: 230 - value: b'FarTripper\x00'
+01:32:00,173 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+01:32:00,173 PIL.TiffImagePlugin DEBUG tag: Copyright (33432) - type: string (2) Tag Location: 130 - Data Location: 242 - value: b'All Rights Reserved\x00'
+01:32:00,173 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01\x06'
+01:35:15,987 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 146 - value: b'Nikon\x00'
+01:35:15,988 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 152 - value: b'Nikon COOLSCAN IV ED\x00'
+01:35:15,988 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 174 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+01:35:15,988 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 182 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+01:35:15,988 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+01:35:15,988 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 190 - value: b'Nikon Scan 4.0.3 W\x00'
+01:35:15,988 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 210 - value: b'2009:12:26 21:54:08\x00'
+01:35:15,988 PIL.TiffImagePlugin DEBUG tag: Artist (315) - type: string (2) Tag Location: 106 - Data Location: 230 - value: b'FarTripper\x00'
+01:35:15,988 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+01:35:15,988 PIL.TiffImagePlugin DEBUG tag: Copyright (33432) - type: string (2) Tag Location: 130 - Data Location: 242 - value: b'All Rights Reserved\x00'
+01:35:15,988 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01\x06'
+01:36:16,996 root INFO Train 200/500 Loss: 6.617095947265625, Time: 0.027929067611694336(s), Frequency: 35.804990481718924(fps)
+01:38:56,528 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 146 - value: b'Nikon\x00'
+01:38:56,528 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 152 - value: b'Nikon COOLSCAN IV ED\x00'
+01:38:56,528 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 174 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+01:38:56,528 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 182 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+01:38:56,528 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+01:38:56,528 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 190 - value: b'Nikon Scan 4.0.3 W\x00'
+01:38:56,528 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 210 - value: b'2009:12:26 21:54:08\x00'
+01:38:56,528 PIL.TiffImagePlugin DEBUG tag: Artist (315) - type: string (2) Tag Location: 106 - Data Location: 230 - value: b'FarTripper\x00'
+01:38:56,529 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+01:38:56,529 PIL.TiffImagePlugin DEBUG tag: Copyright (33432) - type: string (2) Tag Location: 130 - Data Location: 242 - value: b'All Rights Reserved\x00'
+01:38:56,529 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01\x06'
+01:42:23,465 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+01:42:23,465 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+01:42:57,149 root INFO Train 300/500 Loss: 6.38999605178833, Time: 0.0235903263092041(s), Frequency: 42.39025721360352(fps)
+01:43:33,229 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+01:43:33,229 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+01:49:43,683 root INFO Train 400/500 Loss: 6.480076313018799, Time: 0.017958641052246094(s), Frequency: 55.68350061069513(fps)
+01:50:56,804 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+01:50:56,805 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+01:55:20,684 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 122 - value: b'NIKON CORPORATION\x00'
+01:55:20,684 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 140 - value: b'NIKON D3000\x00'
+01:55:20,684 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 152 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+01:55:20,684 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 160 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+01:55:20,685 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+01:55:20,685 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 168 - value: b'picnik.com\x00'
+01:55:20,685 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 180 - value: b'2010:02:16 04:35:46\x00'
+01:55:20,685 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+01:55:20,685 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xc8'
+01:56:47,324 root INFO Train 500/500 Loss: 6.3330979347229, Time: 0.01941204071044922(s), Frequency: 51.514419061655616(fps)
+02:01:56,519 root INFO Val Stats: Loss: 1.3707091250318162, Time: 0.015004944987595081, Clip Sim: 0.07396716117224794
+02:02:05,862 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 146 - value: b'Nikon\x00'
+02:02:05,863 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 152 - value: b'Nikon COOLSCAN IV ED\x00'
+02:02:05,863 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 174 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+02:02:05,863 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 182 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+02:02:05,863 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+02:02:05,863 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 190 - value: b'Nikon Scan 4.0.3 W\x00'
+02:02:05,863 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 210 - value: b'2009:12:26 21:54:08\x00'
+02:02:05,864 PIL.TiffImagePlugin DEBUG tag: Artist (315) - type: string (2) Tag Location: 106 - Data Location: 230 - value: b'FarTripper\x00'
+02:02:05,864 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+02:02:05,864 PIL.TiffImagePlugin DEBUG tag: Copyright (33432) - type: string (2) Tag Location: 130 - Data Location: 242 - value: b'All Rights Reserved\x00'
+02:02:05,864 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01\x06'
+02:02:11,989 root INFO Train 0/500 Loss: 6.456196308135986, Time: 0.018342018127441406(s), Frequency: 54.51962772318411(fps)
+02:08:50,444 root INFO Train 100/500 Loss: 6.510374069213867, Time: 0.02608346939086914(s), Frequency: 38.338458163470506(fps)
+02:15:31,49 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 122 - value: b'NIKON CORPORATION\x00'
+02:15:31,49 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 140 - value: b'NIKON D3000\x00'
+02:15:31,49 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 152 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+02:15:31,49 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 160 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+02:15:31,49 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+02:15:31,49 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 168 - value: b'picnik.com\x00'
+02:15:31,49 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 180 - value: b'2010:02:16 04:35:46\x00'
+02:15:31,50 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+02:15:31,50 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xc8'
+02:15:52,115 root INFO Train 200/500 Loss: 6.439511299133301, Time: 0.05153083801269531(s), Frequency: 19.405855572417366(fps)
+02:17:14,768 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 146 - value: b'Nikon\x00'
+02:17:14,769 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 152 - value: b'Nikon COOLSCAN IV ED\x00'
+02:17:14,769 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 174 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+02:17:14,769 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 182 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+02:17:14,769 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+02:17:14,769 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 190 - value: b'Nikon Scan 4.0.3 W\x00'
+02:17:14,769 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 210 - value: b'2009:12:26 21:54:08\x00'
+02:17:14,769 PIL.TiffImagePlugin DEBUG tag: Artist (315) - type: string (2) Tag Location: 106 - Data Location: 230 - value: b'FarTripper\x00'
+02:17:14,769 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+02:17:14,769 PIL.TiffImagePlugin DEBUG tag: Copyright (33432) - type: string (2) Tag Location: 130 - Data Location: 242 - value: b'All Rights Reserved\x00'
+02:17:14,769 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01\x06'
+02:21:52,421 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+02:21:52,422 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+02:22:51,924 root INFO Train 300/500 Loss: 6.191535472869873, Time: 0.028383970260620117(s), Frequency: 35.2311530352538(fps)
+02:24:02,327 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 122 - value: b'NIKON CORPORATION\x00'
+02:24:02,327 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 140 - value: b'NIKON D3000\x00'
+02:24:02,327 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 152 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+02:24:02,327 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 160 - value: b'\x00\x00\x01,\x00\x00\x00\x01'
+02:24:02,327 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+02:24:02,327 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 168 - value: b'picnik.com\x00'
+02:24:02,327 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 180 - value: b'2010:02:16 04:35:46\x00'
+02:24:02,327 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+02:24:02,327 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xc8'
+02:29:06,473 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+02:29:06,473 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+02:29:45,718 root INFO Train 400/500 Loss: 6.295159339904785, Time: 0.014867067337036133(s), Frequency: 67.26276119762015(fps)
+02:30:14,899 PIL.TiffImagePlugin DEBUG tag: Make (271) - type: string (2) Tag Location: 22 - Data Location: 146 - value: b'Nikon\x00'
+02:30:14,900 PIL.TiffImagePlugin DEBUG tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 152 - value: b'Nikon COOLSCAN IV ED\x00'
+02:30:14,900 PIL.TiffImagePlugin DEBUG tag: XResolution (282) - type: rational (5) Tag Location: 46 - Data Location: 174 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+02:30:14,900 PIL.TiffImagePlugin DEBUG tag: YResolution (283) - type: rational (5) Tag Location: 58 - Data Location: 182 - value: b'\x00\x00\x0bT\x00\x00\x00\x01'
+02:30:14,900 PIL.TiffImagePlugin DEBUG tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
+02:30:14,900 PIL.TiffImagePlugin DEBUG tag: Software (305) - type: string (2) Tag Location: 82 - Data Location: 190 - value: b'Nikon Scan 4.0.3 W\x00'
+02:30:14,900 PIL.TiffImagePlugin DEBUG tag: DateTime (306) - type: string (2) Tag Location: 94 - Data Location: 210 - value: b'2009:12:26 21:54:08\x00'
+02:30:14,901 PIL.TiffImagePlugin DEBUG tag: Artist (315) - type: string (2) Tag Location: 106 - Data Location: 230 - value: b'FarTripper\x00'
+02:30:14,901 PIL.TiffImagePlugin DEBUG tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
+02:30:14,901 PIL.TiffImagePlugin DEBUG tag: Copyright (33432) - type: string (2) Tag Location: 130 - Data Location: 242 - value: b'All Rights Reserved\x00'
+02:30:14,901 PIL.TiffImagePlugin DEBUG tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01\x06'
+02:32:33,149 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
+02:32:33,149 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
+02:36:46,918 root INFO Train 500/500 Loss: 6.215826988220215, Time: 0.026088237762451172(s), Frequency: 38.331450713750435(fps)
+02:42:48,465 root INFO Val Stats: Loss: 1.3715152562932764, Time: 0.017066293628886342, Clip Sim: 0.07435892530261203

@@ -1,0 +1,5 @@
+{
+  "patch_dropout": 0.75,
+  "model": "CLIP",
+  "pretrained_path": "/home/sandeepmukh/DeepUL294Proj/DUL294P/models/mae_pretrain_vit_base_full.pth"
+}

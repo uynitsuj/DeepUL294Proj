@@ -1,0 +1,24 @@
+{
+    "epochs": 10,
+    "batch_size_per_device": 128,
+    "precision": "float32",
+    "loss": "MSE",
+    "masking_prob": 0.75, 
+    "optimizer": {
+        "lr": 1e-4,
+        "schedule": {
+            "lr": 1e-4,
+            "type": "cosine",
+            "steps": 781250.0,
+            "warmup": 0.9995,
+            "final_lr": 0.0
+        }
+    },
+    "pooled_weight": 1.0,
+    "clip_loss_weight": 0.0,
+    "wandb": {
+        "use_wandb": true,
+        "project": "DUL294P"
+    },
+    "pooled_loss_weight": 1
+}
