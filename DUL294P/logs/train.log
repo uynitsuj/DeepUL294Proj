@@ -1422,3 +1422,891 @@
 04:59:02,508 PIL.PngImagePlugin DEBUG STREAM b'IHDR' 16 13
 04:59:02,509 PIL.PngImagePlugin DEBUG STREAM b'IDAT' 41 32768
 04:59:48,413 root INFO Train 200/500 Loss: 0.21098217368125916, Time: 0.01339268684387207(s), Frequency: 74.6676161145034(fps)
+01:57:36,67 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+01:57:36,228 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+01:57:36,328 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+01:57:36,436 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+01:57:36,527 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+01:57:36,529 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+01:57:36,778 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+01:57:36,781 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+01:57:36,879 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+01:57:36,880 filelock DEBUG Attempting to acquire lock 140541775845520 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/102c0884434e5064a1011e5f7c09d3e5f5ebadfe6c452f5cf2570123d0058f19.0d32f087a612dfee7fc27efa6bf2d04c2a1a213a2b67d44bca1e87b737c7ca2d.py.lock
+01:57:36,880 filelock DEBUG Lock 140541775845520 acquired on /home/kushtimusprime/.cache/huggingface/datasets/downloads/102c0884434e5064a1011e5f7c09d3e5f5ebadfe6c452f5cf2570123d0058f19.0d32f087a612dfee7fc27efa6bf2d04c2a1a213a2b67d44bca1e87b737c7ca2d.py.lock
+01:57:36,881 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+01:57:36,978 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+01:57:36,980 filelock DEBUG Attempting to release lock 140541775845520 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/102c0884434e5064a1011e5f7c09d3e5f5ebadfe6c452f5cf2570123d0058f19.0d32f087a612dfee7fc27efa6bf2d04c2a1a213a2b67d44bca1e87b737c7ca2d.py.lock
+01:57:36,980 filelock DEBUG Lock 140541775845520 released on /home/kushtimusprime/.cache/huggingface/datasets/downloads/102c0884434e5064a1011e5f7c09d3e5f5ebadfe6c452f5cf2570123d0058f19.0d32f087a612dfee7fc27efa6bf2d04c2a1a213a2b67d44bca1e87b737c7ca2d.py.lock
+01:57:36,982 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+01:57:37,97 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+01:57:37,99 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+01:57:37,203 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+01:57:37,204 filelock DEBUG Attempting to acquire lock 140541775845520 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/09747db1db769f8a84babd21418e5e652bd59f0de2c9862e044f10a00d4a21ab.92512b6036d5bb908b38ed931bb6086b9d4c6ca4ef7a993b0f8164fde0bb0240.lock
+01:57:37,205 filelock DEBUG Lock 140541775845520 acquired on /home/kushtimusprime/.cache/huggingface/datasets/downloads/09747db1db769f8a84babd21418e5e652bd59f0de2c9862e044f10a00d4a21ab.92512b6036d5bb908b38ed931bb6086b9d4c6ca4ef7a993b0f8164fde0bb0240.lock
+01:57:37,205 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+01:57:37,309 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 3660
+01:57:37,310 filelock DEBUG Attempting to release lock 140541775845520 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/09747db1db769f8a84babd21418e5e652bd59f0de2c9862e044f10a00d4a21ab.92512b6036d5bb908b38ed931bb6086b9d4c6ca4ef7a993b0f8164fde0bb0240.lock
+01:57:37,310 filelock DEBUG Lock 140541775845520 released on /home/kushtimusprime/.cache/huggingface/datasets/downloads/09747db1db769f8a84babd21418e5e652bd59f0de2c9862e044f10a00d4a21ab.92512b6036d5bb908b38ed931bb6086b9d4c6ca4ef7a993b0f8164fde0bb0240.lock
+01:57:37,316 filelock DEBUG Attempting to acquire lock 140541056078224 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+01:57:37,316 filelock DEBUG Lock 140541056078224 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+01:57:37,317 filelock DEBUG Attempting to release lock 140541056078224 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+01:57:37,317 filelock DEBUG Lock 140541056078224 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+01:57:37,320 filelock DEBUG Attempting to acquire lock 140541055998800 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+01:57:37,320 filelock DEBUG Lock 140541055998800 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+01:57:37,320 filelock DEBUG Attempting to release lock 140541055998800 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+01:57:37,320 filelock DEBUG Lock 140541055998800 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+01:57:37,328 filelock DEBUG Attempting to acquire lock 140541020636048 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+01:57:37,328 filelock DEBUG Lock 140541020636048 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+01:57:37,329 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): storage.googleapis.com:443
+01:57:37,545 urllib3.connectionpool DEBUG https://storage.googleapis.com:443 "HEAD /huggingface-nlp/cache/datasets/HuggingFaceM4___coco/2014/1.0.0/dataset_info.json HTTP/1.1" 404 0
+01:57:37,547 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): cs.stanford.edu:443
+01:57:37,744 urllib3.connectionpool DEBUG https://cs.stanford.edu:443 "HEAD /people/karpathy/deepimagesent/caption_datasets.zip HTTP/1.1" 200 0
+01:57:37,746 filelock DEBUG Attempting to acquire lock 140540891092816 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/d6ce4e9a99bf322acbf9400100cdf579264c83d8555e62d5ca1d183222d83bcf.lock
+01:57:37,746 filelock DEBUG Lock 140540891092816 acquired on /home/kushtimusprime/.cache/huggingface/datasets/downloads/d6ce4e9a99bf322acbf9400100cdf579264c83d8555e62d5ca1d183222d83bcf.lock
+01:57:37,746 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): cs.stanford.edu:443
+01:57:37,830 urllib3.connectionpool DEBUG https://cs.stanford.edu:443 "GET /people/karpathy/deepimagesent/caption_datasets.zip HTTP/1.1" 200 36745453
+01:57:44,361 filelock DEBUG Attempting to release lock 140540891092816 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/d6ce4e9a99bf322acbf9400100cdf579264c83d8555e62d5ca1d183222d83bcf.lock
+01:57:44,361 filelock DEBUG Lock 140540891092816 released on /home/kushtimusprime/.cache/huggingface/datasets/downloads/d6ce4e9a99bf322acbf9400100cdf579264c83d8555e62d5ca1d183222d83bcf.lock
+01:57:44,361 filelock DEBUG Attempting to acquire lock 140545789880080 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/b4caf2fcaedd3c54cc2577106fda271849f921513266746f0247fb075ec4dbc4.lock
+01:57:44,361 filelock DEBUG Lock 140545789880080 acquired on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/b4caf2fcaedd3c54cc2577106fda271849f921513266746f0247fb075ec4dbc4.lock
+01:57:44,685 filelock DEBUG Attempting to release lock 140545789880080 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/b4caf2fcaedd3c54cc2577106fda271849f921513266746f0247fb075ec4dbc4.lock
+01:57:44,685 filelock DEBUG Lock 140545789880080 released on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/b4caf2fcaedd3c54cc2577106fda271849f921513266746f0247fb075ec4dbc4.lock
+01:57:44,685 urllib3.connectionpool DEBUG Starting new HTTP connection (1): images.cocodataset.org:80
+01:57:44,963 urllib3.connectionpool DEBUG http://images.cocodataset.org:80 "HEAD /zips/train2014.zip HTTP/1.1" 200 0
+01:57:44,963 filelock DEBUG Attempting to acquire lock 140540891092112 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/7e980cf3d4130423a4b5a84deccf07c77eaaf9a80fe97c255f11f53f44bef5c2.lock
+01:57:44,963 filelock DEBUG Lock 140540891092112 acquired on /home/kushtimusprime/.cache/huggingface/datasets/downloads/7e980cf3d4130423a4b5a84deccf07c77eaaf9a80fe97c255f11f53f44bef5c2.lock
+01:57:44,964 urllib3.connectionpool DEBUG Starting new HTTP connection (1): images.cocodataset.org:80
+01:57:45,114 urllib3.connectionpool DEBUG http://images.cocodataset.org:80 "GET /zips/train2014.zip HTTP/1.1" 200 13510573713
+02:23:17,576 filelock DEBUG Attempting to release lock 140540891092112 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/7e980cf3d4130423a4b5a84deccf07c77eaaf9a80fe97c255f11f53f44bef5c2.lock
+02:23:17,576 filelock DEBUG Lock 140540891092112 released on /home/kushtimusprime/.cache/huggingface/datasets/downloads/7e980cf3d4130423a4b5a84deccf07c77eaaf9a80fe97c255f11f53f44bef5c2.lock
+02:23:17,577 urllib3.connectionpool DEBUG Starting new HTTP connection (1): images.cocodataset.org:80
+02:23:17,758 urllib3.connectionpool DEBUG http://images.cocodataset.org:80 "HEAD /zips/val2014.zip HTTP/1.1" 200 0
+02:23:17,759 filelock DEBUG Attempting to acquire lock 140545789882832 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/afc0a9ad684056b480b278e422e08eee16a2c5097fbb5c45c28428c213a58e3e.lock
+02:23:17,759 filelock DEBUG Lock 140545789882832 acquired on /home/kushtimusprime/.cache/huggingface/datasets/downloads/afc0a9ad684056b480b278e422e08eee16a2c5097fbb5c45c28428c213a58e3e.lock
+02:23:17,759 urllib3.connectionpool DEBUG Starting new HTTP connection (1): images.cocodataset.org:80
+02:23:17,947 urllib3.connectionpool DEBUG http://images.cocodataset.org:80 "GET /zips/val2014.zip HTTP/1.1" 200 6645013297
+02:34:22,811 filelock DEBUG Attempting to release lock 140545789882832 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/afc0a9ad684056b480b278e422e08eee16a2c5097fbb5c45c28428c213a58e3e.lock
+02:34:22,811 filelock DEBUG Lock 140545789882832 released on /home/kushtimusprime/.cache/huggingface/datasets/downloads/afc0a9ad684056b480b278e422e08eee16a2c5097fbb5c45c28428c213a58e3e.lock
+02:34:22,812 filelock DEBUG Attempting to acquire lock 140540891083984 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/202adaf23955e38f03fe6f23b43eef0e51768e852acad662fa03e937a9651cf4.lock
+02:34:22,812 filelock DEBUG Lock 140540891083984 acquired on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/202adaf23955e38f03fe6f23b43eef0e51768e852acad662fa03e937a9651cf4.lock
+02:34:31,447 filelock DEBUG Attempting to release lock 140540891083984 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/202adaf23955e38f03fe6f23b43eef0e51768e852acad662fa03e937a9651cf4.lock
+02:34:31,448 filelock DEBUG Lock 140540891083984 released on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/202adaf23955e38f03fe6f23b43eef0e51768e852acad662fa03e937a9651cf4.lock
+02:34:31,448 filelock DEBUG Attempting to acquire lock 140541748809360 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/f00453a7c6e72c3c19adc29746ca25abba38e070d5aee94aedbb08b276f58123.lock
+02:34:31,448 filelock DEBUG Lock 140541748809360 acquired on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/f00453a7c6e72c3c19adc29746ca25abba38e070d5aee94aedbb08b276f58123.lock
+02:34:35,690 filelock DEBUG Attempting to release lock 140541748809360 on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/f00453a7c6e72c3c19adc29746ca25abba38e070d5aee94aedbb08b276f58123.lock
+02:34:35,699 filelock DEBUG Lock 140541748809360 released on /home/kushtimusprime/.cache/huggingface/datasets/downloads/extracted/f00453a7c6e72c3c19adc29746ca25abba38e070d5aee94aedbb08b276f58123.lock
+02:34:35,700 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.incomplete/coco-train-00000-00000-of-NNNNN.arrow
+02:34:54,449 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.incomplete/coco-validation-00000-00000-of-NNNNN.arrow
+02:34:57,577 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.incomplete/coco-test-00000-00000-of-NNNNN.arrow
+02:35:01,262 filelock DEBUG Attempting to acquire lock 140541731095184 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.incomplete_info.lock
+02:35:01,262 filelock DEBUG Lock 140541731095184 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.incomplete_info.lock
+02:35:01,262 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.incomplete/dataset_info.json
+02:35:01,263 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.incomplete/LICENSE
+02:35:01,263 filelock DEBUG Attempting to release lock 140541731095184 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.incomplete_info.lock
+02:35:01,263 filelock DEBUG Lock 140541731095184 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.incomplete_info.lock
+02:35:01,263 filelock DEBUG Attempting to release lock 140541020636048 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:35:01,263 filelock DEBUG Lock 140541020636048 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:48:01,993 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:48:02,214 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+02:48:02,309 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+02:48:02,388 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+02:48:02,466 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+02:48:02,467 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+02:48:02,758 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+02:48:02,760 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:48:02,868 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+02:48:02,870 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:48:02,968 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+02:48:02,970 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:48:03,73 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+02:48:03,80 filelock DEBUG Attempting to acquire lock 140423074689104 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:48:03,80 filelock DEBUG Lock 140423074689104 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:48:03,89 filelock DEBUG Attempting to release lock 140423074689104 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:48:03,89 filelock DEBUG Lock 140423074689104 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:48:03,92 filelock DEBUG Attempting to acquire lock 140423036079504 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:48:03,92 filelock DEBUG Lock 140423036079504 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:48:03,92 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+02:48:03,92 filelock DEBUG Attempting to release lock 140423036079504 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:48:03,93 filelock DEBUG Lock 140423036079504 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:48:03,104 filelock DEBUG Attempting to acquire lock 140423035982608 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:48:03,104 filelock DEBUG Lock 140423035982608 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:48:03,104 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+02:48:03,104 filelock DEBUG Attempting to release lock 140423035982608 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:48:03,104 filelock DEBUG Lock 140423035982608 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:48:54,772 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:48:54,927 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+02:48:55,25 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+02:48:55,106 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+02:48:55,189 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+02:48:55,190 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+02:48:55,416 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+02:48:55,419 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:48:55,515 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+02:48:55,517 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:48:55,613 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+02:48:55,616 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:48:55,713 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+02:48:55,720 filelock DEBUG Attempting to acquire lock 140662103214800 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:48:55,720 filelock DEBUG Lock 140662103214800 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:48:55,720 filelock DEBUG Attempting to release lock 140662103214800 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:48:55,720 filelock DEBUG Lock 140662103214800 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:48:55,722 filelock DEBUG Attempting to acquire lock 140662069021968 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:48:55,722 filelock DEBUG Lock 140662069021968 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:48:55,722 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+02:48:55,723 filelock DEBUG Attempting to release lock 140662069021968 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:48:55,723 filelock DEBUG Lock 140662069021968 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:48:55,731 filelock DEBUG Attempting to acquire lock 140662073995984 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:48:55,731 filelock DEBUG Lock 140662073995984 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:48:55,731 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+02:48:55,731 filelock DEBUG Attempting to release lock 140662073995984 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:48:55,731 filelock DEBUG Lock 140662073995984 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:53:31,692 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:53:31,999 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+02:53:32,106 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+02:53:32,199 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+02:53:32,280 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+02:53:32,281 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+02:53:32,505 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+02:53:32,508 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:53:32,614 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+02:53:32,617 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:53:32,714 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+02:53:32,716 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+02:53:32,809 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+02:53:32,816 filelock DEBUG Attempting to acquire lock 140466814963600 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:53:32,816 filelock DEBUG Lock 140466814963600 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:53:32,816 filelock DEBUG Attempting to release lock 140466814963600 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:53:32,817 filelock DEBUG Lock 140466814963600 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+02:53:32,819 filelock DEBUG Attempting to acquire lock 140466807691600 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:53:32,819 filelock DEBUG Lock 140466807691600 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:53:32,819 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+02:53:32,819 filelock DEBUG Attempting to release lock 140466807691600 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:53:32,819 filelock DEBUG Lock 140466807691600 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+02:53:32,827 filelock DEBUG Attempting to acquire lock 140466803073168 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:53:32,828 filelock DEBUG Lock 140466803073168 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:53:32,828 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+02:53:32,828 filelock DEBUG Attempting to release lock 140466803073168 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+02:53:32,828 filelock DEBUG Lock 140466803073168 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:02:20,701 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:02:20,893 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:02:20,993 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:02:21,125 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:02:21,204 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:02:21,205 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:02:21,535 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:02:21,537 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:02:21,638 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:02:21,640 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:02:21,734 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:02:21,736 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:02:21,838 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:02:21,845 filelock DEBUG Attempting to acquire lock 140015481296976 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:02:21,845 filelock DEBUG Lock 140015481296976 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:02:21,845 filelock DEBUG Attempting to release lock 140015481296976 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:02:21,845 filelock DEBUG Lock 140015481296976 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:02:21,847 filelock DEBUG Attempting to acquire lock 140016190660304 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:02:21,847 filelock DEBUG Lock 140016190660304 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:02:21,848 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:02:21,848 filelock DEBUG Attempting to release lock 140016190660304 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:02:21,848 filelock DEBUG Lock 140016190660304 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:02:21,856 filelock DEBUG Attempting to acquire lock 140015476069456 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:02:21,856 filelock DEBUG Lock 140015476069456 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:02:21,856 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:02:21,856 filelock DEBUG Attempting to release lock 140015476069456 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:02:21,856 filelock DEBUG Lock 140015476069456 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:02:25,49 root INFO Loaded ViT-B-16 model config.
+03:02:25,742 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:02:25,745 filelock DEBUG Attempting to acquire lock 140015357157200 on /home/kushtimusprime/.cache/huggingface/hub/.locks/models--laion--CLIP-ViT-B-16-laion2B-s34B-b88K/1f16b1274ca25493b1f36225efe81d05f66a3f33c487acd1a07c5ba87920de6f.lock
+03:02:25,746 filelock DEBUG Lock 140015357157200 acquired on /home/kushtimusprime/.cache/huggingface/hub/.locks/models--laion--CLIP-ViT-B-16-laion2B-s34B-b88K/1f16b1274ca25493b1f36225efe81d05f66a3f33c487acd1a07c5ba87920de6f.lock
+03:02:25,750 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+03:02:25,836 urllib3.connectionpool DEBUG https://cdn-lfs.huggingface.co:443 "GET /repos/ad/f2/adf20b858546c65d88f6f4a320f7c0023fc44be08d417622123b95c7ca25da36/1f16b1274ca25493b1f36225efe81d05f66a3f33c487acd1a07c5ba87920de6f?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27open_clip_pytorch_model.bin%3B+filename%3D%22open_clip_pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1715420428&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcxNTQyMDQyOH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy9hZC9mMi9hZGYyMGI4NTg1NDZjNjVkODhmNmY0YTMyMGY3YzAwMjNmYzQ0YmUwOGQ0MTc2MjIxMjNiOTVjN2NhMjVkYTM2LzFmMTZiMTI3NGNhMjU0OTNiMWYzNjIyNWVmZTgxZDA1ZjY2YTNmMzNjNDg3YWNkMWEwN2M1YmE4NzkyMGRlNmY~cmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=seOiRHPlt5t8Q2M0If1y6s6rKWn~7LPlsU1pOv8Y-XgNADIPaR-WA1UZg7GWcOPfc1-iYUjebcxVxdbshli8x~0BPh6PXqS~k38IjR-7VrORkmSpSu1UFgiaO-J8yXiVtbs4obaOqLL1cCrRheUDxFXjg5jO8Ktn21rjkXyRFF-Yi6z6VlFs6Aeevki010qq6zemN3itCNXBkREUhjhr1ag~z9eTPnSVk1q~W81dHxS-vSrQh~~-i-7Bg4CvIxolrU~urFTFidRgUubaK9cXxMQNJwOK680Gtz3wm-FMaS5FJHrRt1PTd2gtgz7XHsSqTCeoXHrtbSOsoTkaFkxO0g__&Key-Pair-Id=KVTP0A1DKRTAX HTTP/1.1" 200 598529951
+03:03:17,740 filelock DEBUG Attempting to release lock 140015357157200 on /home/kushtimusprime/.cache/huggingface/hub/.locks/models--laion--CLIP-ViT-B-16-laion2B-s34B-b88K/1f16b1274ca25493b1f36225efe81d05f66a3f33c487acd1a07c5ba87920de6f.lock
+03:03:17,740 filelock DEBUG Lock 140015357157200 released on /home/kushtimusprime/.cache/huggingface/hub/.locks/models--laion--CLIP-ViT-B-16-laion2B-s34B-b88K/1f16b1274ca25493b1f36225efe81d05f66a3f33c487acd1a07c5ba87920de6f.lock
+03:03:17,740 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:03:47,769 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:03:47,932 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:03:48,27 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:03:48,819 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:03:48,897 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:03:48,898 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:03:49,197 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:03:49,200 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:03:49,295 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:03:49,298 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:03:49,397 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:03:49,399 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:03:49,509 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:03:49,516 filelock DEBUG Attempting to acquire lock 140399502647760 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:03:49,516 filelock DEBUG Lock 140399502647760 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:03:49,517 filelock DEBUG Attempting to release lock 140399502647760 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:03:49,517 filelock DEBUG Lock 140399502647760 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:03:49,519 filelock DEBUG Attempting to acquire lock 140399484126928 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:03:49,519 filelock DEBUG Lock 140399484126928 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:03:49,519 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:03:49,519 filelock DEBUG Attempting to release lock 140399484126928 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:03:49,519 filelock DEBUG Lock 140399484126928 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:03:49,528 filelock DEBUG Attempting to acquire lock 140399476441296 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:03:49,528 filelock DEBUG Lock 140399476441296 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:03:49,528 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:03:49,528 filelock DEBUG Attempting to release lock 140399476441296 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:03:49,528 filelock DEBUG Lock 140399476441296 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:03:50,209 root INFO Loaded ViT-B-16 model config.
+03:03:51,29 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:03:51,30 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:07:35,216 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:07:35,369 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:07:35,473 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:07:35,565 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:07:35,650 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:07:35,651 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:07:35,880 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:07:35,883 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:07:35,982 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:07:35,985 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:07:36,80 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:07:36,82 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:07:36,278 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:07:36,285 filelock DEBUG Attempting to acquire lock 140111000062544 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:07:36,285 filelock DEBUG Lock 140111000062544 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:07:36,285 filelock DEBUG Attempting to release lock 140111000062544 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:07:36,286 filelock DEBUG Lock 140111000062544 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:07:36,288 filelock DEBUG Attempting to acquire lock 140111025591120 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:07:36,288 filelock DEBUG Lock 140111025591120 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:07:36,288 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:07:36,288 filelock DEBUG Attempting to release lock 140111025591120 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:07:36,288 filelock DEBUG Lock 140111025591120 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:07:36,296 filelock DEBUG Attempting to acquire lock 140111009286864 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:07:36,296 filelock DEBUG Lock 140111009286864 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:07:36,296 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:07:36,296 filelock DEBUG Attempting to release lock 140111009286864 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:07:36,296 filelock DEBUG Lock 140111009286864 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:07:36,974 root INFO Loaded ViT-B-16 model config.
+03:07:37,653 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:07:37,654 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:09:00,918 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:09:01,142 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:09:01,246 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:09:01,328 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:09:01,406 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:09:01,407 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:09:01,696 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:09:01,698 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:09:01,797 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:09:01,800 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:09:01,897 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:09:01,899 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:09:01,996 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:09:02,3 filelock DEBUG Attempting to acquire lock 139822120338704 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:09:02,3 filelock DEBUG Lock 139822120338704 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:09:02,4 filelock DEBUG Attempting to release lock 139822120338704 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:09:02,4 filelock DEBUG Lock 139822120338704 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:09:02,6 filelock DEBUG Attempting to acquire lock 139826179139216 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:09:02,6 filelock DEBUG Lock 139826179139216 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:09:02,6 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:09:02,6 filelock DEBUG Attempting to release lock 139826179139216 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:09:02,6 filelock DEBUG Lock 139826179139216 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:09:02,15 filelock DEBUG Attempting to acquire lock 139821408818320 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:09:02,15 filelock DEBUG Lock 139821408818320 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:09:02,15 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:09:02,15 filelock DEBUG Attempting to release lock 139821408818320 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:09:02,15 filelock DEBUG Lock 139821408818320 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:09:02,709 root INFO Loaded ViT-B-16 model config.
+03:09:03,398 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:09:03,398 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:10:40,716 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:10:40,890 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:10:41,15 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:10:41,94 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:10:41,173 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:10:41,174 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:10:41,401 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:10:41,403 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:10:41,500 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:10:41,503 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:10:41,598 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:10:41,600 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:10:41,697 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:10:41,704 filelock DEBUG Attempting to acquire lock 139909963163280 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:10:41,704 filelock DEBUG Lock 139909963163280 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:10:41,704 filelock DEBUG Attempting to release lock 139909963163280 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:10:41,704 filelock DEBUG Lock 139909963163280 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:10:41,707 filelock DEBUG Attempting to acquire lock 139909259627792 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:10:41,707 filelock DEBUG Lock 139909259627792 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:10:41,707 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:10:41,707 filelock DEBUG Attempting to release lock 139909259627792 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:10:41,707 filelock DEBUG Lock 139909259627792 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:10:41,716 filelock DEBUG Attempting to acquire lock 139909257131792 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:10:41,716 filelock DEBUG Lock 139909257131792 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:10:41,716 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:10:41,716 filelock DEBUG Attempting to release lock 139909257131792 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:10:41,716 filelock DEBUG Lock 139909257131792 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:10:42,412 root INFO Loaded ViT-B-16 model config.
+03:10:43,106 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:10:43,107 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:13:21,177 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:13:21,346 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:13:21,638 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:13:21,742 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:13:21,821 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:13:21,821 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:13:22,73 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:13:22,75 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:13:22,175 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:13:22,177 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:13:22,274 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:13:22,276 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:13:22,374 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:13:22,378 filelock DEBUG Attempting to acquire lock 139779098318032 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:13:22,378 filelock DEBUG Lock 139779098318032 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:13:22,378 filelock DEBUG Attempting to release lock 139779098318032 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:13:22,378 filelock DEBUG Lock 139779098318032 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:13:22,380 filelock DEBUG Attempting to acquire lock 139779096167248 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:13:22,380 filelock DEBUG Lock 139779096167248 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:13:22,380 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:13:22,380 filelock DEBUG Attempting to release lock 139779096167248 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:13:22,380 filelock DEBUG Lock 139779096167248 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:13:22,388 filelock DEBUG Attempting to acquire lock 139779119762576 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:13:22,388 filelock DEBUG Lock 139779119762576 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:13:22,389 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:13:22,389 filelock DEBUG Attempting to release lock 139779119762576 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:13:22,389 filelock DEBUG Lock 139779119762576 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:13:23,79 root INFO Loaded ViT-B-16 model config.
+03:13:23,761 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:13:23,762 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:14:01,733 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:14:01,852 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:14:01,950 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:14:02,68 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:14:02,147 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:14:02,148 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:14:02,366 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:14:02,368 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:14:02,463 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:14:02,465 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:14:02,560 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:14:02,562 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:14:02,660 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:14:02,667 filelock DEBUG Attempting to acquire lock 140074310717840 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:14:02,667 filelock DEBUG Lock 140074310717840 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:14:02,667 filelock DEBUG Attempting to release lock 140074310717840 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:14:02,667 filelock DEBUG Lock 140074310717840 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:14:02,669 filelock DEBUG Attempting to acquire lock 140074295685840 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:14:02,670 filelock DEBUG Lock 140074295685840 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:14:02,670 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:14:02,670 filelock DEBUG Attempting to release lock 140074295685840 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:14:02,670 filelock DEBUG Lock 140074295685840 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:14:02,679 filelock DEBUG Attempting to acquire lock 140079069066768 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:14:02,679 filelock DEBUG Lock 140079069066768 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:14:02,679 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:14:02,679 filelock DEBUG Attempting to release lock 140079069066768 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:14:02,679 filelock DEBUG Lock 140079069066768 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:14:03,352 root INFO Loaded ViT-B-16 model config.
+03:14:04,37 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:14:04,37 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:15:13,61 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:15:13,259 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:15:13,356 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:15:13,439 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:15:13,515 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:15:13,516 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:15:13,824 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:15:13,826 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:15:13,949 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:15:13,952 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:15:14,48 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:15:14,50 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:15:14,147 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:15:14,154 filelock DEBUG Attempting to acquire lock 139672944291216 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:15:14,154 filelock DEBUG Lock 139672944291216 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:15:14,154 filelock DEBUG Attempting to release lock 139672944291216 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:15:14,154 filelock DEBUG Lock 139672944291216 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:15:14,156 filelock DEBUG Attempting to acquire lock 139672922340112 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:15:14,156 filelock DEBUG Lock 139672922340112 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:15:14,156 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:15:14,156 filelock DEBUG Attempting to release lock 139672922340112 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:15:14,156 filelock DEBUG Lock 139672922340112 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:15:14,165 filelock DEBUG Attempting to acquire lock 139672928207952 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:15:14,165 filelock DEBUG Lock 139672928207952 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:15:14,165 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:15:14,165 filelock DEBUG Attempting to release lock 139672928207952 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:15:14,165 filelock DEBUG Lock 139672928207952 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:15:14,864 root INFO Loaded ViT-B-16 model config.
+03:15:15,572 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:15:15,573 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:15:53,294 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:15:53,447 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:15:53,553 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:15:53,635 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:15:53,714 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:15:53,715 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:15:53,944 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:15:53,946 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:15:54,39 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:15:54,41 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:15:54,137 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:15:54,140 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:15:54,359 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:15:54,366 filelock DEBUG Attempting to acquire lock 140405019776720 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:15:54,366 filelock DEBUG Lock 140405019776720 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:15:54,366 filelock DEBUG Attempting to release lock 140405019776720 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:15:54,366 filelock DEBUG Lock 140405019776720 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:15:54,368 filelock DEBUG Attempting to acquire lock 140409765207504 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:15:54,368 filelock DEBUG Lock 140409765207504 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:15:54,368 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:15:54,368 filelock DEBUG Attempting to release lock 140409765207504 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:15:54,369 filelock DEBUG Lock 140409765207504 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:15:54,377 filelock DEBUG Attempting to acquire lock 140405750932496 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:15:54,377 filelock DEBUG Lock 140405750932496 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:15:54,377 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:15:54,377 filelock DEBUG Attempting to release lock 140405750932496 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:15:54,377 filelock DEBUG Lock 140405750932496 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:15:55,71 root INFO Loaded ViT-B-16 model config.
+03:15:55,763 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:15:55,764 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:16:26,388 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:16:26,547 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:16:26,655 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:16:26,832 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:16:26,908 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:16:26,909 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:16:27,144 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:16:27,146 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:16:27,248 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:16:27,251 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:16:27,352 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:16:27,354 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:16:27,455 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:16:27,462 filelock DEBUG Attempting to acquire lock 140358510249104 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:16:27,462 filelock DEBUG Lock 140358510249104 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:16:27,462 filelock DEBUG Attempting to release lock 140358510249104 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:16:27,462 filelock DEBUG Lock 140358510249104 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:16:27,464 filelock DEBUG Attempting to acquire lock 140362548957328 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:16:27,464 filelock DEBUG Lock 140362548957328 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:16:27,464 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:16:27,464 filelock DEBUG Attempting to release lock 140362548957328 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:16:27,464 filelock DEBUG Lock 140362548957328 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:16:27,473 filelock DEBUG Attempting to acquire lock 140358516198864 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:16:27,473 filelock DEBUG Lock 140358516198864 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:16:27,473 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:16:27,473 filelock DEBUG Attempting to release lock 140358516198864 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:16:27,473 filelock DEBUG Lock 140358516198864 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:16:28,161 root INFO Loaded ViT-B-16 model config.
+03:16:28,848 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:16:28,849 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:17:25,608 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:17:25,878 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:17:26,2 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:17:26,92 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:17:26,175 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:17:26,176 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:17:26,419 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:17:26,421 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:17:26,518 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:17:26,521 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:17:26,648 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:17:26,650 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:17:26,744 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:17:26,751 filelock DEBUG Attempting to acquire lock 139994013675600 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:17:26,751 filelock DEBUG Lock 139994013675600 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:17:26,751 filelock DEBUG Attempting to release lock 139994013675600 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:17:26,751 filelock DEBUG Lock 139994013675600 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:17:26,753 filelock DEBUG Attempting to acquire lock 139994718962512 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:17:26,753 filelock DEBUG Lock 139994718962512 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:17:26,754 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:17:26,754 filelock DEBUG Attempting to release lock 139994718962512 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:17:26,754 filelock DEBUG Lock 139994718962512 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:17:26,763 filelock DEBUG Attempting to acquire lock 139994013368272 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:17:26,763 filelock DEBUG Lock 139994013368272 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:17:26,763 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:17:26,763 filelock DEBUG Attempting to release lock 139994013368272 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:17:26,763 filelock DEBUG Lock 139994013368272 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:17:27,455 root INFO Loaded ViT-B-16 model config.
+03:17:28,138 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:17:28,139 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:18:25,328 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:18:25,546 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:18:25,639 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:18:25,719 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:18:25,801 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:18:25,802 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:18:26,24 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:18:26,27 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:18:26,269 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:18:26,271 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:18:26,367 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:18:26,369 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:18:26,463 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:18:26,470 filelock DEBUG Attempting to acquire lock 139717678214544 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:18:26,470 filelock DEBUG Lock 139717678214544 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:18:26,470 filelock DEBUG Attempting to release lock 139717678214544 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:18:26,470 filelock DEBUG Lock 139717678214544 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:18:26,472 filelock DEBUG Attempting to acquire lock 139717672533008 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:18:26,472 filelock DEBUG Lock 139717672533008 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:18:26,472 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:18:26,472 filelock DEBUG Attempting to release lock 139717672533008 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:18:26,472 filelock DEBUG Lock 139717672533008 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:18:26,481 filelock DEBUG Attempting to acquire lock 139717702075344 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:18:26,481 filelock DEBUG Lock 139717702075344 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:18:26,481 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:18:26,481 filelock DEBUG Attempting to release lock 139717702075344 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:18:26,481 filelock DEBUG Lock 139717702075344 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:18:27,186 root INFO Loaded ViT-B-16 model config.
+03:18:28,102 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:18:28,103 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:22:25,95 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:22:25,393 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:22:26,362 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:22:26,447 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:22:26,560 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:22:26,561 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:22:26,821 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:22:26,824 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:22:26,917 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:22:26,919 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:22:27,16 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:22:27,18 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:22:27,112 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:22:27,120 filelock DEBUG Attempting to acquire lock 140611692158288 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:22:27,120 filelock DEBUG Lock 140611692158288 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:22:27,120 filelock DEBUG Attempting to release lock 140611692158288 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:22:27,120 filelock DEBUG Lock 140611692158288 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:22:27,122 filelock DEBUG Attempting to acquire lock 140611729269328 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:22:27,122 filelock DEBUG Lock 140611729269328 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:22:27,123 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:22:27,123 filelock DEBUG Attempting to release lock 140611729269328 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:22:27,123 filelock DEBUG Lock 140611729269328 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:22:27,132 filelock DEBUG Attempting to acquire lock 140612665106256 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:22:27,132 filelock DEBUG Lock 140612665106256 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:22:27,132 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:22:27,132 filelock DEBUG Attempting to release lock 140612665106256 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:22:27,132 filelock DEBUG Lock 140612665106256 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:22:27,815 root INFO Loaded ViT-B-16 model config.
+03:22:28,501 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:22:28,502 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+03:26:57,449 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:26:58,635 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:26:58,739 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+03:26:58,825 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+03:26:58,901 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+03:26:58,902 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+03:26:59,146 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+03:26:59,149 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:26:59,249 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+03:26:59,251 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:26:59,348 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+03:26:59,350 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+03:26:59,452 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+03:26:59,459 filelock DEBUG Attempting to acquire lock 140379460117264 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:26:59,460 filelock DEBUG Lock 140379460117264 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:26:59,460 filelock DEBUG Attempting to release lock 140379460117264 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:26:59,460 filelock DEBUG Lock 140379460117264 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+03:26:59,462 filelock DEBUG Attempting to acquire lock 140379495191824 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:26:59,462 filelock DEBUG Lock 140379495191824 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:26:59,462 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:26:59,462 filelock DEBUG Attempting to release lock 140379495191824 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:26:59,462 filelock DEBUG Lock 140379495191824 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+03:26:59,471 filelock DEBUG Attempting to acquire lock 140379460733648 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:26:59,471 filelock DEBUG Lock 140379460733648 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:26:59,471 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+03:26:59,471 filelock DEBUG Attempting to release lock 140379460733648 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:26:59,471 filelock DEBUG Lock 140379460733648 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+03:27:00,167 root INFO Loaded ViT-B-16 model config.
+03:27:00,859 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+03:27:00,860 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+12:04:27,924 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:04:28,117 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:04:28,257 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:04:28,359 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+12:04:28,436 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+12:04:28,437 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+12:04:28,698 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+12:04:28,701 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:04:28,795 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+12:04:28,796 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:04:28,896 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+12:04:28,898 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:04:28,996 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+12:04:29,0 filelock DEBUG Attempting to acquire lock 140121597726736 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:04:29,1 filelock DEBUG Lock 140121597726736 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:04:29,1 filelock DEBUG Attempting to release lock 140121597726736 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:04:29,1 filelock DEBUG Lock 140121597726736 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:04:29,2 filelock DEBUG Attempting to acquire lock 140121574331984 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:04:29,2 filelock DEBUG Lock 140121574331984 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:04:29,2 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:04:29,2 filelock DEBUG Attempting to release lock 140121574331984 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:04:29,2 filelock DEBUG Lock 140121574331984 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:04:29,12 filelock DEBUG Attempting to acquire lock 140121577156112 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:04:29,13 filelock DEBUG Lock 140121577156112 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:04:29,13 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:04:29,13 filelock DEBUG Attempting to release lock 140121577156112 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:04:29,13 filelock DEBUG Lock 140121577156112 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:04:29,708 root INFO Loaded ViT-B-16 model config.
+12:04:30,397 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+12:04:30,398 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+12:05:16,548 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:05:16,655 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:05:16,744 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:05:16,828 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+12:05:16,905 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+12:05:16,906 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+12:05:17,164 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+12:05:17,167 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:05:17,263 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+12:05:17,266 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:05:17,368 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+12:05:17,370 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:05:17,468 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+12:05:17,475 filelock DEBUG Attempting to acquire lock 140357074872848 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:05:17,476 filelock DEBUG Lock 140357074872848 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:05:17,476 filelock DEBUG Attempting to release lock 140357074872848 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:05:17,476 filelock DEBUG Lock 140357074872848 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:05:17,478 filelock DEBUG Attempting to acquire lock 140357055965392 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:05:17,478 filelock DEBUG Lock 140357055965392 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:05:17,478 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:05:17,478 filelock DEBUG Attempting to release lock 140357055965392 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:05:17,478 filelock DEBUG Lock 140357055965392 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:05:17,487 filelock DEBUG Attempting to acquire lock 140357091412752 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:05:17,487 filelock DEBUG Lock 140357091412752 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:05:17,487 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:05:17,487 filelock DEBUG Attempting to release lock 140357091412752 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:05:17,487 filelock DEBUG Lock 140357091412752 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:05:18,178 root INFO Loaded ViT-B-16 model config.
+12:05:18,857 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+12:05:18,858 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+12:13:30,85 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:13:30,224 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:13:30,322 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:13:30,441 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+12:13:30,519 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+12:13:30,520 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+12:13:30,754 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+12:13:30,757 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:13:30,854 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+12:13:30,856 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:13:30,950 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+12:13:30,952 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:13:31,49 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+12:13:31,56 filelock DEBUG Attempting to acquire lock 139616829016528 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:13:31,56 filelock DEBUG Lock 139616829016528 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:13:31,56 filelock DEBUG Attempting to release lock 139616829016528 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:13:31,56 filelock DEBUG Lock 139616829016528 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:13:31,59 filelock DEBUG Attempting to acquire lock 139616812622032 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:13:31,59 filelock DEBUG Lock 139616812622032 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:13:31,59 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:13:31,59 filelock DEBUG Attempting to release lock 139616812622032 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:13:31,59 filelock DEBUG Lock 139616812622032 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:13:31,68 filelock DEBUG Attempting to acquire lock 139616796826064 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:13:31,68 filelock DEBUG Lock 139616796826064 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:13:31,68 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:13:31,68 filelock DEBUG Attempting to release lock 139616796826064 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:13:31,68 filelock DEBUG Lock 139616796826064 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:13:31,753 root INFO Loaded ViT-B-16 model config.
+12:13:32,427 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+12:13:32,428 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+12:16:40,208 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:16:40,373 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:16:40,506 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:16:40,588 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+12:16:40,664 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+12:16:40,665 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+12:16:40,989 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+12:16:40,992 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:16:41,87 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+12:16:41,90 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:16:41,198 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+12:16:41,200 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:16:41,296 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+12:16:41,303 filelock DEBUG Attempting to acquire lock 139975384528272 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:16:41,303 filelock DEBUG Lock 139975384528272 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:16:41,304 filelock DEBUG Attempting to release lock 139975384528272 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:16:41,304 filelock DEBUG Lock 139975384528272 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:16:41,306 filelock DEBUG Attempting to acquire lock 139974713673680 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:16:41,306 filelock DEBUG Lock 139974713673680 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:16:41,306 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:16:41,306 filelock DEBUG Attempting to release lock 139974713673680 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:16:41,306 filelock DEBUG Lock 139974713673680 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:16:41,315 filelock DEBUG Attempting to acquire lock 139974681083152 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:16:41,315 filelock DEBUG Lock 139974681083152 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:16:41,316 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:16:41,316 filelock DEBUG Attempting to release lock 139974681083152 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:16:41,316 filelock DEBUG Lock 139974681083152 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:16:42,9 root INFO Loaded ViT-B-16 model config.
+12:16:42,688 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+12:16:42,688 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+12:17:51,233 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:17:51,376 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:17:51,476 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:17:51,560 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+12:17:51,636 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+12:17:51,637 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+12:17:51,857 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+12:17:51,859 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:17:51,961 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+12:17:51,962 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:17:52,56 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+12:17:52,58 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:17:52,157 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+12:17:52,163 filelock DEBUG Attempting to acquire lock 139873986705552 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:17:52,163 filelock DEBUG Lock 139873986705552 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:17:52,163 filelock DEBUG Attempting to release lock 139873986705552 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:17:52,164 filelock DEBUG Lock 139873986705552 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:17:52,166 filelock DEBUG Attempting to acquire lock 139873955465936 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:17:52,166 filelock DEBUG Lock 139873955465936 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:17:52,166 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:17:52,166 filelock DEBUG Attempting to release lock 139873955465936 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:17:52,166 filelock DEBUG Lock 139873955465936 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:17:52,175 filelock DEBUG Attempting to acquire lock 139873955465552 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:17:52,175 filelock DEBUG Lock 139873955465552 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:17:52,175 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:17:52,175 filelock DEBUG Attempting to release lock 139873955465552 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:17:52,175 filelock DEBUG Lock 139873955465552 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:17:52,881 root INFO Loaded ViT-B-16 model config.
+12:17:53,572 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+12:17:53,572 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+12:42:34,257 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:42:34,410 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:42:34,516 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+12:42:34,607 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+12:42:34,679 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+12:42:34,680 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+12:42:34,923 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+12:42:34,925 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:42:35,19 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+12:42:35,22 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:42:35,115 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+12:42:35,117 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+12:42:35,210 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+12:42:35,217 filelock DEBUG Attempting to acquire lock 140139789693456 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:42:35,217 filelock DEBUG Lock 140139789693456 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:42:35,217 filelock DEBUG Attempting to release lock 140139789693456 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:42:35,217 filelock DEBUG Lock 140139789693456 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+12:42:35,219 filelock DEBUG Attempting to acquire lock 140139780019728 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:42:35,219 filelock DEBUG Lock 140139780019728 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:42:35,220 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:42:35,220 filelock DEBUG Attempting to release lock 140139780019728 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:42:35,220 filelock DEBUG Lock 140139780019728 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+12:42:35,228 filelock DEBUG Attempting to acquire lock 140139806000976 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:42:35,228 filelock DEBUG Lock 140139806000976 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:42:35,228 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+12:42:35,228 filelock DEBUG Attempting to release lock 140139806000976 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:42:35,228 filelock DEBUG Lock 140139806000976 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+12:42:35,928 root INFO Loaded ViT-B-16 model config.
+12:42:36,621 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+12:42:36,622 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+13:34:26,938 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:34:27,214 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+13:34:27,315 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+13:34:27,572 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+13:34:27,647 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+13:34:27,648 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+13:34:27,942 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+13:34:27,944 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:34:28,44 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+13:34:28,46 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:34:28,146 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+13:34:28,148 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:34:28,243 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+13:34:28,251 filelock DEBUG Attempting to acquire lock 140117645396560 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:34:28,251 filelock DEBUG Lock 140117645396560 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:34:28,251 filelock DEBUG Attempting to release lock 140117645396560 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:34:28,251 filelock DEBUG Lock 140117645396560 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:34:28,253 filelock DEBUG Attempting to acquire lock 140118363141456 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:34:28,253 filelock DEBUG Lock 140118363141456 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:34:28,253 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+13:34:28,254 filelock DEBUG Attempting to release lock 140118363141456 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:34:28,254 filelock DEBUG Lock 140118363141456 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:34:28,263 filelock DEBUG Attempting to acquire lock 140117623426000 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:34:28,263 filelock DEBUG Lock 140117623426000 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:34:28,263 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+13:34:28,263 filelock DEBUG Attempting to release lock 140117623426000 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:34:28,263 filelock DEBUG Lock 140117623426000 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:39:50,394 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:39:50,584 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+13:39:50,697 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+13:39:50,777 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+13:39:50,854 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+13:39:50,855 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+13:39:51,102 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+13:39:51,105 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:39:51,199 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+13:39:51,202 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:39:51,305 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+13:39:51,307 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:39:51,405 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+13:39:51,413 filelock DEBUG Attempting to acquire lock 140159541461904 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:39:51,415 filelock DEBUG Lock 140159541461904 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:39:51,416 filelock DEBUG Attempting to release lock 140159541461904 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:39:51,416 filelock DEBUG Lock 140159541461904 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:39:51,417 filelock DEBUG Attempting to acquire lock 140159528604048 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:39:51,417 filelock DEBUG Lock 140159528604048 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:39:51,417 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+13:39:51,418 filelock DEBUG Attempting to release lock 140159528604048 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:39:51,418 filelock DEBUG Lock 140159528604048 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:39:51,426 filelock DEBUG Attempting to acquire lock 140160244319696 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:39:51,426 filelock DEBUG Lock 140160244319696 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:39:51,426 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+13:39:51,426 filelock DEBUG Attempting to release lock 140160244319696 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:39:51,426 filelock DEBUG Lock 140160244319696 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:39:52,136 root INFO Loaded ViT-B-16 model config.
+13:39:52,836 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+13:39:52,837 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+13:40:05,110 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:40:05,528 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+13:40:05,626 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+13:40:05,707 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+13:40:05,789 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+13:40:05,790 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+13:40:06,28 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+13:40:06,30 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:40:06,148 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+13:40:06,151 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:40:06,249 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+13:40:06,251 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:40:06,350 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+13:40:06,358 filelock DEBUG Attempting to acquire lock 139930044698896 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:40:06,358 filelock DEBUG Lock 139930044698896 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:40:06,358 filelock DEBUG Attempting to release lock 139930044698896 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:40:06,358 filelock DEBUG Lock 139930044698896 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:40:06,360 filelock DEBUG Attempting to acquire lock 139930747791120 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:40:06,360 filelock DEBUG Lock 139930747791120 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:40:06,360 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+13:40:06,360 filelock DEBUG Attempting to release lock 139930747791120 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:40:06,360 filelock DEBUG Lock 139930747791120 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:40:06,369 filelock DEBUG Attempting to acquire lock 139930012564624 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:40:06,369 filelock DEBUG Lock 139930012564624 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:40:06,369 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+13:40:06,369 filelock DEBUG Attempting to release lock 139930012564624 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:40:06,369 filelock DEBUG Lock 139930012564624 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:40:07,67 root INFO Loaded ViT-B-16 model config.
+13:40:07,760 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+13:40:07,761 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).
+13:42:05,705 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:42:05,928 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+13:42:06,28 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /api/datasets/HuggingFaceM4/COCO HTTP/1.1" 200 1683
+13:42:06,110 urllib3.connectionpool DEBUG https://huggingface.co:443 "POST /api/datasets/HuggingFaceM4/COCO/paths-info/main HTTP/1.1" 200 495
+13:42:06,267 urllib3.connectionpool DEBUG https://huggingface.co:443 "GET /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 9475
+13:42:06,268 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): s3.amazonaws.com:443
+13:42:06,497 urllib3.connectionpool DEBUG https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/datasets/HuggingFaceM4/COCO/HuggingFaceM4/COCO.py HTTP/1.1" 404 0
+13:42:06,500 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:42:06,596 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/COCO.py HTTP/1.1" 200 0
+13:42:06,599 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:42:06,697 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/dataset_infos.json HTTP/1.1" 404 0
+13:42:06,699 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): huggingface.co:443
+13:42:06,793 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /datasets/HuggingFaceM4/COCO/resolve/main/README.md HTTP/1.1" 200 0
+13:42:06,800 filelock DEBUG Attempting to acquire lock 139781582554448 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:42:06,801 filelock DEBUG Lock 139781582554448 acquired on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:42:06,801 filelock DEBUG Attempting to release lock 139781582554448 on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:42:06,801 filelock DEBUG Lock 139781582554448 released on /home/kushtimusprime/.cache/huggingface/modules/datasets_modules/datasets/HuggingFaceM4--COCO.lock
+13:42:06,803 filelock DEBUG Attempting to acquire lock 139781580340624 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:42:06,803 filelock DEBUG Lock 139781580340624 acquired on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:42:06,803 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+13:42:06,803 filelock DEBUG Attempting to release lock 139781580340624 on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:42:06,804 filelock DEBUG Lock 139781580340624 released on /home/kushtimusprime/.cache/huggingface/datasets/_home_kushtimusprime_.cache_huggingface_datasets_HuggingFaceM4___coco_2014_1.0.0_7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8.lock
+13:42:06,812 filelock DEBUG Attempting to acquire lock 139781617325776 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:42:06,812 filelock DEBUG Lock 139781617325776 acquired on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:42:06,812 fsspec.local DEBUG open file: /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8/dataset_info.json
+13:42:06,812 filelock DEBUG Attempting to release lock 139781617325776 on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:42:06,812 filelock DEBUG Lock 139781617325776 released on /home/kushtimusprime/.cache/huggingface/datasets/HuggingFaceM4___coco/2014/1.0.0/7dba4b1d9b12e588770263b87c2a1fd7b03072c0a0cf550c896dbd09bf2bb7f8_builder.lock
+13:42:07,502 root INFO Loaded ViT-B-16 model config.
+13:42:08,180 urllib3.connectionpool DEBUG https://huggingface.co:443 "HEAD /laion/CLIP-ViT-B-16-laion2B-s34B-b88K/resolve/main/open_clip_pytorch_model.bin HTTP/1.1" 302 0
+13:42:08,181 root INFO Loading pretrained ViT-B-16 weights (laion2b_s34b_b88k).

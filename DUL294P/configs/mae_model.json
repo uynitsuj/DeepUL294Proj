@@ -9,5 +9,5 @@
   "mlp_ratio":4,
   "out_chans":768,
   "model": "MAE",
-  "pretrained_path": "/home/sandeepmukh/DeepUL294Proj/DUL294P/models/mae_pretrain_vit_base_full.pth"
+  "pretrained_path": "/home/kushtimusprime/DeepUL294Proj/DUL294P/models/mae_pretrain_vit_base_full.pth"
 }
