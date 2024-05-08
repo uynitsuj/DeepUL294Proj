@@ -147,15 +147,6 @@ def main():
         #     ratio=model_config["ratio"],
         # )
 
-    if args.resume:
-        model = torch.load(args.resume)
-    else:
-        if os.path.exists("checkpoints/model.pth"):
-            model.load_state_dict(torch.load("checkpoints/model.pth"))
-            print("Loaded pretrained model")
-        else:
-            print("Training from scratch")
-
     clipencoder = OpenCLIPNetworkConfig(device=device).setup().eval().to(device).float()
     model.to(device)
     model.float()
@@ -186,9 +177,8 @@ def main():
     trainloader = data.DataLoader(
         dataset["train"],
         batch_size,
-        drop_last=True,
+        drop_last=False,
         num_workers=6,
-        shuffle=True,
         collate_fn=collate_fn,
     )
 
@@ -199,17 +189,22 @@ def main():
         num_workers=6,
         collate_fn=collate_fn,
     )
+    testloader = data.DataLoader(
+        dataset["test"],
+        batch_size,
+        drop_last=False,
+        num_workers=6,
+        collate_fn=collate_fn,
+    )
 
     # @profile
     def train_one_epoch():
         model.train()
         pbar = tqdm(enumerate(trainloader), total=num_iter)
-        import pdb
-        pdb.set_trace()
         for i, (batch) in pbar:
             img = batch["clip_image"]
             with torch.no_grad():
-                clipimg = clipencoder.process(img).float().to(device)
+                clipimg = img.float().to(device)
                 pooled_clip, pred_clip = clipencoder.model.encode_image(clipimg)
                 sent_clip = clipencoder.model.encode_text(
                     clipencoder.tokenizer([s["raw"] for s in batch["sentences"]]).to(
@@ -219,6 +214,8 @@ def main():
                 )
             # import pdb; pdb.set_trace()
             start = time.time()
+            import pdb
+            pdb.set_trace()
             pooled_mae, pred_mae = inf_func(model, clipimg, training_config)
             elapsed = time.time() - start
             # print(f"Elapsed time: {elapsed}(s)")
@@ -275,6 +272,7 @@ def main():
         times = []
         clip_sims = []
         pbar = tqdm(enumerate(loader), total=len(loader))
+        
         for i, batch in pbar:
             if i < 2:
                 for image, sentences in zip(batch["image"], batch["sentences"]):
@@ -339,6 +337,7 @@ def main():
         )
 
     epoch = 0
+    # val_one_epoch(valloader)
     for _ in range(training_config["epochs"]):
         tqdm.write(f"Epoch {epoch}")
         train_one_epoch()

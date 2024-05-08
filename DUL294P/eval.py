@@ -194,10 +194,6 @@ def main():
 
     @torch.no_grad()
     def val_one_epoch(loader):
-        import pdb
-        pdb.set_trace()
-        for i, batch in tqdm(enumerate(loader), total=len(loader)):
-            pass
         model.eval()
         losses = []
         times = []
@@ -205,6 +201,8 @@ def main():
         for batch in loader:
             pass
         pbar = tqdm(enumerate(loader), total=len(loader))
+        import pdb
+        pdb.set_trace()
         for i, (batch) in pbar:
             import pdb
             pdb.set_trace()

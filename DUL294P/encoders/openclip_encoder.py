@@ -29,17 +29,32 @@ class OpenCLIPNetworkConfig(BaseImageEncoderConfig):
         return "openclip_{}_{}".format(self.clip_model_type, self.clip_model_pretrained)
 
 
+class PermuteChannels:
+    def __init__(self, permutation):
+        self.permutation = permutation
+
+    def __call__(self, tensor):
+        """
+        Args:
+            tensor (Tensor): Tensor image of size (C, H, W) to be permuted.
+        Returns:
+            Tensor: Permuted tensor.
+        """
+        return tensor.permute(*self.permutation)
+    
 class OpenCLIPNetwork(BaseImageEncoder):
     def __init__(self, config: OpenCLIPNetworkConfig):
         super().__init__()
         self.config = config
         self.process = torchvision.transforms.Compose(
             [
+                PermuteChannels((2,0,1)),
                 torchvision.transforms.Resize((224, 224)),
                 torchvision.transforms.Normalize(
                     mean=[0.48145466, 0.4578275, 0.40821073],
                     std=[0.26862954, 0.26130258, 0.27577711],
                 ),
+                
             ]
         )
         model, _, self.preprocess = open_clip.create_model_and_transforms(
@@ -49,7 +64,7 @@ class OpenCLIPNetwork(BaseImageEncoder):
         )
         model.eval()
         model.visual.output_tokens = self.config.output_tokens
-        model.visual.patch_dropout = PatchDropoutFov(self.config.masking_prob)
+        model.visual.patch_dropout = PatchDropout(self.config.masking_prob)
         self.tokenizer = open_clip.get_tokenizer(self.config.clip_model_type)
         self.model = model.to(self.config.device)
         self.clip_n_dims = self.config.clip_n_dims
