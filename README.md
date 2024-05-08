@@ -8,7 +8,7 @@ Have Conda installed on Ubuntu.
 Clone the repo:
 ```
 cd ~/
-git clone https://github.com/uynitsuj/DeepUL294Proj.git
+git clone --recurse-submodules https://github.com/uynitsuj/DeepUL294Proj.git
 ```
 
 Run the setup bash script
