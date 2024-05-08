@@ -1,0 +1,10 @@
+DUL294P/__pycache__
+DUL294P/configs/__pycache__
+DUL294P/encoders/__pycache__
+DUL294P/foveation/__pycache__
+DUL294P/lib/pointops2/__pycache__
+DUL294P/lib/pointops2/build
+DUL294P/lib/cpp_wrappers/cpp_subsampling/build/
+DeCap/data
+DeCap/cc3m_model
+DeCap/coco_model

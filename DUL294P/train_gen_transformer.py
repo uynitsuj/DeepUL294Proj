@@ -17,12 +17,18 @@ import matplotlib.pyplot as plt
 from torch_cluster import knn
 
 import PIL.Image
+import sys
+import pathlib
+filepath = str(pathlib.Path(__file__).parent.resolve())
+filepath += '/../'
+sys.path.append(filepath)
 from DUL294P.model_transformer import FoveatedTransformer
 from DUL294P.foveation.foveate_image import FoveateImage
 from DUL294P.encoders.openclip_encoder import *
 import time
 from datasets.utils.file_utils import get_datasets_user_agent
-
+import pdb
+pdb.set_trace()
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--model_config', type=str,
