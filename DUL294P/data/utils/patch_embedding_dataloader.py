@@ -4,6 +4,7 @@ import numpy as np
 import torch
 from data.utils.feature_dataloader import FeatureDataloader
 from encoders.image_encoder import BaseImageEncoder
+from encoders.openclip_encoder import PatchDropoutFov
 from tqdm import tqdm
 
 
@@ -43,6 +44,10 @@ class PatchEmbeddingDataloader(FeatureDataloader):
         self.center_y = torch.from_numpy(self.center_y).half()
         self.start_x = self.center_x[0].float()
         self.start_y = self.center_y[0].float()
+        
+        self.fov_center = None
+        self.fov_std = 2
+        self.foveation = PatchDropoutFov(.75, False)
 
         self.model = model
         self.embed_size = self.model.embedding_dim
@@ -56,7 +61,7 @@ class PatchEmbeddingDataloader(FeatureDataloader):
 
     def create(self, img_list):
         assert self.model is not None, "model must be provided to generate features"
-        print("here",self.kernel_size,self.stride,self.padding)
+        # print("here",self.kernel_size,self.stride,self.padding)
         self.unfold_func = torch.nn.Unfold(
             kernel_size=self.kernel_size,
             stride=self.stride,
@@ -66,13 +71,19 @@ class PatchEmbeddingDataloader(FeatureDataloader):
 
     def add_images(self,image_list):
         img_embeds = []
+        idx_kept = []
         for img in tqdm(image_list, desc="Embedding images", leave=False):
-            img_embeds.append(self._embed_clip_tiles(img.unsqueeze(0), self.unfold_func))
+            embds, idx = self._embed_clip_tiles(img.unsqueeze(0), self.unfold_func)
+            img_embeds.append(embds)
+            idx_kept.append(idx)
         if self.data is not None:
             self.data = torch.cat([self.data, torch.stack(img_embeds).half()])
         else:
             self.data = torch.stack(img_embeds).half()
-        return img_embeds
+        return img_embeds, idx_kept
+    
+    def clear(self):
+        self.data = None
 
     def __call__(self, img_points):
         # img_points: (B, 3) # (img_ind, x, y) (img_ind, row, col)
@@ -106,17 +117,23 @@ class PatchEmbeddingDataloader(FeatureDataloader):
         aug_imgs = image #.permute(0,3,1,2) #input to unfold should be N x 3 x H x W 
         # import pdb; pdb.set_trace()
 
-        tiles = unfold_func(aug_imgs).permute(2, 0, 1).reshape(-1, 3, self.kernel_size, self.kernel_size).to(self.device)
-
+        tiles = unfold_func(aug_imgs).permute(2, 0, 1).reshape(-1, 3*self.kernel_size*self.kernel_size)
+        tiles, idx =  self.foveation(tiles.unsqueeze(0), self.fov_center, self.fov_std, True, height=self.center_x.shape[0])
+        tiles = tiles.reshape(-1, 3, self.kernel_size, self.kernel_size).to(self.device, non_blocking=True)
+        # print(tiles.shape)
         with torch.no_grad():
             clip_embeds = []
             bsize = 1024
+            # print(tiles.shape)
             for i in range(0,tiles.shape[0],bsize):
                 embeds = self.model.encode_image(tiles[i:i+bsize,...])
                 clip_embeds.append(embeds)
             clip_embeds = torch.concatenate(clip_embeds,dim=0)
         clip_embeds /= clip_embeds.norm(dim=-1, keepdim=True)
-        clip_embeds = clip_embeds.reshape((self.center_x.shape[0], self.center_y.shape[0], -1))
-        clip_embeds = torch.concat((clip_embeds, clip_embeds[:, [-1], :]), dim=1)
-        clip_embeds = torch.concat((clip_embeds, clip_embeds[[-1], :, :]), dim=0)
-        return clip_embeds
+        # clip_embeds = clip_embeds.reshape((self.center_x.shape[0], self.center_y.shape[0], -1))
+        # clip_embeds = torch.concat((clip_embeds, clip_embeds[:, [-1], :]), dim=1)
+        # clip_embeds = torch.concat((clip_embeds, clip_embeds[[-1], :, :]), dim=0)
+        return clip_embeds, idx
+    
+    def set_fov_center(self, center: torch.Tensor):
+        self.fov_center = center

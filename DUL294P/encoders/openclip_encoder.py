@@ -19,7 +19,8 @@ class OpenCLIPNetworkConfig(BaseImageEncoderConfig):
     clip_model_type: str = "ViT-B-16"
     clip_model_pretrained: str = "laion2b_s34b_b88k"
     clip_n_dims: int = 768
-    negatives: Tuple[str] = ("object", "things", "stuff", "texture")
+    negatives: Tuple[str] = ("Tiled floor", "wooden wall panel", "glass door")
+    # ("object", "things", "stuff", "texture") # "reflective", "glass")
     device: str = 'cuda'
     output_tokens: bool = True
     masking_prob: float = 0.75
@@ -49,7 +50,7 @@ class OpenCLIPNetwork(BaseImageEncoder):
         )
         model.eval()
         model.visual.output_tokens = self.config.output_tokens
-        model.visual.patch_dropout = PatchDropoutFov(self.config.masking_prob)
+        model.visual.patch_dropout = PatchDropout(self.config.masking_prob)
         self.tokenizer = open_clip.get_tokenizer(self.config.clip_model_type)
         self.model = model.to(self.config.device)
         self.clip_n_dims = self.config.clip_n_dims
@@ -119,7 +120,7 @@ class PatchDropout(torch.nn.Module):
         self.prob = prob
         self.exclude_first_token = exclude_first_token  # exclude CLS token
 
-    def forward(self, x):
+    def forward(self, x, return_indices=False):
         if self.prob == 0.:
             return x
 
@@ -144,6 +145,9 @@ class PatchDropout(torch.nn.Module):
 
         if self.exclude_first_token:
             x = torch.cat((cls_tokens, x), dim=1)
+        
+        if return_indices:
+            return x, patch_indices_keep
 
         return x
     
@@ -160,8 +164,10 @@ class PatchDropoutFov(torch.nn.Module):
         self.prob = prob
         self.exclude_first_token = exclude_first_token  # exclude CLS token
 
-    def forward(self, x, center_coord, std_dev, return_indices=False):
-        if self.prob == 0.:
+    def forward(self, x, center_coord=None, std_dev=None, return_indices=False, height=None):
+        if self.prob == 0. or center_coord is None or std_dev is None:
+            if return_indices:
+                return x, torch.arange(x.size(1))
             return x
 
         if self.exclude_first_token:
@@ -170,16 +176,21 @@ class PatchDropoutFov(torch.nn.Module):
             cls_tokens = torch.jit.annotate(torch.Tensor, x[:, :1])
 
         batch_size, num_tokens, _ = x.size()
+        
+        if height is not None:
+            width = num_tokens // height
+        else:
+            height = width = num_tokens ** .5
 
         # Calculate distances from center coordinate
         # get grid of token coordinates
         token_locs = torch.arange(num_tokens)
-        distances = ((token_locs // num_tokens**.5) - center_coord[0])**2 \
-                               + ((token_locs % num_tokens**.5) - center_coord[1])**2
+        distances = ((token_locs // height) - center_coord[0])**2 \
+                               + ((token_locs % width) - center_coord[1])**2*2
 
         # Calculate probabilities based on normal distribution
-        # probabilities = torch.exp(-distances / (2 * std_dev**2))
-        probabilities = 1/(std_dev*(1+distances/std_dev**2))
+        probabilities = torch.exp(-distances / (2 * std_dev**2))
+        # probabilities = 1/(std_dev*(1+distances/std_dev**2))
 
         # Normalize probabilities to sum to 1
         probabilities /= probabilities.sum()

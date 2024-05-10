@@ -32,6 +32,7 @@ import time
 
 # from datasets.utils.file_utils import get_datasets_user_agent
 
+
 def mae_inference(model, img, training_config):
     latent, mask, ids_restore = model.forward_encoder(
         img, training_config["masking_prob"]
@@ -39,9 +40,11 @@ def mae_inference(model, img, training_config):
     pred_mae, pooled_mae = model.forward_decoder(latent, ids_restore)
     return pooled_mae, pred_mae
 
+
 def clip_inference(model, img, training_config):
-    pooled_mae, pred_mae = model(img) 
+    pooled_mae, pred_mae = model(img)
     return pooled_mae, pred_mae
+
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
@@ -131,10 +134,20 @@ def main():
         )
         inf_func = mae_inference
     elif model_config["model"] == "CLIP":
-        model = OpenCLIPNetworkConfig(device=device).setup().float().model.visual
+        model = (
+            OpenCLIPNetworkConfig(
+                device=device,
+                clip_n_dims=1024,
+                clip_model_type="ViT-H-14",
+                clip_model_pretrained="laion2b_s32b_b79k",
+            )
+            .setup()
+            .float()
+            .model.visual
+        )
         model.patch_dropout = PatchDropout(model_config["patch_dropout"])
         inf_func = clip_inference
-            
+
     else:
         raise ValueError("Model not supported")
         # model = FoveatedTransformer(
@@ -156,7 +169,18 @@ def main():
         else:
             print("Training from scratch")
 
-    clipencoder = OpenCLIPNetworkConfig(device=device).setup().eval().to(device).float()
+    clipencoder = (
+        OpenCLIPNetworkConfig(
+            device=device,
+            clip_n_dims=1024,
+            clip_model_type="ViT-H-14",
+            clip_model_pretrained="laion2b_s32b_b79k",
+        )
+        .setup()
+        .eval()
+        .to(device)
+        .float()
+    )
     model.to(device)
     model.float()
 
@@ -228,14 +252,14 @@ def main():
             if training_config["loss"] == "MSE":
                 if model_config["model"] == "MAE":
                     loss = torch.nn.MSELoss()(pred_mae, pred_clip)
-                else: 
-                    loss = 0.
+                else:
+                    loss = 0.0
                 loss = loss + (
                     torch.nn.MSELoss()(pooled_mae, pooled_clip)
                     * training_config["pooled_loss_weight"]
                 )
                 loss = loss + torch.nn.MSELoss()(pooled_mae, sent_clip)
-                
+
                 if training_config["clip_loss_weight"] > 0:
                     loss -= (
                         F.cosine_similarity(pooled_mae, sent_clip).mean()
@@ -244,14 +268,16 @@ def main():
             elif training_config["loss"] == "DistillClip":
                 loss = torch.nn.MSELoss()(pred_mae, pred_clip)
                 logit_scale = clipencoder.model.logit_scale
-                loss = loss + sum(DistillClipLoss().forward(
-                    pooled_mae,
-                    sent_clip,
-                    logit_scale,
-                    pooled_clip,
-                    sent_clip,
-                    logit_scale,
-                ))
+                loss = loss + sum(
+                    DistillClipLoss().forward(
+                        pooled_mae,
+                        sent_clip,
+                        logit_scale,
+                        pooled_clip,
+                        sent_clip,
+                        logit_scale,
+                    )
+                )
             else:
                 raise ValueError("Loss not supported")
             loss.backward()
@@ -284,7 +310,7 @@ def main():
                         normalize=True,
                     )
                     start = time.time()
-                    pooled_mae, _ = inf_func(model, clipimg, training_config)
+                    pooled_mae, _ = inf_func(model, clipimg.to(device), training_config)
                     elapsed = time.time() - start
                     # loss = torch.nn.MSELoss()(pred_mae, pred_clip)
                     loss = (
@@ -308,9 +334,8 @@ def main():
                     ),
                     normalize=True,
                 )
-                
-                pooled_mae, _ = inf_func(model, img, training_config)
 
+                pooled_mae, _ = inf_func(model, img.to(device), training_config)
 
                 # loss = torch.nn.MSELoss()(pred_mae, pred_clip)
                 loss = (
@@ -318,7 +343,15 @@ def main():
                     * training_config["pooled_loss_weight"]
                 )
                 loss = loss.item()
-                clip_sim = (F.cosine_similarity(pooled_clip, clip_sent) - F.cosine_similarity(pooled_mae, clip_sent)).abs().mean().item()
+                clip_sim = (
+                    (
+                        F.cosine_similarity(pooled_clip, clip_sent)
+                        - F.cosine_similarity(pooled_mae, clip_sent)
+                    )
+                    .abs()
+                    .mean()
+                    .item()
+                )
                 losses.append(loss)
                 clip_sims.append(clip_sim)
                 pbar.set_description(

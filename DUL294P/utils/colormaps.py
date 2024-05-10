@@ -17,7 +17,7 @@ class ColormapOptions:
 
     colormap: Colormaps = "default"
     """ The colormap to use """
-    normalize: bool = False
+    normalize: bool = True
     """ Whether to normalize the input tensor image """
     colormap_min: float = 0
     """ Minimum value for the output colormap """

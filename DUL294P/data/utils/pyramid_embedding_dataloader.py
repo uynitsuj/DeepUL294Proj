@@ -43,48 +43,6 @@ class PyramidEmbeddingDataloader(FeatureDataloader):
     def _stride_scaler(self, tile_ratio, stride_scaler):
         return np.interp(tile_ratio, [0.05, 0.15], [1.0, stride_scaler])
 
-    # def load(self):
-    #     # don't create anything, PatchEmbeddingDataloader will create itself
-    #     cache_info_path = self.cache_path.with_suffix(".info")
-
-    #     # check if cache exists
-    #     if not cache_info_path.exists():
-    #         raise FileNotFoundError
-
-    #     # if config is different, remove all cached content
-    #     with open(cache_info_path, "r") as f:
-    #         cfg = json.loads(f.read())
-    #     if cfg != self.cfg:
-    #         for f in os.listdir(self.cache_path):
-    #             os.remove(os.path.join(self.cache_path, f))
-    #         raise ValueError("Config mismatch")
-
-    #     raise FileNotFoundError  # trigger create
-
-    # def create(self, image_list):
-    #     os.makedirs(self.cache_path, exist_ok=True)
-    #     for i, tr in enumerate(tqdm(self.tile_sizes, desc="Scales")):
-    #         stride_scaler = self.strider_scaler_list[i]
-    #         self.data_dict[i] = PatchEmbeddingDataloader(
-    #             cfg={
-    #                 "tile_ratio": tr.item(),
-    #                 "stride_ratio": stride_scaler,
-    #                 "image_shape": self.cfg["image_shape"],
-    #                 "model_name": self.cfg["model_name"],
-    #             },
-    #             device=self.device,
-    #             model=self.model,
-    #             image_list=image_list,
-    #             cache_path=Path(f"{self.cache_path}/level_{i}.npy"),
-    #         )
-    #         print(image_list.shape)
-
-    # def save(self):
-    #     cache_info_path = self.cache_path.with_suffix(".info")
-    #     with open(cache_info_path, "w") as f:
-    #         f.write(json.dumps(self.cfg))
-    #     # don't save anything, PatchEmbeddingDataloader will save itself
-    #     pass
 
     def _random_scales(self, img_points):
         # img_points: (B, 3) # (img_ind, x, y)

@@ -1,6 +1,6 @@
 {
     "epochs": 15,
-    "batch_size_per_device": 512,
+    "batch_size_per_device": 128,
     "precision": "float32",
     "loss": "MSE",
     "masking_prob": 0.75, 
